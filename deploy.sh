@@ -5,8 +5,14 @@ export DOTPATH
 
 cd $DOTPATH
 
-for dotfile in .??*
-do
+echo
+for before_deploy_sh in $DOTPATH/before_deploy/*.sh; do
+  echo "loading $before_deploy_sh ..."
+  source $before_deploy_sh
+done
+
+echo
+for dotfile in .??*; do
   [ "$dotfile" = ".git" ] && continue
   [ "$dotfile" = ".DS_Store" ] && continue
 
@@ -25,7 +31,7 @@ done
 
 echo
 echo "loading .zshrc ..."
-./zshrc/deploy.sh
+./_zshrc/deploy.sh
 
 echo
 echo "finished."

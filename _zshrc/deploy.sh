@@ -1,11 +1,11 @@
 #!/bin/sh
 
-echo $DOTPATH
+echo "deploying .zshrc ..."
 
 cd $DOTPATH
 
 select_prompt_color () {
-  echo "select prompt color from below."
+  echo "Select prompt color from below. Default is 'green'."
   echo "  [black, red, green, yellow, blue, magenta, cyan, white]"
   /bin/echo -n "prompt color > "
   read zshrc_prompt_color
@@ -30,7 +30,7 @@ select_prompt_color
 echo "zshrc_prompt_color=$zshrc_prompt_color" >> "$HOME"/.zshrc
 echo "export zshrc_prompt_color" >> "$HOME"/.zshrc
 
-shs=`ls $DOTPATH/zshrc/[0-9][0-9]_*.sh`
+shs=`ls $DOTPATH/_zshrc/[0-9][0-9]_*.sh`
 for sh in $shs
 do
   echo "loading ${sh} ..."
