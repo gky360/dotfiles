@@ -10,7 +10,7 @@ alias vash='vagrant ssh'
 alias vahl='vagrant halt'
 
 # local IP address 確認
-alias localip="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*'"
+alias localips="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*'"
 
 # redis
 alias rds='redis-server'
