@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # 少し凝った zshrc
 # License : MIT

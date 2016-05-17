@@ -27,7 +27,7 @@ if command_exists android ; then
 fi
 
 # nodebrew
-if command_exists nodebrew ; then
+if command_exists $HOME/.nodebrew/current/bin/nodebrew ; then
   export PATH=$HOME/.nodebrew/current/bin:$PATH
 fi
 

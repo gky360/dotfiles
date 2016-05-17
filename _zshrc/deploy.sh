@@ -33,7 +33,7 @@ echo "export zshrc_prompt_color" >> "$HOME"/.zshrc
 shs=`ls $DOTPATH/_zshrc/[0-9][0-9]_*.sh`
 for sh in $shs
 do
-  echo "loading ${sh} ..."
+  echo "loading $sh ..."
   echo "source $sh" >> "$HOME"/.zshrc
 done
 
