@@ -14,6 +14,8 @@ done
 echo
 for dotfile in .??*; do
   [ "$dotfile" = ".git" ] && continue
+  [ "$dotfile" = ".gitignore" ] && continue
+  [ "$dotfile" = ".gitattributes" ] && continue
   [ "$dotfile" = ".DS_Store" ] && continue
 
   echo
