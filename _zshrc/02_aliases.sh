@@ -15,3 +15,6 @@ alias localips="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*'"
 # redis
 alias rds='redis-server'
 alias rdc='redis-cli'
+
+# npm
+alias nbw='npm run build:watch'
