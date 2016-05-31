@@ -26,11 +26,6 @@ if command_exists android ; then
   export ANDROID_HOME=/usr/local/opt/android-sdk
 fi
 
-# nodebrew
-if command_exists $HOME/.nodebrew/current/bin/nodebrew ; then
-  export PATH=$HOME/.nodebrew/current/bin:$PATH
-fi
-
 # cordova
 if command_exists cordova ; then
   export PATH=$PATH:/usr/local/Cellar/android-sdk/24.4/tools
@@ -41,3 +36,8 @@ fi
 if command_exists postgres ; then
   export PGDATA=/usr/local/var/postgres
 fi
+
+# node
+export NVM_DIR="/Users/inagaki/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
