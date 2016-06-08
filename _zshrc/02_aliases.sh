@@ -17,4 +17,4 @@ alias rds='redis-server'
 alias rdc='redis-cli'
 
 # npm
-alias nbw='npm run build:watch'
+alias nrbw='npm run build:watch'
