@@ -21,13 +21,13 @@ for dotfile in .??*; do
 
   echo
   echo "loading $dotfile ..."
-  if [ -e "$HOME"/"$dotfile" ] ; then
+  if [ -e "$HOME"/"$dotfile" ]; then
     /bin/echo -n "overwrite ~/$dotfile ? (yn) > "
     read yn
   else
     yn="y"
   fi
-  if [ ${yn:-"no"} = "yes" ] || [ ${yn:-"no"} = "y" ] ; then
+  if [ ${yn:-"no"} = "y" ]; then
     ln -snfv "$DOTPATH"/"$dotfile" "$HOME"/"$dotfile"
   fi
 done
@@ -38,3 +38,11 @@ echo "loading .zshrc ..."
 
 echo
 echo "finished."
+
+echo
+/bin/echo -n "restart $SHELL ? (yn) > "
+read yn
+if [ ${yn:-"no"} = "y" ]; then
+  exec $SHELL -l
+fi
+
