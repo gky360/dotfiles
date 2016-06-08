@@ -17,6 +17,7 @@ for dotfile in .??*; do
   [ "$dotfile" = ".gitignore" ] && continue
   [ "$dotfile" = ".gitattributes" ] && continue
   [ "$dotfile" = ".DS_Store" ] && continue
+  [ ${dotfile##*.} = "swp" ] && continue
 
   echo
   echo "loading $dotfile ..."
