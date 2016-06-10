@@ -39,10 +39,3 @@ echo "loading .zshrc ..."
 echo
 echo "finished."
 
-echo
-/bin/echo -n "restart $SHELL ? (yn) > "
-read yn
-if [ ${yn:-"no"} = "y" ]; then
-  exec $SHELL -l
-fi
-
