@@ -4,6 +4,9 @@
 alias be='bundle exec'
 alias rsb='rails s -b 0.0.0.0'
 
+# git
+alias gbrcl="git branch --merged | grep -v '*' | xargs git branch -d"
+
 # vagrant
 alias vain='vagrant up; vagrant ssh'
 alias vash='vagrant ssh'
