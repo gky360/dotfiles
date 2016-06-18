@@ -22,3 +22,7 @@ alias rdc='redis-cli'
 
 # npm
 alias nrbw='npm run build:watch'
+
+# tmux
+alias txa='tmux a || tmux'
+
