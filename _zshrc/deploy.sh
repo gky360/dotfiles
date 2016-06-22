@@ -21,6 +21,10 @@ else
   alias sedi='sed -i "" '
 fi
 
+if ! [ -e "$HOME"/.zshrc ]; then
+  touch "$HOME"/.zshrc
+fi
+
 sedi "/##### begin dotfiles #####/,/##### end dotfiles #####/c\\" "$HOME"/.zshrc
 
 
