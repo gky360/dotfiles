@@ -5,10 +5,8 @@ PATH=$PATH:$HOME/bin
 export PATH
 
 # ruby, rails
-if command_exists rbenv ; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init --no-rehash -)"
-fi
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init --no-rehash -)"
 
 # go 言語
 # [Macでgo言語開発環境を作る]
