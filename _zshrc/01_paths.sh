@@ -8,6 +8,13 @@ export PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init --no-rehash -)"
 
+# python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command_exists pyenv ; then
+  eval "$(pyenv init -)"
+fi
+
 # go 言語
 # [Macでgo言語開発環境を作る]
 # (http://qiita.com/puttyo_bubu/items/4e60e42ff041f2474428)
