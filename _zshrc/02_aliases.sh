@@ -26,3 +26,6 @@ alias nrbw='npm run build:watch'
 # tmux
 alias txa='tmux a || tmux'
 
+# tail
+alias tlf='tail -f'
+

@@ -6,7 +6,9 @@ export PATH
 
 # ruby, rails
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init --no-rehash -)"
+if command_exists rbenv ; then
+  eval "$(rbenv init --no-rehash -)"
+fi
 
 # python
 export PYENV_ROOT="$HOME/.pyenv"
