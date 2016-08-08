@@ -44,7 +44,15 @@ if command_exists 'postgres' ; then
   export PGDATA=/usr/local/var/postgres
 fi
 
-# node
-export NVM_DIR="/Users/inagaki/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# nvm
+# [NVM の nvm.sh を遅延ロードしてシェルの起動を高速化する - Qiita](http://qiita.com/uasi/items/80865646607b966aedc8)
+PATH=${NVM_DIR:-$HOME/.nvm}/default/bin:$PATH
+MANPATH=${NVM_DIR:-$HOME/.nvm}/default/share/man:$MANPATH
+export NODE_PATH=${NVM_DIR:-$HOME/.nvm}/default/lib/node_modules
+NODE_PATH=${NODE_PATH:A}
+nvm() {
+  unset -f nvm
+  source "${NVM_DIR:-$HOME/.nvm}/nvm.sh"
+  nvm "$@"
+}
 
