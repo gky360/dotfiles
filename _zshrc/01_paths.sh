@@ -4,6 +4,9 @@ PATH=$PATH:$HOME/bin
 
 export PATH
 
+# brew
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:$PATH
+
 # zsh-completions
 if [ -e /usr/local/share/zsh-completions ]; then
   fpath=(/usr/local/share/zsh-completions $fpath)
