@@ -4,6 +4,11 @@ PATH=$PATH:$HOME/bin
 
 export PATH
 
+# zsh-completions
+if [ -e /usr/local/share/zsh-completions ]; then
+  fpath=(/usr/local/share/zsh-completions $fpath)
+fi
+
 # ruby, rails
 export PATH="$HOME/.rbenv/bin:$PATH"
 if command_exists 'rbenv' ; then
