@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PATH=$PATH:$HOME/bin
+PATH=$PATH:/sbin:$HOME/bin
 
 export PATH
 
