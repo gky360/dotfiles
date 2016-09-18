@@ -31,14 +31,17 @@ if command_exists 'postgres' ; then
 fi
 
 # nvm
-# [NVM の nvm.sh を遅延ロードしてシェルの起動を高速化する - Qiita](http://qiita.com/uasi/items/80865646607b966aedc8)
-PATH=${NVM_DIR:-$HOME/.nvm}/default/bin:$PATH
-MANPATH=${NVM_DIR:-$HOME/.nvm}/default/share/man:$MANPATH
-export NODE_PATH=${NVM_DIR:-$HOME/.nvm}/default/lib/node_modules
+# 参考: [NVM の nvm.sh を遅延ロードしてシェルの起動を高速化する - Qiita](http://qiita.com/uasi/items/80865646607b966aedc8)
+export NVM_DIR="$HOME/.nvm"
+NVM_DEFAULT_VERSION=`cat $NVM_DIR/alias/default`
+NVM_DEFAULT_DIR=$NVM_DIR/versions/node/v6.4.0
+PATH=$NVM_DEFAULT_DIR/bin:$PATH
+MANPATH=$NVM_DEFAULT_DIR/share/man:$MANPATH
+export NODE_PATH=$NVM_DEFAULT_DIR/lib/node_modules
 NODE_PATH=${NODE_PATH:A}
 nvm() {
   unset -f nvm
-  source "${NVM_DIR:-$HOME/.nvm}/nvm.sh"
+  source "$NVM_DIR/nvm.sh"
   nvm "$@"
 }
 
