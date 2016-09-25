@@ -5,12 +5,15 @@ echo "deploying .zshrc ..."
 cd $DOTPATH
 
 select_prompt_color () {
-  echo "Select prompt color from below. Default is 'green'."
-  echo "  [black, red, green, yellow, blue, magenta, cyan, white]"
-  /bin/echo -n "prompt color > "
-  read zshrc_prompt_color
   if [ ! $zshrc_prompt_color ] ; then
     zshrc_prompt_color='green'
+  fi
+  echo "Select prompt color from below. Default is '$zshrc_prompt_color'."
+  echo "  [black, red, green, yellow, blue, magenta, cyan, white]"
+  /bin/echo -n "prompt color > "
+  read tmp_zshrc_prompt_color
+  if [ $tmp_zshrc_prompt_color ] ; then
+    zshrc_prompt_color=$tmp_zshrc_prompt_color
   fi
   echo "zshrc_prompt_color = $zshrc_prompt_color"
 }
