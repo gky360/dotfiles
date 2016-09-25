@@ -20,16 +20,20 @@ for dotfile in .??*; do
   [ ${dotfile##*.} = "swp" ] && continue
 
   echo
-  echo "loading $dotfile ..."
-  if [ -e "$HOME"/"$dotfile" ]; then
-    /bin/echo -n "overwrite ~/$dotfile ? (yn) > "
-    read yn
-  else
-    yn="y"
+  if ! [ -e "$HOME"/"$dotfile" ]; then
+    continue
   fi
-  if [ ${yn:-"no"} = "y" ]; then
-    ln -snfv "$DOTPATH"/"$dotfile" "$HOME"/"$dotfile"
-  fi
+  read -p "overwrite ~/$dotfile ? (Yn) > " yn
+  case $yn in
+    [Nn]* )
+      echo "skipping ..."
+      continue
+      ;;
+    * )
+      echo "loading $dotfile ..."
+      ln -snfv "$DOTPATH"/"$dotfile" "$HOME"/"$dotfile"
+      ;;
+  esac
 done
 
 echo
