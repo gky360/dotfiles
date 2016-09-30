@@ -8,7 +8,7 @@ alias rsb='rails s -b 0.0.0.0'
 alias gbrcl="git branch --merged | grep -v '*' | xargs git branch -d"
 
 # vagrant
-alias vain='vagrant up; vagrant ssh'
+alias vain='vagrant up && vagrant ssh'
 alias vash='vagrant ssh'
 alias vahl='vagrant halt'
 alias vasus='vagrant suspend'
