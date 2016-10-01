@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# gcc
+alias g++14='g++ -std=c++14'
+
 # ruby, rails
 alias be='bundle exec'
 alias rsb='rails s -b 0.0.0.0'
