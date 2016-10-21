@@ -20,9 +20,6 @@ for dotfile in .??*; do
   [ ${dotfile##*.} = "swp" ] && continue
 
   echo
-  if ! [ -e "$HOME"/"$dotfile" ]; then
-    continue
-  fi
   read -p "overwrite ~/$dotfile ? (Yn) > " yn
   case $yn in
     [Nn]* )
