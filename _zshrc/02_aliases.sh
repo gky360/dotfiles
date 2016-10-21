@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # gcc
-alias g++14='g++ -std=c++14'
+alias g++14='g++ -std=c++14 -Wall'
 
 # ruby, rails
 alias be='bundle exec'
