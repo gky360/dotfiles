@@ -10,6 +10,8 @@ if command_exists git ; then
   git config --global color.branch auto
   # ステータス
   git config --global alias.st status
+  # ブランチ
+  git config --global alias.br branch
   # チェックアウト
   git config --global alias.ch checkout
   # git mab -> git merge --abort
