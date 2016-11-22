@@ -33,3 +33,6 @@ alias txa='tmux a || tmux'
 # tail
 alias tlf='tail -f'
 
+# heroku
+alias hlt='heroku logs -t'
+
