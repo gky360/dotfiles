@@ -15,6 +15,7 @@ alias vain='vagrant up && vagrant ssh'
 alias vash='vagrant ssh'
 alias vahl='vagrant halt'
 alias vasus='vagrant suspend'
+alias varein='vagrant reload && vagrant ssh'
 
 # local IP address 確認
 alias localips="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*'"
