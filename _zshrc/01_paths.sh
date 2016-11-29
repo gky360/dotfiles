@@ -15,7 +15,7 @@ fi
 # ruby, rails
 export PATH="$HOME/.rbenv/bin:$PATH"
 if command_exists 'rbenv' ; then
-  eval "$(rbenv init --no-rehash -)"
+  eval "$(rbenv init -)"
 fi
 
 # python
