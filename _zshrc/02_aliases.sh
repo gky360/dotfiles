@@ -8,7 +8,7 @@ alias be='bundle exec'
 alias rsb='bundle exec rails s -b 0.0.0.0'
 alias rtcc='bundle exec rake tmp:cache:clear'
 alias Prc='bundle exec rails c -e production'
-alias Prap'RAILS_ENV=production bundle exec rake assets:precompile assets:clean'
+alias Prap='RAILS_ENV=production bundle exec rake assets:precompile assets:clean'
 alias Prsb='bundle exec rails s -b 0.0.0.0 -e production'
 
 # git
