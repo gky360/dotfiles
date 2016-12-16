@@ -5,7 +5,10 @@ alias g++14='g++ -std=c++14 -Wall'
 
 # ruby, rails
 alias be='bundle exec'
-alias rsb='rails s -b 0.0.0.0'
+alias rsb='bundle exec rails s -b 0.0.0.0'
+alias rtcc='bundle exec rake tmp:cache:clear'
+alias Prc='bundle exec rails c -e production'
+alias Prsb='RAILS_ENV=production bundle exec rake assets:precompile assets:clean && bundle exec rails s -b 0.0.0.0 -e production'
 
 # git
 alias gbrcl="git branch --merged | grep -v '*' | xargs git branch -d"
