@@ -1,5 +1,14 @@
 #!/bin/sh
 
+# basic
+alias la='ls -la'
+alias ll='ls -l'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+# sudo の後のコマンドでエイリアスを有効にする
+alias sudo='sudo '
+
 # dotfiles
 alias dotfiles="cd $DOTPATH"
 alias srcrc="if [ -e ~/.${SHELL##*/}rc ]; then; source ~/.${SHELL##*/}rc; fi"
