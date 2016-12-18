@@ -1,3 +1,5 @@
 #!/bin/sh
 
-source $DOTPATH/_zshrc/00_funcs.sh
+set -e
+
+source $DOTPATH/_x_shrc/00_funcs.sh

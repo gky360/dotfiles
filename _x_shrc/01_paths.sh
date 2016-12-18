@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 PATH=$PATH:/sbin:$HOME/bin
 
 export PATH

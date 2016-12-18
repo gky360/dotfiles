@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 echo "deploying .zshrc ..."
 
 cd $DOTPATH
@@ -37,7 +39,9 @@ select_prompt_color
 echo "zshrc_prompt_color=$zshrc_prompt_color" >> "$HOME"/.zshrc
 echo "export zshrc_prompt_color" >> "$HOME"/.zshrc
 
-shs=`ls $DOTPATH/_zshrc/[0-9][0-9]_*.sh`
+_x_sh_shs=`ls $DOTPATH/_x_shrc/[0-9][0-9]_*.sh`
+zsh_shs=`ls $DOTPATH/_zshrc/[0-9][0-9]_*.sh`
+shs="$_x_sh_shs $zsh_shs"
 for sh in $shs
 do
   echo "loading $sh ..."

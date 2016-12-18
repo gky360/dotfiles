@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 # 少し凝った zshrc
 # License : MIT
 # http://mollifier.mit-license.org/

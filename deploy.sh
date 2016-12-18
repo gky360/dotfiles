@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 DOTPATH="$HOME/dotfiles"
 export DOTPATH
 
@@ -33,6 +35,10 @@ for dotfile in .??*; do
   echo "loading $dotfile ..."
   ln -snfv "$DOTPATH"/"$dotfile" "$HOME"/"$dotfile"
 done
+
+echo
+echo "loading .bashrc ..."
+./_bashrc/deploy.sh
 
 echo
 echo "loading .zshrc ..."
