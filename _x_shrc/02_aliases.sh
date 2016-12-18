@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -e
-
 # gcc
 alias g++14='g++ -std=c++14 -Wall'
 

@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -e
-
 if command_exists git ; then
   # エディターを vim にする
   git config --global core.editor 'vim -c "set fenc=utf-8"'
