@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# dotfiles
+alias dotfiles="cd $DOTPATH"
+alias srcrc="if [ -e ~/.${SHELL##*/}rc ]; then; source ~/.zshrc; fi"
+
 # gcc
 alias g++14='g++ -std=c++14 -Wall'
 

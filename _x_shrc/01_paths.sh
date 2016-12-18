@@ -4,6 +4,9 @@ PATH=$PATH:/sbin:$HOME/bin
 
 export PATH
 
+# dotfiles
+export DOTPATH="$HOME/dotfiles"
+
 # brew
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:$PATH
 
