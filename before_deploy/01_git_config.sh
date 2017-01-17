@@ -26,4 +26,6 @@ if command_exists git ; then
   git config --global alias.dfca 'diff --cached'
   # 不要な空白やタブ、改行が含まれていないか add 前にチェック
   git config --global alias.dfch 'diff --check'
+  # 今の日時にしてcommitし直す
+  git config --global alias.cmad '!git commit --amend --date "`date -R`"'
 fi
