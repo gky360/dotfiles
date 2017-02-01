@@ -57,3 +57,7 @@ alias tlf='tail -f'
 # heroku
 alias hlt='heroku logs -t'
 
+# nkf
+alias nuo='nkf -Luw --overwrite'
+
+
