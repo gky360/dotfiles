@@ -26,6 +26,7 @@ alias Prsb='bundle exec rails s -b 0.0.0.0 -e production'
 
 # git
 alias gbrcl="git branch --merged | grep -v '*' | xargs git branch -d"
+alias gprst="git diff --numstat | awk '{if ((\$1 == \"0\" && \$2 == \"0\") || (\$1 == \"-\" && \$2 == \"-\")) print \$3}' | xargs git checkout HEAD"
 
 # vagrant
 alias vain='vagrant up && vagrant ssh'
