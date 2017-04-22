@@ -53,7 +53,7 @@ alias wpbw='webpack --progress --colors --watch'
 alias txa='tmux a || tmux'
 
 # tail
-alias tlf='tail -f'
+alias tlf='tail -F'
 
 # heroku
 alias hlt='heroku logs -t'
