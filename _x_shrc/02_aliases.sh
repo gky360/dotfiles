@@ -33,6 +33,8 @@ alias gprst="git diff --numstat | awk '{if ((\$1 == \"0\" && \$2 == \"0\") || (\
 alias gdf='if [[ -x `which cdiff 2>/dev/null` ]]; then; git diff $@ | cdiff -s; else; git diff $@; fi'
 ## side-by-side diff --cached
 alias gdfca='if [[ -x `which cdiff 2>/dev/null` ]]; then; git diff $@ --cached | cdiff -s; else; git diff $@ --cached; fi'
+## side-by-side show
+alias gsh='if [[ -x `which cdiff 2>/dev/null` ]]; then; git show $@ | cdiff -s; else; git show $@; fi'
 
 # vagrant
 alias vain='vagrant up && vagrant ssh'

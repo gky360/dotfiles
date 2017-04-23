@@ -22,6 +22,8 @@ if command_exists git ; then
   git config --global alias.gn 'grep -n'
   # マージできるか調べる
   git config --global alias.mts 'merge --no-commit --no-ff'
+  # side-by-side diff --cached
+  git config --global alias.dfca '!if [[ -x `which cdiff 2>/dev/null` ]]; then; git diff $@ --cached | cdiff -s; else; git diff $@ --cached; fi'
   # 不要な空白やタブ、改行が含まれていないか add 前にチェック
   git config --global alias.dfch 'diff --check'
   # 今の日時にしてcommitし直す
