@@ -22,8 +22,6 @@ if command_exists git ; then
   git config --global alias.gn 'grep -n'
   # マージできるか調べる
   git config --global alias.mts 'merge --no-commit --no-ff'
-  # git add した後に差分を確認する
-  git config --global alias.dfca 'diff --cached'
   # 不要な空白やタブ、改行が含まれていないか add 前にチェック
   git config --global alias.dfch 'diff --check'
   # 今の日時にしてcommitし直す
