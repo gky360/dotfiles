@@ -25,6 +25,8 @@ alias Prap='RAILS_ENV=production bundle exec rake assets:precompile assets:clean
 alias Prsb='bundle exec rails s -b 0.0.0.0 -e production'
 
 # git
+## status
+alias gst="git status"
 ## clear unused branches
 alias gbrcl="git branch --merged | grep -v '*' | xargs git branch -d"
 ## reset modes of the files
