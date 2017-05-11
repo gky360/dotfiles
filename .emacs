@@ -1,13 +1,13 @@
 ;; tuareg-mode 読み込み
 (setq load-path (cons "~/dotfiles/lib/tuareg-mode-1.45.7" load-path))
-(setq auto-mode-alist (cons ’("\.ml\w?" . tuareg-mode) auto-mode-alist))
-    (autoload ’tuareg-mode "tuareg" "Major mode for editing Caml code" t)
-    (autoload ’camldebug "camldebug" "Run the Caml debugger" t)
-    (if (and (boundp ’window-system) window-system)
+(setq auto-mode-alist (cons '("\.ml\w?" . tuareg-mode) auto-mode-alist))
+    (autoload 'tuareg-mode "tuareg" "Major mode for editing Caml code" t)
+    (autoload 'camldebug "camldebug" "Run the Caml debugger" t)
+    (if (and (boundp 'window-system) window-system)
         (when (string-match "XEmacs" emacs-version)
-            (if (not (and (boundp ’mule-x-win-initted) mule-x-win-initted))
-                (require ’sym-lock))
-            (require ’font-lock)))
+            (if (not (and (boundp 'mule-x-win-initted) mule-x-win-initted))
+                (require 'sym-lock))
+            (require 'font-lock)))
 
 ; OCaml 設定
 (require 'package)
