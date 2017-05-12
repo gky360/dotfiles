@@ -54,7 +54,7 @@
 
 ;; 行番号を常に表示させる
 (global-linum-mode)
-(setq linum-format "%4d ")
+(setq linum-format "%04d ")
 
 ;; 現在行を目立たせる
 (setq hl-line-face 'underline)
@@ -62,3 +62,27 @@
 
 ;; テーマを設定する
 (load-theme 'manoj-dark t)
+
+;; タブにスペースを使用する
+(setq-default tab-width 4 indent-tabs-mode nil)
+
+; 改行コードを表示する
+(setq eol-mnemonic-dos "(CRLF)")
+(setq eol-mnemonic-mac "(CR)")
+(setq eol-mnemonic-unix "(LF)")
+
+;; スペース、タブなどを可視化する
+(global-whitespace-mode 1)
+
+;; スクロールは１行ごとに
+(setq scroll-conservatively 1)
+
+;; dired設定
+(require 'dired-x)
+
+;; "yes or no" の選択を "y or n" にする
+(fset 'yes-or-no-p 'y-or-n-p)
+
+;; Macのoptionをメタキーにする
+(setq mac-option-modifier 'meta)
+
