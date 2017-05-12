@@ -1,25 +1,28 @@
 (add-to-list 'load-path "~/dotfiles/.elisp")
 (add-to-list 'load-path "~/dotfiles/.elisp/tuareg-mode")
 
+(require 'cl)
+(defvar my/packages
+  '(
+    ;; packages to install
+    exec-path-from-shell
+    tuareg
+    ))
+
 (require 'package)
 (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
-(require 'cl)
-(defvar installing-package-list
-  '(
-    ;; ここに使っているパッケージを書く。
-    exec-path-from-shell
-    tuareg
-    ))
-(let ((not-installed (loop for x in installing-package-list
-                            when (not (package-installed-p x))
-                            collect x)))
+(let ((not-installed (remove-if 'package-installed-p my/packages)))
   (when not-installed
     (package-refresh-contents)
-    (dolist (pkg not-installed)
-        (package-install pkg))))
+    (dolist (package my/packages)
+      (package-install package))))
 
+;; Avoid to write `package-selected-packages` in init.el
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(when (file-exists-p custom-file)
+  (load custom-file))
 
 ;;; append-tuareg.el - Tuareg quick installation: Append this file to .emacs.
 (setq auto-mode-alist (cons '("\\.ml\\w?" . tuareg-mode) auto-mode-alist))
@@ -30,17 +33,3 @@
         (if (not (and (boundp 'mule-x-win-initted) mule-x-win-initted))
             (require 'sym-lock))
         (require 'font-lock)))
-
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (exec-path-from-shell tuareg))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
