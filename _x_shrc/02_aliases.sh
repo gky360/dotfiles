@@ -13,6 +13,9 @@ alias sudo='sudo '
 alias dotfiles="cd $DOTPATH"
 alias srcrc="if [ -e ~/.${SHELL##*/}rc ]; then source ~/.${SHELL##*/}rc; fi"
 
+# emacs
+alias emacs='emacs -nw'
+
 # gcc
 alias g++14='g++ -std=c++14 -Wall'
 
