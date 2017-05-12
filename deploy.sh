@@ -21,6 +21,10 @@ for dotfile in .??*; do
   [ "$dotfile" = ".DS_Store" ] && continue
   [ ${dotfile##*.} = "swp" ] && continue
 
+  if [ -d "$DOTPATH"/"$dotfile" ]; then
+    continue
+  fi
+
   echo
   if [ -e "$HOME"/"$dotfile" ]; then
     read -p "overwrite ~/$dotfile ? (Yn) > " yn
