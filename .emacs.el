@@ -1,5 +1,5 @@
-(add-to-list 'load-path "~/dotfiles/.elisp")
-(add-to-list 'load-path "~/dotfiles/.elisp/tuareg-mode")
+(add-to-list 'load-path "~/dotfiles/elisp")
+(add-to-list 'load-path "~/dotfiles/elisp/tuareg-mode")
 
 (require 'cl)
 (defvar my/packages

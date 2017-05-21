@@ -21,9 +21,6 @@ for dotfile in .??*; do
   [ "$dotfile" = ".DS_Store" ] && continue
   [ ${dotfile##*.} = "swp" ] && continue
 
-  if [ -d "$DOTPATH"/"$dotfile" ]; then
-    continue
-  fi
 
   echo
   if [ -e "$HOME"/"$dotfile" ]; then
@@ -34,10 +31,14 @@ for dotfile in .??*; do
         continue
         ;;
     esac
+    if [ -d "$DOTPATH"/"$dotfile" ]; then
+      rm -rf "$HOME"/"$dotfile"
+    fi
   fi
 
   echo "loading $dotfile ..."
-  ln -snfv "$DOTPATH"/"$dotfile" "$HOME"/"$dotfile"
+  ln -snfv "$DOTPATH"/"$dotfile" "$HOME"
+
 done
 
 echo
