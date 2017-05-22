@@ -10,3 +10,6 @@ repo = 'itchyny/lightline.vim'
 [[plugins]]
 repo = 'tpope/vim-surround'
 
+[[plugins]]
+repo = 'cohama/lexima.vim'
+
