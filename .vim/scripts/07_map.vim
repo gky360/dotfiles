@@ -50,3 +50,7 @@ inoremap <C-p> <Up>
 inoremap <C-n> <Down>
 inoremap <C-m> <CR>
 
+" Tabpages {{{1
+nnoremap <silent> tn :<C-u>tabnew<CR>
+nnoremap <silent> tc :<C-u>tabclose<CR>
+
