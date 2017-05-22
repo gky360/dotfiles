@@ -10,5 +10,3 @@ repo = 'itchyny/lightline.vim'
 [[plugins]]
 repo = 'tpope/vim-surround'
 
-[[plugins]]
-repo = 'justinmk/vim-dirvish'
