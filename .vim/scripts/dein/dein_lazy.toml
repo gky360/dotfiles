@@ -1,11 +1,10 @@
 [[plugins]]
 repo = 'Shougo/neocomplete.vim'
-depends = 'context_filetype.vim'
 if = "has('lua')"
 on_event = 'InsertEnter'
 hook_source = '''
   let g:neocomplete#enable_at_startup = 1
-  source ~/.vim/rc/plugins/neocomplete.rc.vim
+  source ~/.vim/scripts/plugins/neocomplete.vim
 '''
 
 [[plugins]]

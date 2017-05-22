@@ -25,13 +25,13 @@ if !dein#load_state(s:base_path)
     finish
 endif
 
-let s:tomls = Glob(g:dotvim."/scripts/dein", "*[0-9]*_*.toml")
-call dein#begin(s:base_path, [expand('<sfile>')] + s:tomls)
-let s:lazy = 0
-for toml in s:tomls
-    call dein#load_toml(toml, {'lazy' : s:lazy})
-    let s:lazy += 1
-endfor
+let s:toml_path = '~/.vim/scripts/dein/dein.toml'
+let s:toml_lazy_path = '~/.vim/scripts/dein/dein_lazy.toml'
+
+call dein#begin(s:base_path, [expand('<sfile>'), s:toml_path, s:toml_lazy_path])
+
+call dein#load_toml(s:toml_path, {'lazy': 0})
+call dein#load_toml(s:toml_lazy_path, {'lazy': 1})
 
 call dein#end()
 call dein#save_state()
