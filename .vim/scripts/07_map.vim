@@ -41,6 +41,24 @@ inoremap <C-n> <Down>
 inoremap <C-m> <CR>
 
 " Tabpages {{{1
-nnoremap <silent> tn :<C-u>tabnew<CR>
-nnoremap <silent> tc :<C-u>tabclose<CR>
+" The prefix key.
+nnoremap [Tag] <Nop>
+nmap t [Tag]
+
+" Jump to n-th tab
+for n in range(1, 9)
+  execute 'nnoremap <silent> [Tag]'.n ':<C-u>tabnext'.n.'<CR>'
+endfor
+" Create new tab at right
+map <silent> [Tag]c :tablast <bar> tabnew<CR>
+" Close tab
+map <silent> [Tag]x :tabclose<CR>
+" Move to next tab
+map <silent> [Tag]l :tabnext<CR>
+" Move to previous tab
+map <silent> [Tag]h :tabprevious<CR>
+" Move tab to right
+map <silent> [Tag]ml :tabm +1<CR>
+" Move tab to left
+map <silent> [Tag]mh :tabm -1<CR>
 
