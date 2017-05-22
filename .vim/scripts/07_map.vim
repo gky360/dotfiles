@@ -62,3 +62,12 @@ map <silent> [Tag]ml :tabm +1<CR>
 " Move tab to left
 map <silent> [Tag]mh :tabm -1<CR>
 
+augroup netrw_mapping
+    autocmd!
+    autocmd filetype netrw call NetrwMapping()
+augroup END
+
+function! NetrwMapping()
+    nmap <buffer> t [Tag]
+endfunction
+
