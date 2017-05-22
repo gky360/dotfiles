@@ -12,3 +12,7 @@ repo = 'tpope/vim-surround'
 
 [[plugins]]
 repo = 'cohama/lexima.vim'
+
+[[plugins]]
+repo = 'honza/vim-snippets'
+

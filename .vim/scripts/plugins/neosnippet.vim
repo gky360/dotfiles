@@ -20,5 +20,5 @@ if has('conceal')
 endif
 
 " Custom snippets
-let g:neosnippet#snippets_directory = '~/.vim/snippets/'
+let g:neosnippet#snippets_directory = g:plugins_path . '/honza/vim-snippets/snippets, ~/.vim/snippets/'
 
