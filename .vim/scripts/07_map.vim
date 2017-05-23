@@ -43,14 +43,14 @@ inoremap <C-m> <CR>
 " Tabpages {{{1
 " The prefix key.
 nnoremap [Tag] <Nop>
-nmap t [Tag]
+nmap <leader>t [Tag]
 
 " Jump to n-th tab
 for n in range(1, 9)
   execute 'nnoremap <silent> [Tag]'.n ':<C-u>tabnext'.n.'<CR>'
 endfor
 " Create new tab at right
-map <silent> [Tag]c :tablast <bar> tabnew<CR>
+map <silent> [Tag]c :tablast <bar> Texplore<CR>
 " Close tab
 map <silent> [Tag]x :tabclose<CR>
 " Move to next tab
@@ -61,13 +61,4 @@ map <silent> [Tag]h :tabprevious<CR>
 map <silent> [Tag]ml :tabm +1<CR>
 " Move tab to left
 map <silent> [Tag]mh :tabm -1<CR>
-
-augroup netrw_mapping
-    autocmd!
-    autocmd filetype netrw call NetrwMapping()
-augroup END
-
-function! NetrwMapping()
-    nmap <buffer> t [Tag]
-endfunction
 

@@ -40,19 +40,19 @@ function! s:vimrc_environment()
     let env.tmux_proc = system('tmux display-message -p "#W"')
 
     let env.vimrc = {
+                \ 'plugin_on': g:false,
+                \ 'suggest_neobundleinit': g:false,
                 \ 'goback_to_eof2bof': g:false,
                 \ 'save_window_position': g:true,
                 \ 'restore_cursor_position': g:true,
-                \ 'statusline_manually': g:true,
+                \ 'statusline_manually': g:false,
                 \ 'add_execute_perm': g:false,
                 \ 'colorize_statusline_insert': g:true,
                 \ 'manage_rtp_manually': g:true,
                 \ 'auto_cd_file_parentdir': g:true,
                 \ 'ignore_all_settings': g:true,
+                \ 'check_plug_update': g:false,
                 \ }
-"               \ 'plugin_on': g:true,
-"               \ 'suggest_neobundleinit': g:true,
-"               \ 'check_plug_update': g:true,
 
     return env
 endfunction
