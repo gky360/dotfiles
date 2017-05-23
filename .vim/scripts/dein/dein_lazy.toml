@@ -32,6 +32,11 @@ hook_source = '''
 '''
 
 [[plugins]]
+repo = 'lervag/vimtex'
+on_ft = 'tex'
+hook_source = 'source ~/.vim/scripts/plugins/vimtex.vim'
+
+[[plugins]]
 repo = 'mattn/emmet-vim'
 on_ft = ['html', 'css', 'jsx', 'javascript.jsx']
 hook_source = '''
