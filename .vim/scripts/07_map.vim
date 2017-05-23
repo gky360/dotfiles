@@ -1,14 +1,18 @@
 if !exists('g:env')
-    finish
+  finish
 endif
 
 " Common {{{1
 
 " Use backslash
 if IsMac()
-    noremap ¥ \
-    noremap \ ¥
+  noremap ¥ \
+  noremap \ ¥
 endif
+
+" Define mapleader
+let g:mapleader = ','
+let g:maplocalleader = ','
 
 inoremap <C-h> <Backspace>
 inoremap <C-d> <Delete>
