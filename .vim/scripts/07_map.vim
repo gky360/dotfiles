@@ -14,6 +14,16 @@ endif
 let g:mapleader = ','
 let g:maplocalleader = ','
 
+" Smart space mapping
+" Notice: when starting other <Space> mappings in noremap, disappeared [Space]
+nmap  <Space>   [Space]
+xmap  <Space>   [Space]
+nnoremap  [Space]   <Nop>
+xnoremap  [Space]   <Nop>
+" key map ^,$ to <Space>h,l. Because ^ and $ is difficult to type and damage little finger!!!
+noremap [Space]h ^
+noremap [Space]l $
+
 inoremap <C-h> <Backspace>
 inoremap <C-d> <Delete>
 cnoremap <C-k> <UP>
