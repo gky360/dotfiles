@@ -29,3 +29,8 @@ on_ft = 'toml'
 [[plugins]]
 repo = 'fatih/vim-go'
 on_ft = 'go'
+
+[[plugins]]
+repo = 'gabrielelana/vim-markdown'
+on_ft = 'markdown'
+
