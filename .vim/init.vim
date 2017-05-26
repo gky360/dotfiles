@@ -4,7 +4,7 @@ if 0 | endif
 " Use plain vim
 " when vim was invoked by 'sudo' command
 " or, invoked as 'git difftool'
-if exists('$SUDO_USER') || exists('$GIT_DIR')
+if exists('$SUDO_USER')
   finish
 endif
 
