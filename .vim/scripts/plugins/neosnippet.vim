@@ -21,7 +21,3 @@ endif
 " Custom snippets
 let g:neosnippet#snippets_directory = g:plugins_path . '/honza/vim-snippets/snippets, ~/.vim/snippets/'
 
-" enable html snippets in jsx
-let g:neosnippet#scope_aliases = {}
-let g:neosnippet#scope_aliases['jsx'] = 'html,jsx'
-
