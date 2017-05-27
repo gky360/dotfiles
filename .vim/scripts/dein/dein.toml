@@ -19,3 +19,6 @@ repo = 'honza/vim-snippets'
 [[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
 
+[[plugins]]
+repo = 'tyru/caw.vim'
+
