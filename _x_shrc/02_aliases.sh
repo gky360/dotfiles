@@ -48,6 +48,9 @@ alias vahl='vagrant halt'
 alias vasus='vagrant suspend'
 alias varein='vagrant reload && vagrant ssh'
 
+# docker
+alias dcm='docker-compose'
+
 # linux
 alias osstats='cat /etc/redhat-release /proc/version /proc/cpuinfo /proc/meminfo && df'
 
