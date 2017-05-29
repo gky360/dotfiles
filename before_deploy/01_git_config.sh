@@ -3,6 +3,8 @@
 if command_exists git ; then
   # エディターを vim にする
   git config --global core.editor 'vim -c "set fenc=utf-8"'
+  # enable gitignore_global
+  git config --global core.excludesfile ~/.gitignore_global
   # カラフルにする
   git config --global color.ui true
   git config --global color.diff auto
