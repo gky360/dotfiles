@@ -218,5 +218,11 @@ if has('patch-7.4.338')
   set breakindent
 endif
 
+
+
+" 80-column indication
+set colorcolumn=80
+
+
 " __END__ {{{1
 " vim:fdm=marker expandtab fdc=3:
