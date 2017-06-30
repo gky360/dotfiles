@@ -1,0 +1,17 @@
+snippet ajax
+    $.ajax({
+        url: "${1:/path/to/file}",
+        type: "${2:GET}",
+        dataType: "${3:json}",
+        data: { ${4:} },
+    })
+    .done(function(data, textStatus, jqXHR) {
+        console.log(data);
+        ${5:}
+    }.bind(this))
+    .fail(function(jqXHR, textStatus, errorThrown) {
+        console.error(jqXHR);
+    }.bind(this))
+    .always(function() {
+    }.bind(this));
+
