@@ -94,3 +94,15 @@ on_ft = 'go'
 repo = 'gabrielelana/vim-markdown'
 on_ft = 'markdown'
 
+[[plugins]]
+repo = 'vim-scripts/ruby-matchit'
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'basyura/unite-rails'
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+on_ft = ['ruby']
+
