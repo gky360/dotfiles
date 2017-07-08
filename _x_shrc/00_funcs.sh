@@ -5,7 +5,7 @@ function command_exists () {
 }
 
 function gpwo() {
-  set +x
+  set -x
   g++ -Wall -std=c++14 -o ${1%.cpp}.out ${@:2} ${1%.cpp}.cpp
 }
 
