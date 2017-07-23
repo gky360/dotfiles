@@ -11,3 +11,5 @@ augroup END
 
 filetype plugin indent on
 
+let g:tex_flavor = 'tex'
+
