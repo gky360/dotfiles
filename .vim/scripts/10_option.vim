@@ -223,6 +223,19 @@ endif
 " 80-column indication
 set colorcolumn=80
 
+" swapfile configrations
+" Create swapfile
+set swapfile
+" Designate dir to create swapfiles
+set directory=.,~/tmp,/var/tmp,/tmp
+
+" backup configurations
+" Create backups only when failed to overwrite
+set nobackup
+set writebackup
+" Designate dir to create backups
+set backupdir=.,~/tmp,~/
+
 
 " __END__ {{{1
 " vim:fdm=marker expandtab fdc=3:
