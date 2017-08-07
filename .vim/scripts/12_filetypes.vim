@@ -7,6 +7,7 @@ augroup filetypes
   autocmd BufRead,BufNewFile .vimrc set filetype=vim
   autocmd BufRead,BufNewFile *.nas set filetype=nask
   autocmd BufRead,BufNewFile *.vim set filetype=vim
+  autocmd BufRead,BufNewFile *.jsx set filetype=javascript.jsx
 augroup END
 
 filetype plugin indent on
