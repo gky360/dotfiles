@@ -1,3 +1,4 @@
 # windows でも LF のままにするファイルを設定
-*.sh text eol=lf
+*.sh    text eol=lf
+.vimrc  text eol=lf
 
