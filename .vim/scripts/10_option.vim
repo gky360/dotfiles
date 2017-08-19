@@ -173,7 +173,7 @@ endif
 " Make it normal in UTF-8 in Unix.
 set encoding=utf-8
 set fileencoding=utf-8
-set fileencodings=utf-8,iso-2022-jp,euc-jp,ucs-2le,ucs-2,cp932
+set fileencodings=utf-8,cp932,iso-2022-jp,euc-jp,ucs-2le,ucs-2
 
 " Select newline character (either or both of CR and LF depending on system) automatically
 set foldenable
