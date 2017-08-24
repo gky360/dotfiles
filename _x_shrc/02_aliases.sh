@@ -30,6 +30,8 @@ alias Prsb='bundle exec rails s -b 0.0.0.0 -e production'
 # git
 ## status
 alias gst="git status"
+## log graph
+alias ggr="git gr"
 ## clear unused branches
 alias gbrcl="git branch --merged | grep -v '*' | xargs git branch -d"
 ## reset modes of the files
@@ -70,5 +72,4 @@ alias hlt='heroku logs -t'
 
 # nkf
 alias nuo='nkf -Luw --overwrite'
-
 

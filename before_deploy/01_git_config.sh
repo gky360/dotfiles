@@ -30,4 +30,7 @@ if command_exists git ; then
   git config --global alias.dfch 'diff --check'
   # 今の日時にしてcommitし直す
   git config --global alias.cmad '!git commit --amend --date'
+  # push -u
+  git config --global alias.pushu 'push -u'
 fi
+
