@@ -24,7 +24,7 @@ set keywordprg=:help
 set helplang& helplang=ja
 
 " Ignore case
-set ignorecase
+" set ignorecase
 
 " Smart ignore case
 set smartcase
