@@ -26,3 +26,6 @@ repo = 'bronson/vim-trailing-whitespace'
 [[plugins]]
 repo = 'tyru/caw.vim'
 
+[[plugins]]
+repo = 'w0rp/ale'
+
