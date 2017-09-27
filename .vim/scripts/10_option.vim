@@ -237,5 +237,9 @@ set writebackup
 set backupdir=.,~/tmp,~/
 
 
+" add splited window to the bottom
+set splitbelow
+
+
 " __END__ {{{1
 " vim:fdm=marker expandtab fdc=3:
