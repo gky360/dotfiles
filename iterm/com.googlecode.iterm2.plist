@@ -771,7 +771,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/inagaki</string>
+			<string>~</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -1025,7 +1025,7 @@
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Dynamic Profile Filename</key>
-			<string>/Users/inagaki/Library/Application Support/iTerm2/DynamicProfiles/profiles.json</string>
+			<string>~/Library/Application Support/iTerm2/DynamicProfiles/profiles.json</string>
 			<key>Flashing Bell</key>
 			<false/>
 			<key>Foreground Color</key>
@@ -1419,7 +1419,7 @@
 			<key>Window Type</key>
 			<integer>1</integer>
 			<key>Working Directory</key>
-			<string>/Users/inagaki</string>
+			<string>~</string>
 		</dict>
 	</array>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
@@ -1545,7 +1545,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/inagaki/dotfiles/iterm</string>
+	<string>~/dotfiles/iterm</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>

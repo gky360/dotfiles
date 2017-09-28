@@ -63,7 +63,7 @@
         "Green Component" : 1,
         "Red Component" : 1
       },
-      "Working Directory" : "\/Users\/inagaki",
+      "Working Directory" : "~",
       "Foreground Color" : {
         "Blue Component" : 0.7333333492279053,
         "Green Component" : 0.7333333492279053,
@@ -91,7 +91,7 @@
       "AWDS Window Directory" : "",
       "Idle Code" : 0,
       "Columns" : 80,
-      "Dynamic Profile Filename" : "\/Users\/inagaki\/Library\/Application Support\/iTerm2\/DynamicProfiles\/profiles.json",
+      "Dynamic Profile Filename" : "~\/Library\/Application Support\/iTerm2\/DynamicProfiles\/profiles.json",
       "Ansi 13 Color" : {
         "Blue Component" : 0.9965209,
         "Green Component" : 0.6133059,
