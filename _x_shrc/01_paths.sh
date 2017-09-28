@@ -55,6 +55,7 @@ if [ -s $HOME/.nvm ]; then
   nvm() {
     unset -f nvm
     source "$NVM_DIR/nvm.sh"
+    source "$NVM_DIR/bash_completion"
     nvm "$@"
   }
 fi
