@@ -1,7 +1,7 @@
 let g:ale_fixers = {
-  'javascript': ['eslint'],
-  'python': ['pylint'],
-}
+      \  'javascript': ['eslint'],
+      \  'python': ['pylint'],
+      \}
 
 " Set this setting in vimrc if you want to fix files automatically on save.
 " This is off by default.
