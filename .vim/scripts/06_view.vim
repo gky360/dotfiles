@@ -116,7 +116,7 @@ let g:lightline = {
       \}
 
 function! ALEStatus()
-  return ALEGetStatusLine()
+  return exists('*ALEGetStatusLine') ? ALEGetStatusLine() : ''
 endfunction
 " endif
 
