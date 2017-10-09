@@ -11,7 +11,7 @@ mkdir -p $working_dir
 
 # libevent
 cd $working_dir
-wget https://github.com/libevent/libevent/releases/download/release-${libevent_version}-stable/libevent-${libevent_version}-stable.tar.gz
+wget -c https://github.com/libevent/libevent/releases/download/release-${libevent_version}-stable/libevent-${libevent_version}-stable.tar.gz
 tar xvf libevent-${libevent_version}-stable.tar.gz
 cd libevent-${libevent_version}-stable
 ./configure --prefix=$target_dir
@@ -20,14 +20,14 @@ make install
 
 # tmux
 cd $working_dir
-wget https://github.com/tmux/tmux/releases/download/${tmux_version}/tmux-${tmux_version}.tar.gz
+wget -c https://github.com/tmux/tmux/releases/download/${tmux_version}/tmux-${tmux_version}.tar.gz
 tar xvf tmux-${tmux_version}.tar.gz
 cd tmux-${tmux_version}
-./configure --prefix=$target_dir CFLAGS="-I$working_dir/include" LDFLAGS="-L$working_dir/lib"
+./configure --prefix=$target_dir CFLAGS="-I${target_dir}/include" LDFLAGS="-L${target_dir}/lib"
 make
 make install
 
 echo
 echo
-echo 'Add \"export PATH=$HOME/.local/bin:$PATH\" to your .bashrc or .zshrc .'
-
+echo 'Add "export PATH=$HOME/.local/bin:$PATH" to your .bashrc or .zshrc .'
+echo 'Add "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib" to your .bashrc or .zshrc .'
