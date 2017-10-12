@@ -1,6 +1,8 @@
 #!/bin/sh
 
 if command_exists git ; then
+  # ghq config
+  git config --global ghq.root ~/ghq
   # エディターを vim にする
   git config --global core.editor 'vim -c "set fenc=utf-8"'
   # enable gitignore_global
