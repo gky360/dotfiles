@@ -36,6 +36,10 @@ alias ggr="git gr"
 alias gbrcl="git branch --merged | grep -v '*' | xargs git branch -d"
 ## reset modes of the files
 alias gprst="git diff --numstat | awk '{if ((\$1 == \"0\" && \$2 == \"0\") || (\$1 == \"-\" && \$2 == \"-\")) print \$3}' | xargs git checkout HEAD"
+## ghq list
+alias gl='cd $(ghq root)/$(ghq list | peco)'
+## hub browse
+alias gb='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 
 # vagrant
 alias vain='vagrant up && vagrant ssh'

@@ -40,7 +40,7 @@ fi
 
 # go
 export GOPATH="$HOME/go"
-# export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin
 
 # nvm
 # 参考: [NVM の nvm.sh を遅延ロードしてシェルの起動を高速化する - Qiita](http://qiita.com/uasi/items/80865646607b966aedc8)
