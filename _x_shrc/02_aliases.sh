@@ -52,7 +52,7 @@ alias varein='vagrant reload && vagrant ssh'
 alias dcm='docker-compose'
 
 # linux
-alias osstats='cat /etc/redhat-release /proc/version /proc/cpuinfo /proc/meminfo && df'
+alias osstats='cat /etc/redhat-release /proc/version /proc/cpuinfo /proc/meminfo && df -h'
 
 # local IP address 確認
 alias localips="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*'"
