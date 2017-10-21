@@ -27,7 +27,7 @@ shs="$_x_sh_shs $bash_shs"
 for sh in $shs
 do
   echo "loading $sh ..."
-  echo "source $sh" >> "$HOME"/.bashrc
+  echo ". $sh" >> "$HOME"/.bashrc
 done
 
 echo "##### end dotfiles #####" >> "$HOME"/.bashrc

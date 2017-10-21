@@ -54,8 +54,8 @@ if [ -s $HOME/.nvm ]; then
   NODE_PATH=${NODE_PATH:A}
   nvm() {
     unset -f nvm
-    source "$NVM_DIR/nvm.sh"
-    source "$NVM_DIR/bash_completion"
+    . "$NVM_DIR/nvm.sh"
+    . "$NVM_DIR/bash_completion"
     nvm "$@"
   }
 fi

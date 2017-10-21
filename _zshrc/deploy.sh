@@ -45,7 +45,7 @@ shs="$_x_sh_shs $zsh_shs"
 for sh in $shs
 do
   echo "loading $sh ..."
-  echo "source $sh" >> "$HOME"/.zshrc
+  echo ". $sh" >> "$HOME"/.zshrc
 done
 
 echo "##### end dotfiles #####" >> "$HOME"/.zshrc

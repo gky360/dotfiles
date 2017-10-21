@@ -11,7 +11,7 @@ alias sudo='sudo '
 
 # dotfiles
 alias dotfiles="cd $DOTPATH"
-alias srcrc="if [ -e ~/.${SHELL##*/}rc ]; then source ~/.${SHELL##*/}rc; fi"
+alias srcrc="if [ -e ~/.${SHELL##*/}rc ]; then . ~/.${SHELL##*/}rc; fi"
 
 # emacs
 alias emacs='emacs -nw'
