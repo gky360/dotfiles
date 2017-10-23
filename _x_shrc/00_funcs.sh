@@ -20,7 +20,7 @@ function gpwo() {
 # alias gdf='if [[ -x `which cdiff 2>/dev/null` ]]; then; git diff $@ | cdiff -s; else; git diff $@; fi'
 function gdf() {
   if [[ -x `which cdiff 2>/dev/null` ]]; then
-    git diff $@ | cdiff -s
+    git diff $@ | cdiff -s -w 0
   else
     git diff $@
   fi
@@ -29,7 +29,7 @@ function gdf() {
 ## side-by-side diff --cached
 function gdfca() {
   if [[ -x `which cdiff 2>/dev/null` ]]; then
-    git diff --cached $@ | cdiff -s
+    git diff --cached $@ | cdiff -s -w 0
   else
     git diff --cached $@
   fi
