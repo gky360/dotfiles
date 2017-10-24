@@ -7,6 +7,9 @@ export PATH
 # dotfiles
 export DOTPATH="$HOME/dotfiles"
 
+# local bin
+export PATH=$HOME/.local/bin:$PATH
+
 # brew
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:$PATH
 
