@@ -4,7 +4,7 @@ endif
 
 let g:vimtex_compiler_latexmk = {'callback' : 0}
 let g:vimtex_compiler_latexmk['options'] = ["-cd",
-      \ "-e", '''$latex = "platex -synctex=1 -src-specials -interaction=nonstopmode"''',
+      \ "-e", '''$latex = "pdflatex -synctex=1 -src-specials -interaction=nonstopmode"''',
       \ "-e", '''$biber = "biber %O --bblencoding=utf8 -u -U --output_safechars %B"''',
       \ "-e", '''$bibtex = "pbibtex %O %B"''',
       \ "-e", '''$makeindex = "makeindex %O -o %D %S"''',
