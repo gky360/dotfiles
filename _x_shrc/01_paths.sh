@@ -21,14 +21,14 @@ fi
 # ruby, rails
 export PATH="$HOME/.rbenv/bin:$PATH"
 if command_exists 'rbenv' ; then
-  eval "$(rbenv init -)"
+  eval "$(rbenv init - --no-rehash)"
 fi
 
 # python
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if command_exists 'pyenv' ; then
-  eval "$(pyenv init -)"
+  eval "$(pyenv init - --no-rehash)"
 fi
 
 # postgreSQL
