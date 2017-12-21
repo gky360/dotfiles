@@ -77,3 +77,5 @@ alias hlt='heroku logs -t'
 # nkf
 alias nuo='nkf -Luw --overwrite'
 
+# python
+alias jnb='jupyter notebook'
