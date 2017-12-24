@@ -1,0 +1,5 @@
+# Run manually to reformat a file:
+# clang-format -i --style=file <file>
+BasedOnStyle: Google
+AccessModifierOffset: -4
+IndentWidth: 4
