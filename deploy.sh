@@ -7,11 +7,13 @@ export DOTPATH
 
 cd $DOTPATH
 
+
 echo
 for before_deploy_sh in $DOTPATH/before_deploy/*.sh; do
   echo "loading $before_deploy_sh ..."
   . $before_deploy_sh
 done
+
 
 echo
 for dotfile in .??*; do
@@ -20,7 +22,6 @@ for dotfile in .??*; do
   [ "$dotfile" = ".gitattributes" ] && continue
   [ "$dotfile" = ".DS_Store" ] && continue
   [ ${dotfile##*.} = "swp" ] && continue
-
 
   echo
   if [ -e "$HOME"/"$dotfile" ]; then
@@ -48,6 +49,18 @@ echo "loading .bashrc ..."
 echo
 echo "loading .zshrc ..."
 ./_zshrc/deploy.sh
+
+echo
+echo "loading .atom ..."
+./_atom/deploy.sh
+
+
+echo
+for after_deploy_sh in $DOTPATH/after_deploy/*.sh; do
+  echo "loading $after_deploy_sh ..."
+  . $after_deploy_sh
+done
+
 
 echo
 echo "finished."
