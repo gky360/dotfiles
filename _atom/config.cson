@@ -18,3 +18,8 @@
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
     useGitHubStyle: true
+  welcome:
+    showOnStartup: false
+".gfm.source":
+  editor:
+    tabLength: 4
