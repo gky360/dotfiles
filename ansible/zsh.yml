@@ -1,0 +1,20 @@
+---
+- hosts: localhost
+  connection: local
+  become: no
+
+  tasks:
+
+    - name: Check etc/shells
+      shell: |
+        cat /etc/shells | grep -p '\/usr\/local\/bin\/zsh'
+      register: result
+      ignore_errors: true
+
+    - name: Add zsh to etc/shells
+      shell: echo '/usr/local/bin/zsh' >> /etc/shells
+      become: yes
+      when: result|failed
+
+    - name: Change shell
+      shell: chsh -s /usr/local/bin/zsh

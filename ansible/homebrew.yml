@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  become: no
+
+  tasks:
+
+    - name: Update homebrew itself first
+      homebrew: update_homebrew=yes
+
+    - name: Install homebrew packages using homebrew-bundle
+      shell: brew bundle

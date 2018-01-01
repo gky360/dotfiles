@@ -1,0 +1,3 @@
+---
+- import_playbook: homebrew.yml
+- import_playbook: zsh.yml
