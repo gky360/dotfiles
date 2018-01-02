@@ -1,0 +1,5 @@
+---
+- src: suzuki-shunsuke.pyenv
+- src: suzuki-shunsuke.pyenv-virtualenv
+- src: suzuki-shunsuke.pyenv-module
+- src: zzet.rbenv

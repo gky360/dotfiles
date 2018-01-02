@@ -1,3 +1,6 @@
 ---
 - import_playbook: homebrew.yml
 - import_playbook: zsh.yml
+- import_playbook: python.yml
+- import_playbook: ruby.yml
+- import_playbook: node.yml

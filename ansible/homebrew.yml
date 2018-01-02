@@ -9,4 +9,17 @@
       homebrew: update_homebrew=yes
 
     - name: Install homebrew packages using homebrew-bundle
-      shell: brew bundle
+      shell: brew bundle | tee logs/brew_bundle.log
+
+    - name: Link gcc@7
+      shell: |
+        ln -sf /usr/local/bin/gcc-7 /usr/local/bin/gcc
+        ln -sf /usr/local/bin/g++-7 /usr/local/bin/g++
+        ln -sf /usr/local/bin/c++-7 /usr/local/bin/c++
+
+    - name: Link iTerm2 config file
+      shell: ln -sf ~/dotfiles/iterm/profiles.json ~/Library/Application\ Support/iTerm2/DynamicProfiles
+
+  handlers:
+    - name: Run fc-cache
+      shell: fc-cache -vf
