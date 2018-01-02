@@ -20,6 +20,10 @@
     - name: Link iTerm2 config file
       shell: ln -sf ~/dotfiles/iterm/profiles.json ~/Library/Application\ Support/iTerm2/DynamicProfiles
 
+    - name: Update TeX packages
+      shell: tlmgr update –self –all
+      become: yes
+
   handlers:
     - name: Run fc-cache
       shell: fc-cache -vf

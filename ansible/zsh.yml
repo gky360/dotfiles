@@ -17,4 +17,5 @@
       when: result|failed
 
     - name: Change shell
+      become: yes
       shell: chsh -s /usr/local/bin/zsh
