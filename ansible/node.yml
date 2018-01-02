@@ -1,0 +1,24 @@
+---
+- hosts: localhost
+  connection: local
+  become: no
+
+  vars:
+    node_version: v8.9.3
+
+  tasks:
+
+    - name: Install node
+      shell: bash -l -c ". ~/.bashrc && nvm install {{ node_version }}"
+
+    - name: Set default node version
+      shell: bash -l -c ". ~/.bashrc && nvm use {{ node_version }} && nvm alias default {{ node_version }}"
+
+    - name: Install global packages
+      npm: name={{ item }} global=yes
+      with_items:
+        - npm
+        - webpack
+        - yarn
+
+
