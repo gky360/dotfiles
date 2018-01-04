@@ -18,3 +18,4 @@
       gem: name={{ item }}
       with_items:
         - bundler
+        - pry
