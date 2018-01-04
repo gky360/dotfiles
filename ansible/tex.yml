@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  become: yes
+
+  tasks:
+
+    - name: Update TeX packages
+      shell: tlmgr update --self --all
+
+    - name: Install TeX packages
+      shell: tlmgr install collection-langjapanese

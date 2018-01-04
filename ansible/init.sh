@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 sudo xcodebuild -license
 xcode-select --install
 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
