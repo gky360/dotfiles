@@ -25,6 +25,7 @@
       file:
         src: ~/dotfiles/iterm/profiles.json
         dest: ~/Library/Application Support/iTerm2/DynamicProfiles/profiles.json
+        state: link
 
   handlers:
     - name: Run fc-cache
