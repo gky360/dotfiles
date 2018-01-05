@@ -22,7 +22,6 @@
   "exception-reporting":
     userId: "6f7b3b0e-bf39-46d9-95ce-d6fd2384407c"
   "linter-ui-default":
-    showPanel: true
     statusBarRepresents: "Current File"
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
