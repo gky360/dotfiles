@@ -47,6 +47,7 @@ alias vash='vagrant ssh'
 alias vahl='vagrant halt'
 alias vasus='vagrant suspend'
 alias varein='vagrant reload && vagrant ssh'
+alias vast='vagrant status'
 
 # docker
 alias dcm='docker-compose'
