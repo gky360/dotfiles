@@ -11,6 +11,23 @@
     disabledPackages: [
       "markdown-preview"
     ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "*.aux"
+      "*.bbl"
+      "*.blg"
+      "*.fdb_latexmk"
+      "*.fff"
+      "*.fls"
+      "*.synctex.gz"
+      "*.ttt"
+    ]
     telemetryConsent: "no"
   editor:
     fontFamily: "Myrica M"
@@ -21,12 +38,16 @@
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "6f7b3b0e-bf39-46d9-95ce-d6fd2384407c"
+  latex:
+    buildOnSave: true
   "linter-ui-default":
     statusBarRepresents: "Current File"
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
     useGitHubStyle: true
   minimap: {}
+  "tree-view":
+    hideIgnoredNames: true
   welcome:
     showOnStartup: false
 ".gfm.source":
