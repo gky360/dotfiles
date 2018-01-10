@@ -21,5 +21,6 @@
       npm: name={{ item }} global=yes executable=~/.nvm/versions/node/{{ node_version }}/bin/npm
       with_items:
         - npm
+        - typescript
         - webpack
         - yarn

@@ -42,7 +42,7 @@ hook_source = 'source ~/.vim/scripts/plugins/vimtex.vim'
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
-on_ft = ['html', 'css', 'jsx', 'javascript.jsx', 'javascript', 'eruby', 'xhtml']
+on_ft = ['html', 'css', 'jsx', 'javascript.jsx', 'javascript', 'tsx', 'typescript.tsx', 'typescript', 'eruby', 'xhtml']
 hook_source = 'source ~/.vim/scripts/plugins/emmet-vim.vim'
 
 # HTML5 ominicomplete & syntax
@@ -72,6 +72,10 @@ repo = 'justinj/vim-react-snippets'
 on_ft = 'javascript.jsx'
 
 [[plugins]]
+repo = 'leafgarland/typescript-vim'
+on_ft = ['typescript']
+
+[[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
@@ -85,10 +89,6 @@ on_ft = 'go'
 
 [[plugins]]
 repo = 'Vimjas/vim-python-pep8-indent'
-on_ft = 'python'
-
-[[plugins]]
-repo = 'davidhalter/jedi-vim'
 on_ft = 'python'
 
 [[plugins]]
