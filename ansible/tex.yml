@@ -3,10 +3,46 @@
   connection: local
   become: yes
 
+  vars:
+    texlive_bin: /usr/local/texlive/2017basic/bin/x86_64-darwin
+
   tasks:
 
+    - name: Clear log file
+      file:
+        state: absent
+        path: logs/tlmgr.log
+
     - name: Update TeX packages
-      shell: tlmgr update --self --all
+      shell: |
+        {{ texlive_bin }}/tlmgr update --self --all 2>&1 | tee -a logs/tlmgr.log
+        {{ texlive_bin }}/tlmgr update\
+          collection-basic\
+          collection-latex\
+          collection-latexrecommended\
+          collection-metapost\
+          2>&1 | tee -a logs/tlmgr.log
 
     - name: Install TeX packages
-      shell: tlmgr install collection-langjapanese
+      shell: |
+        {{ texlive_bin }}/tlmgr install\
+          latexmk\
+          newtx\
+          fontaxes\
+          boondox\
+          txfonts\
+          ec\
+          helvetic\
+          ptex\
+          collection-langjapanese\
+          japanese-otf\
+          jsclasses\
+          algorithms\
+          spotcolor\
+          2>&1 | tee -a logs/tlmgr.log
+
+    - name: Reflect updates
+      shell: |
+        cd `{{ texlive_bin }}/kpsewhich -var-value=TEXMFLOCAL`
+        {{ texlive_bin }}/mktexlsr 2>&1 | tee -a logs/tlmgr.log
+        {{ texlive_bin }}/texhash 2>&1 | tee -a logs/tlmgr.log

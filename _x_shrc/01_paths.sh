@@ -37,8 +37,9 @@ if command_exists 'postgres' ; then
 fi
 
 # latex
-if [ -e /usr/local/texlive/2016/bin/x86_64-darwin ]; then
-  export PATH=$PATH:/usr/local/texlive/2016/bin/x86_64-darwin
+TEXLIVE_BIN=/usr/local/texlive/2017basic/bin/x86_64-darwin
+if [ -e $TEXLIVE_BIN ]; then
+  export PATH=$PATH:$TEXLIVE_BIN
 fi
 
 # go

@@ -9,7 +9,7 @@
       homebrew: update_homebrew=yes
 
     - name: Install homebrew packages using homebrew-bundle
-      shell: brew bundle | tee logs/brew_bundle.log
+      shell: brew bundle 2>&1 | tee logs/brew_bundle.log
 
     - name: Link gcc@7
       file: src={{ item.src }} dest={{ item.dest }} state=link
