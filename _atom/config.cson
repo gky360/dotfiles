@@ -45,6 +45,15 @@
     enableLatexRenderingByDefault: true
     useGitHubStyle: true
   minimap: {}
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "text.tex.latex"
+    ]
   "tree-view":
     hideIgnoredNames: true
   welcome:
