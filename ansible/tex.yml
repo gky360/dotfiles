@@ -4,7 +4,7 @@
   become: yes
 
   vars:
-    texlive_bin: /usr/local/texlive/2017basic/bin/x86_64-darwin
+    texlive_bin: /usr/local/texlive/2017/bin/x86_64-darwin
 
   tasks:
 
@@ -17,32 +17,7 @@
       shell: |
         {{ texlive_bin }}/tlmgr update --self --all 2>&1 | tee -a logs/tlmgr.log
 
-    - name: Install TeX packages
-      shell: |
-        {{ texlive_bin }}/tlmgr install\
-          collection-basic\
-          collection-latex\
-          collection-latexrecommended\
-          collection-metapost\
-          latexmk\
-          newtx\
-          fontaxes\
-          boondox\
-          txfonts\
-          ec\
-          helvetic\
-          ptex\
-          collection-langjapanese\
-          collection-fontsrecommended\
-          japanese-otf\
-          jsclasses\
-          algorithms\
-          soul adjustbox collectbox ucs titlesec framed bigfoot\
-          spotcolor\
-          2>&1 | tee -a logs/tlmgr.log
-
     - name: Reflect updates
       shell: |
         cd `{{ texlive_bin }}/kpsewhich -var-value=TEXMFLOCAL`
-        {{ texlive_bin }}/mktexlsr 2>&1 | tee -a logs/tlmgr.log
-        {{ texlive_bin }}/texhash 2>&1 | tee -a logs/tlmgr.log
+        {{ texlive_bin }}/mktexlsr
