@@ -42,7 +42,7 @@ hook_source = 'source ~/.vim/scripts/plugins/vimtex.vim'
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
-on_ft = ['html', 'css', 'jsx', 'javascript.jsx', 'javascript', 'tsx', 'typescript.tsx', 'typescript', 'eruby', 'xhtml']
+on_ft = ['html', 'css', 'jsx', 'javascript.jsx', 'javascript', 'tsx', 'typescript.jsx', 'typescript', 'eruby', 'xhtml']
 hook_source = 'source ~/.vim/scripts/plugins/emmet-vim.vim'
 
 # HTML5 ominicomplete & syntax
