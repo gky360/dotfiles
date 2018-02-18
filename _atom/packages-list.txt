@@ -2,6 +2,7 @@ atom-beautify@0.30.9
 autocomplete-paths@2.12.2
 autocomplete-python@1.10.5
 busy-signal@1.4.3
+editorconfig@2.2.2
 ex-mode@0.18.0
 file-icons@2.1.16
 git-time-machine@1.5.9
