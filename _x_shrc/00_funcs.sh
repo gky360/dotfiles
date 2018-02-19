@@ -44,5 +44,17 @@ function gsh() {
   fi
 }
 
-
+## convert md to pdf using pandoc
+function md2pdf() {
+  if ! [ -e ~/.pandoc/templates/eisvogel.latex ]; then
+    mkdir -p ~/.pandoc/templates/
+    curl -o ~/.pandoc/templates/eisvogel.latex\
+      https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/master/eisvogel.tex
+  fi
+  basename=${1//.md}
+  pandoc -f markdown_github ${basename}.md -o ${basename}.pdf\
+    --from markdown --template eisvogel --listings --latex-engine=xelatex\
+    -V CJKmainfont=Hiragino\ Kaku\ Gothic\ Pro -V lang=en-US\
+    --metadata date="`date +%Y-%m-%d`"
+}
 
