@@ -36,6 +36,9 @@ alias ggr="git gr"
 alias gbrcl="git branch --merged | grep -v '*' | xargs git branch -d"
 ## reset modes of the files
 alias gprst="git diff --numstat | awk '{if ((\$1 == \"0\" && \$2 == \"0\") || (\$1 == \"-\" && \$2 == \"-\")) print \$3}' | xargs git checkout HEAD"
+## word-by-word diff
+alias gdfw="git dfw"
+alias gshw="git shw"
 ## ghq list
 alias gl='cd $(ghq root)/$(ghq list | peco)'
 ## hub browse
