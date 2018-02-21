@@ -37,6 +37,7 @@ brew "hub"
 brew "icu4c"
 brew "imagemagick"
 brew "kubernetes-cli"
+brew "kubernetes-helm"
 brew "maven"
 brew "mono"
 brew "mysql", restart_service: true
