@@ -2,6 +2,7 @@ let g:ale_fixers = {
       \  'cpp': ['clang-format'],
       \  'javascript': ['eslint'],
       \  'typescript': ['eslint'],
+      \  'php': ['phpcbf'],
       \  'python': ['autopep8'],
       \}
 

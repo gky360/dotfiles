@@ -42,7 +42,7 @@ hook_source = 'source ~/.vim/scripts/plugins/vimtex.vim'
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
-on_ft = ['html', 'css', 'jsx', 'javascript.jsx', 'javascript', 'tsx', 'typescript.jsx', 'typescript', 'eruby', 'xhtml']
+on_ft = ['html', 'css', 'jsx', 'javascript.jsx', 'javascript', 'tsx', 'typescript.jsx', 'typescript', 'eruby', 'xhtml', 'php', 'twig']
 hook_source = 'source ~/.vim/scripts/plugins/emmet-vim.vim'
 
 # HTML5 ominicomplete & syntax
@@ -82,6 +82,18 @@ on_ft = 'toml'
 [[plugins]]
 repo = 'ymyzk/vim-copl'
 on_ft = 'copl'
+
+[[plugins]]
+repo = 'StanAngeloff/php.vim'
+on_ft = 'php'
+
+[[plugins]]
+repo = '2072/PHP-Indenting-for-VIm'
+on_ft = 'php'
+
+[[plugins]]
+repo = 'lvht/phpcd.vim'
+on_ft = 'php'
 
 [[plugins]]
 repo = 'fatih/vim-go'
