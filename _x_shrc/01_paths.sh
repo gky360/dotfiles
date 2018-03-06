@@ -43,7 +43,7 @@ if [ -e $TEXLIVE_BIN ]; then
 fi
 
 # go
-export GOPATH="$HOME/go"
+export GOPATH="$HOME/dev"
 export PATH=$PATH:$GOPATH/bin
 
 # nvm
