@@ -33,3 +33,5 @@ repo = 'tyru/caw.vim'
 repo = 'w0rp/ale'
 hook_add = 'source ~/.vim/scripts/plugins/ale.vim'
 
+[[plugins]]
+repo = 'embear/vim-localvimrc'
