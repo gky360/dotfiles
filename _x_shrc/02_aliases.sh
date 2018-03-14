@@ -69,9 +69,6 @@ alias rdc='redis-cli'
 alias nrbw='npm run build:watch'
 alias wpbw='$(npm bin)/webpack --progress --colors --watch'
 
-# tmux
-alias txa='tmux a || tmux'
-
 # tail
 alias tlf='tail -F'
 

@@ -44,6 +44,12 @@ function gsh() {
   fi
 }
 
+## tmux attach
+function txa() {
+  session_name=${1:-${PWD##*/}}
+  tmux new-session -A -s $session_name
+}
+
 ## convert md to pdf using pandoc
 function md2pdf() {
   if ! [ -e ~/.pandoc/templates/eisvogel.latex ]; then
