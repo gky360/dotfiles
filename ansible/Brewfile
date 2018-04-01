@@ -50,7 +50,7 @@ brew "octave"
 brew "opam"
 brew "open-mpi"
 brew "openblas"
-brew "openssl", link: true
+brew "openssl"
 brew "pandoc"
 brew "peco"
 brew "php"
@@ -60,7 +60,7 @@ brew "php@7.1"
 brew "postgresql", restart_service: true
 brew "protobuf"
 brew "r", args: ["with-openblas"]
-brew "readline", link: true
+brew "readline"
 brew "redis"
 brew "rename"
 brew "sbt"
