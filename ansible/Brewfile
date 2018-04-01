@@ -21,6 +21,7 @@ brew "cfssl"
 brew "chromedriver"
 brew "clang-format"
 brew "cmake"
+brew "composer"
 brew "elasticsearch"
 brew "emacs", link: false
 brew "ghostscript"
@@ -51,6 +52,10 @@ brew "openblas"
 brew "openssl", link: true
 brew "pandoc"
 brew "peco"
+brew "php"
+brew "php-code-sniffer"
+brew "php-cs-fixer"
+brew "php@7.1"
 brew "postgresql", restart_service: true
 brew "r", args: ["with-openblas"]
 brew "readline", link: true
@@ -68,10 +73,6 @@ brew "wget"
 brew "zsh", args: ["without-etcdir"]
 brew "zsh-completions"
 brew "heroku/brew/heroku"
-brew "homebrew/php/composer"
-brew "homebrew/php/php-code-sniffer"
-brew "homebrew/php/php-cs-fixer"
-brew "homebrew/php/php71"
 cask "adobe-acrobat-reader"
 cask "alfred"
 cask "angry-ip-scanner"
