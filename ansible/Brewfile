@@ -15,6 +15,7 @@ cask "caskroom/versions/java8"
 brew "python"
 brew "ansible"
 brew "gcc"
+brew "arping"
 brew "boost"
 brew "cdiff"
 brew "cfssl"
@@ -57,6 +58,7 @@ brew "php-code-sniffer"
 brew "php-cs-fixer"
 brew "php@7.1"
 brew "postgresql", restart_service: true
+brew "protobuf"
 brew "r", args: ["with-openblas"]
 brew "readline", link: true
 brew "redis"
