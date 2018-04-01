@@ -98,6 +98,9 @@ on_ft = 'php'
 [[plugins]]
 repo = 'fatih/vim-go'
 on_ft = 'go'
+hook_source = '''
+  let g:go_fmt_command = "goimports"
+'''
 
 [[plugins]]
 repo = 'Vimjas/vim-python-pep8-indent'
