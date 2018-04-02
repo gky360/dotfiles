@@ -16,6 +16,8 @@
       become: yes
       when: result|failed
 
+    - debug: var=ansible_user_id
+
     - name: Change shell
-      become: no
-      shell: chsh -s /usr/local/bin/zsh
+      become: yes
+      shell: chsh -s /usr/local/bin/zsh {{ ansible_user_id }}
