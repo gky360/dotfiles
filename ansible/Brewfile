@@ -1,11 +1,9 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
 tap "heroku/brew"
-tap "homebrew/science"
 tap "homebrew/core"
-tap "homebrew/php"
-tap "homebrew/versions"
-tap "homebrew/gui"
 tap "homebrew/bundle"
-tap "homebrew/services"
 tap "caskroom/fonts"
 tap "caskroom/versions"
 tap "caskroom/cask"
