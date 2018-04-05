@@ -50,6 +50,11 @@ function txa() {
   tmux new-session -A -s $session_name
 }
 
+## md5 base64 encode
+function md5base64() {
+  echo -n $1 | openssl dgst -md5 -binary | openssl enc -base64
+}
+
 ## convert md to pdf using pandoc
 function md2pdf() {
   if ! [ -e ~/.pandoc/templates/eisvogel.latex ]; then
