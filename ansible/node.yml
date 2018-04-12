@@ -20,6 +20,7 @@
     - name: Install global packages
       npm: name={{ item }} global=yes executable=~/.nvm/versions/node/{{ node_version }}/bin/npm
       with_items:
+        - gtop
         - npm
         - typescript
         - webpack
