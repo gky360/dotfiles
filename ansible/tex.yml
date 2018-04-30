@@ -4,7 +4,7 @@
   become: yes
 
   vars:
-    texlive_bin: /usr/local/texlive/2017/bin/x86_64-darwin
+    texlive_bin: /usr/local/texlive/2018/bin/x86_64-darwin
 
   tasks:
 
