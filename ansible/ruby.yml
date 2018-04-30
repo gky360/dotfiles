@@ -7,15 +7,12 @@
     - role: zzet.rbenv
       rbenv:
         env: user
-        default_ruby: 2.4.1
+        version: v1.1.1
+        default_ruby: 2.5.1
         rubies:
-          - version: 2.4.1
+          - version: 2.5.1
             env:
-              RUBY_CONFIGURE_OPTS: "--with-readline-dir=/usr/local/opt --with-openssl-dir=/usr/local/opt"
-
-  tasks:
-    - name: Install global gems
-      gem: name={{ item }}
-      with_items:
-        - bundler
-        - pry
+              RUBY_CONFIGURE_OPTS: "--with-readline-dir=/usr/local/opt/readline/ --with-openssl-dir=/usr/local/opt/openssl/"
+      rbenv_users:
+        - "{{ ansible_user | default(lookup('env', 'USER')) }}"
+      default_gems_file: "{{ lookup('env', 'DOTPATH') }}/ansible/default-gems"
