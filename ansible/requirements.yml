@@ -1,5 +1,9 @@
 ---
 - src: suzuki-shunsuke.pyenv
+  version: v3.2.4
 - src: suzuki-shunsuke.pyenv-virtualenv
+  version: 1.1.0
 - src: suzuki-shunsuke.pyenv-module
+  version: v2.3.1
 - src: zzet.rbenv
+  version: 3.4.0
