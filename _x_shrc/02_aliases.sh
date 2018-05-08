@@ -3,6 +3,7 @@
 # basic
 alias la='ls -la'
 alias ll='ls -l'
+alias lh='ls -lah'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
