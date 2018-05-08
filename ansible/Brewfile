@@ -66,6 +66,7 @@ brew "scala"
 brew "screenfetch"
 brew "selenium-server-standalone"
 brew "siege"
+brew "tldr"
 brew "tmux"
 brew "tree"
 brew "vim", args: ["with-lua"]
