@@ -2,7 +2,6 @@
 
 set -e
 
-readline_version=7.0
 lua_version=5.3.4
 vim_version=8.0
 working_dir=$HOME/tmp
