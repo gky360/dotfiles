@@ -10,69 +10,133 @@ tap "caskroom/cask"
 cask "java"
 cask "xquartz"
 cask "caskroom/versions/java8"
+# SSL/TLS cryptography library
 brew "openssl"
+# Library for command-line editing
 brew "readline", link: true
+# Automate deployment, configuration, and upgrading
 brew "ansible"
+# GNU compiler collection
 brew "gcc"
+# Utility to check whether MAC addresses are already taken on a LAN
 brew "arping"
+# Collection of portable C++ source libraries
 brew "boost"
+# View colored diff with side by side and auto pager support
 brew "cdiff"
+# CloudFlare's PKI toolkit
 brew "cfssl"
+# Tool for automated testing of webapps across many browsers
 brew "chromedriver"
+# Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
+# Cross-platform make
 brew "cmake"
+# Dependency Manager for PHP
 brew "composer"
+# Distributed search & analytics engine
 brew "elasticsearch"
+# GNU Emacs text editor
 brew "emacs", link: false
+# Interpreter for PostScript and PDF
 brew "ghostscript", link: false
+# WebDriver <-> Marionette proxy
 brew "geckodriver"
+# C++ geography library
 brew "geographiclib"
+# Remote repository management made easy
 brew "ghq"
+# Access GitHub's .gitignore boilerplates
 brew "gibo"
+# Distributed revision control system
 brew "git"
+# Git extension for versioning large files
 brew "git-lfs"
+# Powerful, lightweight programming language
 brew "lua"
+# Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Build system based on the Groovy language
 brew "gradle"
+# SDK for Groovy: a Java-based scripting language
 brew "groovysdk"
+# Improved top (interactive process viewer)
 brew "htop"
+# Add GitHub support to git on the command-line
 brew "hub"
+# C/C++ and Java libraries for Unicode and globalization
 brew "icu4c"
+# Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# Kubernetes command-line interface
 brew "kubernetes-cli"
+# The Kubernetes package manager
 brew "kubernetes-helm"
+# Java-based project management
 brew "maven"
+# Cross platform, open source .NET development framework
 brew "mono"
+# Open source relational database management system
 brew "mysql"
+# Network Kanji code conversion Filter (NKF)
 brew "nkf"
+# High-level interpreted language for numerical computing
 brew "octave"
+# Package manager for OCaml
 brew "opam"
+# High performance message passing library
 brew "open-mpi"
+# Optimized BLAS library
 brew "openblas"
+# Swiss-army knife of markup format conversion
 brew "pandoc"
+# Simplistic interactive filtering tool
 brew "peco"
+# General-purpose scripting language
 brew "php"
+# Check coding standards in PHP, JavaScript and CSS
 brew "php-code-sniffer"
+# Tool to automatically fix PHP coding standards issues
 brew "php-cs-fixer"
+# General-purpose scripting language
 brew "php@7.1"
+# Object-relational database system
 brew "postgresql"
+# Protocol buffers (Google's data interchange format)
 brew "protobuf"
+# Interpreted, interactive, object-oriented programming language
 brew "python"
+# Software environment for statistical computing
 brew "r", args: ["with-openblas"]
+# Persistent key-value database, with built-in net interface
 brew "redis"
+# Perl-powered file rename script with many helpful built-ins
 brew "rename"
+# Build tool for Scala projects
 brew "sbt"
+# JVM-based programming language
 brew "scala"
+# Generate ASCII art with terminal, shell, and OS info
 brew "screenfetch"
+# Browser automation for testing purposes
 brew "selenium-server-standalone"
+# HTTP regression testing and benchmarking utility
 brew "siege"
+# Simplified and community-driven man pages
 brew "tldr"
+# Terminal multiplexer
 brew "tmux"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Vi 'workalike' with many additional features
 brew "vim", args: ["with-lua"]
+# Internet file retriever
 brew "wget"
+# UNIX shell (command interpreter)
 brew "zsh", args: ["without-etcdir"]
+# Additional completion definitions for zsh
 brew "zsh-completions"
+# Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 cask "adobe-acrobat-reader"
 cask "alfred"
