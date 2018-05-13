@@ -45,7 +45,11 @@
   "linter-ui-default":
     statusBarRepresents: "Current File"
   "markdown-preview-plus":
-    enableLatexRenderingByDefault: true
+    mathConfig:
+      enableLatexRenderingByDefault: true
+    syncConfig:
+      syncEditorOnPreviewScroll: true
+      syncPreviewOnEditorScroll: true
     useGitHubStyle: true
   minimap: {}
   "spell-check":
