@@ -9,6 +9,7 @@ git-time-machine@2.0.1
 hex-view@0.2.1
 hydrogen@2.5.0
 intentions@1.1.5
+kite@0.90.0
 language-latex@1.1.1
 latex@0.50.0
 linter-flake8@2.3.0
