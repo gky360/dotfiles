@@ -44,6 +44,8 @@ brew "ghostscript", link: false
 brew "geckodriver"
 # C++ geography library
 brew "geographiclib"
+# Geometry Engine
+brew "geos"
 # Remote repository management made easy
 brew "ghq"
 # Access GitHub's .gitignore boilerplates
