@@ -73,6 +73,9 @@ alias wpbw='$(npm bin)/webpack --progress --colors --watch'
 # tail
 alias tlf='tail -F'
 
+# ssh
+alias scpf='scp -F ~/.ssh/config'
+
 # heroku
 alias hlt='heroku logs -t'
 
