@@ -56,6 +56,9 @@ alias vast='vagrant status'
 # docker
 alias dcm='docker-compose'
 
+# dstat
+alias dstata='dstat -tlcmgdn --socket --tcp --io'
+
 # linux
 alias osstats='cat /etc/redhat-release /proc/version /proc/cpuinfo /proc/meminfo && echo "\n=====\n" && lscpu && echo "\n=====\n" && df -h'
 
