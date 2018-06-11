@@ -16,8 +16,6 @@ brew "openssl"
 brew "readline", link: true
 # Automate deployment, configuration, and upgrading
 brew "ansible"
-# GNU compiler collection
-brew "gcc"
 # Utility to check whether MAC addresses are already taken on a LAN
 brew "arping"
 # Collection of portable C++ source libraries
@@ -40,6 +38,8 @@ brew "elasticsearch"
 brew "emacs", link: false
 # Interpreter for PostScript and PDF
 brew "ghostscript", link: false
+# GNU compiler collection
+brew "gcc@7"
 # WebDriver <-> Marionette proxy
 brew "geckodriver"
 # C++ geography library
@@ -71,7 +71,7 @@ brew "icu4c"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Kubernetes command-line interface
-brew "kubernetes-cli"
+brew "kubernetes-cli", link: false
 # The Kubernetes package manager
 brew "kubernetes-helm"
 # Java-based project management
