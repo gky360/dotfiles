@@ -55,8 +55,10 @@
         - pandas
         - pep8
         - pytest
+        - scapy
         - scikit-image
         - scikit-learn
         - scipy
         - setuptools
+        - statsmodels
         - tqdm

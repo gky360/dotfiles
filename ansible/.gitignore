@@ -1,2 +1,2 @@
 *.log
-playbook.retry
+*.retry
