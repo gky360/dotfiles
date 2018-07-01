@@ -16,12 +16,14 @@ brew "openssl"
 brew "readline", link: true
 # Automate deployment, configuration, and upgrading
 brew "ansible"
+# GNU compiler collection
+brew "gcc"
 # Utility to check whether MAC addresses are already taken on a LAN
 brew "arping"
+# Searches a binary image for embedded files and executable code
+brew "binwalk"
 # Collection of portable C++ source libraries
 brew "boost"
-# View colored diff with side by side and auto pager support
-brew "cdiff"
 # CloudFlare's PKI toolkit
 brew "cfssl"
 # Tool for automated testing of webapps across many browsers
@@ -106,6 +108,8 @@ brew "php@7.1"
 brew "postgresql"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
+# Show ps output as a tree
+brew "pstree"
 # Interpreted, interactive, object-oriented programming language
 brew "python"
 # Software environment for statistical computing
@@ -134,6 +138,8 @@ brew "tree"
 brew "vim", args: ["with-lua"]
 # Internet file retriever
 brew "wget"
+# View colored diff with side by side and auto pager support
+brew "ydiff"
 # UNIX shell (command interpreter)
 brew "zsh", args: ["without-etcdir"]
 # Additional completion definitions for zsh
@@ -177,6 +183,7 @@ cask "skype"
 cask "slack"
 cask "sourcetree"
 cask "the-unarchiver"
+cask "typora"
 cask "unity"
 cask "vagrant"
 cask "virtualbox"
