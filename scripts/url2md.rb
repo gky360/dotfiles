@@ -5,7 +5,7 @@ require 'open-uri'
 require 'open_uri_redirections'
 require 'uri'
 
-url = `pbpaste`
+url = `pbpaste`.strip
 doc = Nokogiri::HTML(open(url, :allow_redirections => :all))
 title = doc.title.strip.gsub(/[\s]*(\r\n?|\n)[\s]*/," ")
 md_link_text = "[#{title}](#{URI::unescape(url)})"
