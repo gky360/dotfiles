@@ -2,14 +2,13 @@
 # vi: set ft=ruby :
 
 tap "heroku/brew"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-tap "homebrew/cask"
-tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 cask "java"
 cask "xquartz"
-cask "homebrew/cask-versions/java8"
 # SSL/TLS cryptography library
 brew "openssl"
 # Library for command-line editing
@@ -84,12 +83,12 @@ brew "mono"
 brew "mysql"
 # Network Kanji code conversion Filter (NKF)
 brew "nkf"
+# High performance message passing library
+brew "open-mpi"
 # High-level interpreted language for numerical computing
 brew "octave"
 # Package manager for OCaml
 brew "opam"
-# High performance message passing library
-brew "open-mpi"
 # Optimized BLAS library
 brew "openblas"
 # Swiss-army knife of markup format conversion
@@ -135,7 +134,7 @@ brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Vi 'workalike' with many additional features
-brew "vim", args: ["with-lua"]
+brew "vim", args: ["with-lua", "with-python3"]
 # Internet file retriever
 brew "wget"
 # View colored diff with side by side and auto pager support
@@ -150,15 +149,14 @@ cask "adobe-acrobat-reader"
 cask "alfred"
 cask "angry-ip-scanner"
 cask "atom"
-cask "chatwork"
 cask "chromium"
 cask "clipy"
 cask "cyberduck"
 cask "docker"
 cask "duet"
-cask "eclipse-java"
 cask "emacs"
 cask "firefox"
+cask "font-myrica"
 cask "gimp"
 cask "github"
 cask "google-backup-and-sync"
@@ -168,6 +166,7 @@ cask "google-japanese-ime"
 cask "intellij-idea-ce"
 cask "istat-menus"
 cask "iterm2"
+cask "java8"
 cask "kite"
 cask "mactex"
 cask "maczip4win"
@@ -176,7 +175,6 @@ cask "minikube"
 cask "nteract"
 cask "postman"
 cask "rstudio"
-cask "scala-ide"
 cask "sequel-pro"
 cask "skim"
 cask "skype"
@@ -184,8 +182,6 @@ cask "slack"
 cask "sourcetree"
 cask "the-unarchiver"
 cask "typora"
-cask "unity"
 cask "vagrant"
 cask "virtualbox"
 cask "wireshark"
-cask "homebrew/cask-fonts/font-myrica"
