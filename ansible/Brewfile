@@ -23,6 +23,8 @@ brew "arping"
 brew "binwalk"
 # Collection of portable C++ source libraries
 brew "boost"
+# Freely available high-quality data compressor
+brew "bzip2"
 # CloudFlare's PKI toolkit
 brew "cfssl"
 # Tool for automated testing of webapps across many browsers
