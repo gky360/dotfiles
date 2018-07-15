@@ -218,6 +218,10 @@ if has('patch-7.4.338')
   set breakindent
 endif
 
+if has('python3')
+  silent! python3 1
+endif
+
 
 
 " 80-column indication
