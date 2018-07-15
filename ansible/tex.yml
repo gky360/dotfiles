@@ -5,6 +5,7 @@
 
   vars:
     texlive_bin: /usr/local/texlive/2018/bin/x86_64-darwin
+    texmf_local_dir: /usr/local/texlive/texmf-local/tex/latex/local
 
   tasks:
 
@@ -16,6 +17,20 @@
     - name: Update TeX packages
       shell: |
         {{ texlive_bin }}/tlmgr update --self --all 2>&1 | tee -a logs/tlmgr.log
+
+    - name: Download jlistings
+      shell: |
+        WORKING_DIR=/Users/{{ ansible_user }}/tmp
+        TARGET_DIR={{ texmf_local_dir }}
+
+        mkdir -p $WORKING_DIR
+        cd $WORKING_DIR
+        wget https://osdn.net/projects/mytexpert/downloads/26068/jlisting.sty.bz2
+        bunzip2 jlisting.sty.bz2
+        cp $WORKING_DIR/jlisting.sty $TARGET_DIR
+        {{ texlive_bin }}/mktexlsr
+      args:
+        creates: "{{ texmf_local_dir }}/jlisting.sty"
 
     - name: Reflect updates
       shell: |
