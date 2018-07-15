@@ -153,36 +153,36 @@
 \\\\usepackage{subfigure}
 \\\\usepackage{listings,jlisting,sourcecodepro}
 \\\\usepackage[dvipdfmx]{xcolor}
-  \\\\definecolor{darkGray}{rgb}{0.4,0.4,0.4}
-  \\\\lstset{%
-    language={},
-    % language={c++},
-    % language={python},
-    basicstyle={\\\\footnotesize\\\\ttfamily},%
-    identifierstyle={\\\\footnotesize},%
-    commentstyle={\\\\footnotesize\\\\color{darkGray}},%
-    keywordstyle={\\\\footnotesize\\\\bfseries},%
-    ndkeywordstyle={\\\\footnotesize},%
-    stringstyle={\\\\footnotesize\\\\ttfamily},
-    frame={tb},
-    breaklines=true,
-    %  columns=[l]{fullflexible},%
-    numbers=left,%
-    xrightmargin=0zw,%
-    xleftmargin=3zw,%
-    numberstyle={\\\\scriptsize},%
-    stepnumber=1,
-    numbersep=1zw,%
-    lineskip=-0.5ex,%
-    showstringspaces=false%
-  }
-  \\\\renewcommand{\\\\lstlistingname}{コード}
-  \\\\DeclareFontShape{JT1}{mc}{b}{n}{<5> <6> <7> <8> <9> <10> sgen*tmin
-      <10.95><12><14.4><17.28><20.74><24.88> tmin10
-      <-> tmin10}{}
-  \\\\DeclareFontShape{JY1}{mc}{b}{n}{<5> <6> <7> <8> <9> <10> sgen*min
-      <10.95><12><14.4><17.28><20.74><24.88> min10
-      <-> min10}{}
+\\\\definecolor{darkGray}{rgb}{0.4,0.4,0.4}
+\\\\lstset{%
+language={},
+% language={c++},
+% language={python},
+basicstyle={\\\\footnotesize\\\\ttfamily},%
+identifierstyle={\\\\footnotesize},%
+commentstyle={\\\\footnotesize\\\\color{darkGray}},%
+keywordstyle={\\\\footnotesize\\\\bfseries},%
+ndkeywordstyle={\\\\footnotesize},%
+stringstyle={\\\\footnotesize\\\\ttfamily},
+frame={tb},
+breaklines=true,
+%  columns=[l]{fullflexible},%
+numbers=left,%
+xrightmargin=0zw,%
+xleftmargin=3zw,%
+numberstyle={\\\\scriptsize},%
+stepnumber=1,
+numbersep=1zw,%
+lineskip=-0.5ex,%
+showstringspaces=false%
+}
+\\\\renewcommand{\\\\lstlistingname}{コード}
+\\\\DeclareFontShape{JT1}{mc}{b}{n}{<5> <6> <7> <8> <9> <10> sgen*tmin
+  <10.95><12><14.4><17.28><20.74><24.88> tmin10
+  <-> tmin10}{}
+\\\\DeclareFontShape{JY1}{mc}{b}{n}{<5> <6> <7> <8> <9> <10> sgen*min
+  <10.95><12><14.4><17.28><20.74><24.88> min10
+  <-> min10}{}
 \\\\makeatletter
 \\\\newcommand{\\\\figcaption}[1]{\\\\def\\\\@captype{figure}\\\\caption{#1}}
 \\\\newcommand{\\\\tblcaption}[1]{\\\\def\\\\@captype{table}\\\\caption{#1}}
