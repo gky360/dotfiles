@@ -102,7 +102,7 @@
 \\\\end{document}
 %
 
-% \\\\begin{figure}[htbp]
+% \\\\begin{figure}[tb]
 %   \\\\begin{center}
 %     \\\\includegraphics[height=5cm]{white.png}
 %     \\\\caption{white}
@@ -110,7 +110,7 @@
 %   \\\\end{center}
 % \\\\end{figure}
 
-% \\\\begin{figure}[htbp]
+% \\\\begin{figure}[tb]
 %   \\\\begin{minipage}{.48\\\\textwidth}
 %     \\\\begin{center}
 %       \\\\includegraphics[width=7cm]{white.png}
@@ -128,7 +128,7 @@
 %   \\\\end{minipage}
 % \\\\end{figure}
 
-% \\\\begin{table}
+% \\\\begin{table}[b]
 %   \\\\begin{center}
 %     \\\\caption{white}
 %     \\\\label{tab:white}
@@ -250,7 +250,7 @@ showstringspaces=false%
 \\\\end{document}
 %
 
-% \\\\begin{figure}[htbp]
+% \\\\begin{figure}[tb]
 %   \\\\begin{center}
 %     \\\\includegraphics[height=5cm]{white.png}
 %     \\\\caption{white}
@@ -258,7 +258,7 @@ showstringspaces=false%
 %   \\\\end{center}
 % \\\\end{figure}
 
-% \\\\begin{figure}[htbp]
+% \\\\begin{figure}[tb]
 %   \\\\begin{minipage}{.48\\\\textwidth}
 %     \\\\begin{center}
 %       \\\\includegraphics[width=7cm]{white.png}
@@ -276,7 +276,7 @@ showstringspaces=false%
 %   \\\\end{minipage}
 % \\\\end{figure}
 
-% \\\\begin{table}
+% \\\\begin{table}[b]
 %   \\\\begin{center}
 %     \\\\caption{white}
 %     \\\\label{tab:white}
