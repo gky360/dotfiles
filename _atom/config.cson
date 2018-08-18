@@ -32,7 +32,6 @@
     telemetryConsent: "no"
   editor:
     fontFamily: "Myrica M"
-    preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
     softWrap: true
