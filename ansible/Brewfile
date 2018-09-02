@@ -41,6 +41,8 @@ brew "elasticsearch"
 brew "emacs", link: false
 # Interpreter for PostScript and PDF
 brew "ghostscript", link: false
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # GNU compiler collection
 brew "gcc@7"
 # WebDriver <-> Marionette proxy
@@ -61,7 +63,7 @@ brew "git-lfs"
 brew "lua"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Build system based on the Groovy language
+# Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
 # SDK for Groovy: a Java-based scripting language
 brew "groovysdk"
@@ -186,4 +188,5 @@ cask "the-unarchiver"
 cask "typora"
 cask "vagrant"
 cask "virtualbox"
+cask "vnc-viewer"
 cask "wireshark"
