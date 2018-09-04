@@ -13,7 +13,7 @@ go get github.com/motemen/ghq
 curl https://glide.sh/get | sh
 
 ghq get peco/peco
-ghq look peco/peco
+cd $(ghq root)/$(ghq list --exact peco/peco)
 glide install
 go build cmd/peco/peco.go
 cp peco $(ghq root)/../bin
