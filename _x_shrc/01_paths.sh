@@ -44,7 +44,7 @@ fi
 
 # go
 export GOPATH="$HOME/dev"
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 # atcli
 export ATCLI_ROOT=${GOPATH}/src/github.com/gky360/contests/atcoder
