@@ -4,7 +4,7 @@
 setopt combining_chars
 
 # curl で no matches found と怒られるのを防ぐ
-alias curl='noglob curl'
+# alias curl='noglob curl'
 
 # kubectl completion
 kubectl () {
