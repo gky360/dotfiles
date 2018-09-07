@@ -4,6 +4,7 @@ let g:ale_fixers = {
       \  'typescript': ['eslint'],
       \  'php': ['phpcbf'],
       \  'python': ['autopep8'],
+      \  'rust': ['rustfmt'],
       \}
 
 " Set this setting in vimrc if you want to fix files automatically on save.
