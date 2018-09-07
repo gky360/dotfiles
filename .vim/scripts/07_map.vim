@@ -11,8 +11,8 @@ if IsMac()
 endif
 
 " Define mapleader
-let g:mapleader = ','
-let g:maplocalleader = ','
+let g:mapleader = "\<Space>"
+let g:maplocalleader = "\<Space>"
 
 " Smart space mapping
 " Notice: when starting other <Space> mappings in noremap, disappeared [Space]
@@ -75,4 +75,3 @@ map <silent> [Tag]h :tabprevious<CR>
 map <silent> [Tag]ml :tabm +1<CR>
 " Move tab to left
 map <silent> [Tag]mh :tabm -1<CR>
-
