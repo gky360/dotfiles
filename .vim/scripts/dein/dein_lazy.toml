@@ -28,7 +28,7 @@ if = "has('nvim')"
 on_i = 1
 hook_source = '''
   let g:deoplete#enable_at_startup = 1
-  source ~/.vim/config/plugins/deoplete.vim
+  source ~/.vim/scripts/plugins/deoplete.vim
 '''
 
 [[plugins]]
