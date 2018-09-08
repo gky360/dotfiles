@@ -13,6 +13,3 @@ git clone https://github.com/KittyKatt/screenFetch.git
 cd screenFetch
 chmod +x screenfetch-dev
 cp screenfetch-dev ${target_dir}/bin/screenfetch
-
-echo 'Add "export PATH=$HOME/.local/bin:$PATH" to your .bashrc or .zshrc .'
-

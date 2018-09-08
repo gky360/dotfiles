@@ -9,6 +9,7 @@ export DOTPATH="$HOME/dotfiles"
 
 # local bin
 export PATH=$HOME/.local/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
 
 # brew
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:$PATH
@@ -26,7 +27,7 @@ fi
 
 # python
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PATH:$PYENV_ROOT/bin"
 if command_exists 'pyenv' ; then
   eval "$(pyenv init - --no-rehash)"
 fi

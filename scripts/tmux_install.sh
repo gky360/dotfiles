@@ -30,8 +30,3 @@ cd tmux-${tmux_version}
 ./configure --prefix=$target_dir CFLAGS="-I${target_dir}/include" LDFLAGS="-L${target_dir}/lib"
 make
 make install
-
-echo
-echo
-echo 'Add "export PATH=$HOME/.local/bin:$PATH" to your .bashrc or .zshrc .'
-echo 'Add "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib" to your .bashrc or .zshrc .'
