@@ -48,7 +48,7 @@ inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 "inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
 
 " AutoComplPop like behavior.
-"let g:neocomplete#enable_auto_select = 1
+let g:neocomplete#enable_auto_select = 1
 
 " Shell like behavior(not recommended).
 "set completeopt+=longest
