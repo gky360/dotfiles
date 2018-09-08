@@ -68,7 +68,7 @@ if [ : ]; then
   make distclean
   ./configure \
     --prefix=${target_dir} \
-    --with-tlib="ncursesw" \
+    --with-tlib="ncurses" \
     --with-features=huge \
     --enable-multibyte \
     --enable-cscope \
