@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-set -e
+set -eux
 
 ncurses_version=6.1
 readline_version=7.0
@@ -8,11 +8,26 @@ lua_version=5.3.5
 vim_version=8.1
 working_dir=$HOME/tmp
 target_dir=$HOME/.local
+PY3_VERSION=3.6.5
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${target_dir}/lib
+if [ -e ~/.pyenv ]; then
+    read -p "install python $PY3_VERSION with '--enable-shared' flag? (y/N) > " yn
+    case $yn in
+      [Yy]* )
+        CONFIGURE_OPTS="--enable-shared" pyenv install $PY3_VERSION
+        break
+        ;;
+      *)
+        echo "skipping python install ..."
+        ;;
+    esac
+    cd $working_dir
+    pyenv local $PY3_VERSION
+fi
+
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:-}:${target_dir}/lib
 
 mkdir -p $working_dir
-mkdir -p ${target_dir}/include
 
 # ncurses
 cd $working_dir
@@ -41,7 +56,6 @@ if ! [ -e ${target_dir}/lib/liblua.a ]; then
   tar xzf lua-${lua_version}.tar.gz
   cd lua-${lua_version}
   make linux MYCFLAGS="-I${target_dir}/include" MYLDFLAGS="-L${target_dir}/lib"  MYLIBS="-lncurses"
-  # -L${HOME}/local/ncurses/lib" MYLIBS="-lncursesw"
   make install INSTALL_TOP=${target_dir}
 fi
 
@@ -49,18 +63,22 @@ fi
 cd $working_dir
 if [ : ]; then
   curl -O http://ftp.vim.org/pub/vim/unix/vim-${vim_version}.tar.bz2
-  tar jxf vim-${vim_version}.tar.bz2
-  cd vim${vim_version//.}
+  bunzip2 -c vim-${vim_version}.tar.bz2 | tar -xf -
+  cd vim$(echo $vim_version | tr -d .)
+  make distclean
   ./configure \
     --prefix=${target_dir} \
-    --with-tlib="ncurses" \
+    --with-tlib="ncursesw" \
     --with-features=huge \
     --enable-multibyte \
+    --enable-cscope \
+    --without-x \
+    --disable-gui \
     --enable-luainterp \
     --with-lua-prefix=${target_dir} \
-    --enable-pythoninterp \
+    --enable-python3interp=dynamic \
     --enable-rubyinterp \
-    LDFLAGS="-L${target_dir}/lib"
+    LDFLAGS="-L${target_dir}/lib -Wl,-rpath,${HOME}/.pyenv/versions/${PY3_VERSION}/lib"
   make
   make install
 fi
