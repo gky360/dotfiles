@@ -90,3 +90,4 @@ alias jnb='jupyter notebook'
 
 # kubernetes
 alias kgponame="kgpo -o go-template --template '{{(index .items 0).metadata.name}}'"
+alias kgponamel="kgpo -o go-template --template '{{(index .items 0).metadata.name}}' -l"
