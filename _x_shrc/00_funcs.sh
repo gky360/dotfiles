@@ -49,9 +49,13 @@ function txa() {
   tmux new-session -A -s $session_name
 }
 
-## md5 base64 encode
+## hash base64 encode
 function md5base64() {
   echo -n $1 | openssl dgst -md5 -binary | openssl enc -base64
+}
+
+function sha256base64() {
+  echo -n $1 | openssl dgst -sha256 -binary | openssl enc -base64
 }
 
 ## convert md to pdf using pandoc
