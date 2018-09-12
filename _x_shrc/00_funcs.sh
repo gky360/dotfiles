@@ -68,3 +68,12 @@ function md2pdf() {
     --metadata date="`date +%Y-%m-%d`"
 }
 
+# kubectl completion<
+kubectl () {
+  echo "+ kubectl $@" >&2
+  command kubectl $@
+  if [[ -z $KUBECTL_COMPLETE ]]; then
+    source <(command kubectl completion zsh)
+    KUBECTL_COMPLETE=1
+  fi
+}
