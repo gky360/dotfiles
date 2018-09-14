@@ -21,7 +21,7 @@ SAVEHIST=1000000
 # 1行表示
 # PROMPT="%~ %# "
 # 2行表示
-PROMPT="%{${fg[$zshrc_prompt_color]}%}[%n@%m %*]%{${reset_color}%} %~
+PROMPT="%{${fg[$zshrc_prompt_color]}%}[%n@%m]%{${reset_color}%} %~
 %{%(?.$fg[white].$fg[red])%}%#%{$reset_color%} "
 
 
@@ -62,7 +62,7 @@ zstyle ':vcs_info:*' actionformats '%F{red}(%s)-[%b|%a]%f'
 
 function _update_vcs_info_msg() {
     LANG=en_US.UTF-8 vcs_info
-    RPROMPT="${vcs_info_msg_0_}"
+    RPROMPT="${vcs_info_msg_0_} %*"
 }
 add-zsh-hook precmd _update_vcs_info_msg
 
