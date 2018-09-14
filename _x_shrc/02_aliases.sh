@@ -63,7 +63,7 @@ alias dstata='dstat -tlcmgdr --socket --tcp -n'
 alias osstats='cat /etc/redhat-release /proc/version /proc/cpuinfo /proc/meminfo && echo "\n=====\n" && lscpu && echo "\n=====\n" && df -h'
 
 # network
-alias localips="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*'"
+alias localips="ip addr | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*'"
 alias globalip="curl inet-ip.info"
 
 # redis
