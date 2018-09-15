@@ -1,5 +1,6 @@
 let g:ale_fixers = {
       \  'cpp': ['clang-format'],
+      \  'go': ['gofmt', 'goimports'],
       \  'javascript': ['eslint'],
       \  'typescript': ['eslint'],
       \  'php': ['phpcbf'],
