@@ -37,6 +37,16 @@ repo = 'mdempsky/gocode'
 on_ft = 'go'
 
 [[plugins]]
+repo = 'zchee/deoplete-clang'
+on_ft = 'cpp'
+hook_source = '''
+  if IsMac()
+    let g:deoplete#sources#clang#libclang_path = "/Library/Developer/CommandLineTools/usr/lib/libclang.dylib"
+    let g:deoplete#sources#clang#clang_header = "/Library/Developer/CommandLineTools/usr/lib/clang"
+  endif
+'''
+
+[[plugins]]
 repo = 'zchee/deoplete-go'
 build = 'make'
 on_ft = 'go'
