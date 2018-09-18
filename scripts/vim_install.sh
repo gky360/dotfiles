@@ -10,7 +10,14 @@ working_dir=$HOME/tmp
 target_dir=$HOME/.local
 PY3_VERSION=3.6.5
 
-if [ -e ~/.pyenv ]; then
+
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:-}:${target_dir}/lib
+
+mkdir -p $working_dir
+
+
+build_dependencies() {
+  if [ -e ~/.pyenv ]; then
     read -p "install python $PY3_VERSION with '--enable-shared' flag? (y/N) > " yn
     case $yn in
       [Yy]* )
@@ -23,40 +30,59 @@ if [ -e ~/.pyenv ]; then
     esac
     cd $working_dir
     pyenv local $PY3_VERSION
-fi
+  fi
 
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:-}:${target_dir}/lib
+  # ncurses
+  cd $working_dir
+  if ! [ -e ${target_dir}/lib/libncurses.a ]; then
+    wget https://ftp.gnu.org/pub/gnu/ncurses/ncurses-${ncurses_version}.tar.gz
+    tar xzf ncurses-${ncurses_version}.tar.gz
+    cd ncurses-${ncurses_version}
+    ./configure --prefix=${target_dir}
+    make && make install
+  fi
 
-mkdir -p $working_dir
+  # readline
+  cd $working_dir
+  if ! [ -e ${target_dir}/lib/libreadline.a ]; then
+    wget https://ftp.gnu.org/gnu/readline/readline-${readline_version}.tar.gz
+    tar xzf readline-${readline_version}.tar.gz
+    cd readline-${readline_version}
+    ./configure --prefix=${target_dir}
+    make && make install
+  fi
 
-# ncurses
-cd $working_dir
-if ! [ -e ${target_dir}/lib/libncurses.a ]; then
-  wget https://ftp.gnu.org/pub/gnu/ncurses/ncurses-${ncurses_version}.tar.gz
-  tar xzf ncurses-${ncurses_version}.tar.gz
-  cd ncurses-${ncurses_version}
-  ./configure --prefix=${target_dir}
-  make && make install
-fi
+  # lua
+  cd $working_dir
+  if ! [ -e ${target_dir}/lib/liblua.a ]; then
+    curl -O http://www.lua.org/ftp/lua-${lua_version}.tar.gz
+    tar xzf lua-${lua_version}.tar.gz
+    cd lua-${lua_version}
+    make linux MYCFLAGS="-I${target_dir}/include" MYLDFLAGS="-L${target_dir}/lib"  MYLIBS="-lncurses"
+    make install INSTALL_TOP=${target_dir}
+  fi
+}
 
-# readline
-cd $working_dir
-if ! [ -e ${target_dir}/lib/libreadline.a ]; then
-  wget https://ftp.gnu.org/gnu/readline/readline-${readline_version}.tar.gz
-  tar xzf readline-${readline_version}.tar.gz
-  cd readline-${readline_version}
-  ./configure --prefix=${target_dir}
-  make && make install
-fi
+install_dependencies_with_sudo() {
+  sudo apt-get install -y git build-essential ncurses-dev lua5.3 lua5.3-dev luajit python-dev python3-dev python3-pip
+}
 
-# lua
-cd $working_dir
-if ! [ -e ${target_dir}/lib/liblua.a ]; then
-  curl -O http://www.lua.org/ftp/lua-${lua_version}.tar.gz
-  tar xzf lua-${lua_version}.tar.gz
-  cd lua-${lua_version}
-  make linux MYCFLAGS="-I${target_dir}/include" MYLDFLAGS="-L${target_dir}/lib"  MYLIBS="-lncurses"
-  make install INSTALL_TOP=${target_dir}
+read -p "use sudo? (Y/n) > " yn
+case $yn in
+  [Nn]*)
+    is_using_sudo=false
+    build_dependencies
+    break
+    ;;
+  *)
+    echo "usnig sudo"
+    is_using_sudo=true
+    install_dependencies_with_sudo
+    ;;
+esac
+
+if [ -x "$(command -v pip3)" ]; then
+  pip3 install neovim
 fi
 
 # vim
@@ -66,6 +92,10 @@ if [ : ]; then
   bunzip2 -c vim-${vim_version}.tar.bz2 | tar -xf -
   cd vim$(echo $vim_version | tr -d .)
   make distclean
+  ldflags=''
+  if [ "$is_using_sudo" != true ]; then
+    ldflags="-L${target_dir}/lib -Wl,-rpath,${HOME}/.pyenv/versions/${PY3_VERSION}/lib"
+  fi
   ./configure \
     --prefix=${target_dir} \
     --with-tlib="ncurses" \
@@ -78,7 +108,7 @@ if [ : ]; then
     --with-lua-prefix=${target_dir} \
     --enable-python3interp=dynamic \
     --enable-rubyinterp \
-    LDFLAGS="-L${target_dir}/lib -Wl,-rpath,${HOME}/.pyenv/versions/${PY3_VERSION}/lib"
+    LDFLAGS="$ldflags"
   make
   make install
 fi
