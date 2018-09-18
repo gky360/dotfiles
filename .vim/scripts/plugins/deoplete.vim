@@ -10,6 +10,7 @@ let g:deoplete#auto_complete_start_length = 1
 let s:deoplete_custom_option = {
       \ 'ignore_sources': {
       \   '_': ['around', 'dictionary', 'omni', 'tag'],
+      \   'cpp': ['around', 'dictionary', 'omni', 'tag', 'member'],
       \   'python': ['around', 'dictionary', 'omni', 'tag', 'member'],
       \ },
       \ }
