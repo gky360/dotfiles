@@ -13,6 +13,7 @@ let s:deoplete_custom_option = {
       \   'cpp': ['around', 'dictionary', 'omni', 'tag', 'member'],
       \   'python': ['around', 'dictionary', 'omni', 'tag', 'member'],
       \ },
+      \ 'num_processes': 6,
       \ }
 call deoplete#custom#option(s:deoplete_custom_option)
 
