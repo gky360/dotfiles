@@ -49,6 +49,7 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 # atcli
 export ATCLI_ROOT=${GOPATH}/src/github.com/gky360/contests/atcoder
+export ATCLI_CPP_TEMPLATE_PATH=$ATCLI_ROOT/../templates/Main.cpp.tmpl
 
 # nvm
 # 参考: [NVM の nvm.sh を遅延ロードしてシェルの起動を高速化する - Qiita](http://qiita.com/uasi/items/80865646607b966aedc8)
