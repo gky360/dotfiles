@@ -8,6 +8,7 @@ let g:deoplete#auto_complete_start_length = 1
 
 " from https://github.com/zchee/.nvim
 let s:deoplete_custom_option = {
+      \ 'ignore_case': g:true,
       \ 'ignore_sources': {
       \   '_': ['around', 'dictionary', 'omni', 'tag'],
       \   'cpp': ['around', 'dictionary', 'omni', 'tag', 'member'],
@@ -18,6 +19,7 @@ let s:deoplete_custom_option = {
 call deoplete#custom#option(s:deoplete_custom_option)
 
 set completeopt-=preview
+set completeopt+=noinsert
 
 " Disable conflicting keymaps
 let g:lexima_no_default_rules = 1
