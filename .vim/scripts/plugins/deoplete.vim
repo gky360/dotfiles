@@ -38,7 +38,7 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-y>" : "\<TAB>"
 
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><C-h> deoplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> deoplete#smart_close_popup()."\<C-h>"
+" inoremap <expr><BS> deoplete#smart_close_popup()."\<C-h>"
 
 inoremap <expr><C-g> deoplete#refresh()
 " inoremap <expr><C-e> deoplete#cancel_popup()
