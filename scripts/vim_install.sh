@@ -64,7 +64,18 @@ build_dependencies() {
 }
 
 install_dependencies_with_sudo() {
-  sudo apt-get install -y git build-essential ncurses-dev lua5.3 lua5.3-dev luajit python-dev python3-dev python3-pip
+  if [ -f /etc/lsb-release ]; then
+    # Debian/Ubuntu
+    sudo apt-get install -y git build-essential ncurses-dev lua5.3 lua5.3-dev python-dev python3-dev python3-pip
+  elif [ -f /etc/redhat-release ]; then
+    # CentOS
+    sudo yum install -y git make automake gcc gcc-c++ kernel-devel ncurses ncurses-devel lua lua-devel python36 python36-devel
+    sudo ln -sf $(which python3.6) /usr/bin/python3
+    curl https://bootstrap.pypa.io/get-pip.py | sudo python3.6
+  else
+    echo "unsupported OS ."
+    exit 1
+  fi
 }
 
 read -p "use sudo? (Y/n) > " yn
@@ -82,7 +93,7 @@ case $yn in
 esac
 
 if [ -x "$(command -v pip3)" ]; then
-  pip3 install neovim
+  pip3 install neovim --user
 fi
 
 # vim
