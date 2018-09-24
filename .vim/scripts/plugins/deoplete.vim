@@ -12,7 +12,6 @@ let s:deoplete_custom_option = {
       \ 'ignore_sources': {
       \   '_': ['around', 'dictionary', 'omni', 'tag'],
       \   'cpp': ['around', 'dictionary', 'omni', 'tag', 'member'],
-      \   'javascript': ['around', 'dictionary', 'omni', 'tag'],
       \   'python': ['around', 'dictionary', 'omni', 'tag', 'member'],
       \ },
       \ 'num_processes': 6,
