@@ -7,12 +7,15 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "homebrew/services"
 cask "java"
 cask "xquartz"
 # SSL/TLS cryptography library
 brew "openssl"
 # Library for command-line editing
 brew "readline", link: true
+# Command-line interface for SQLite
+brew "sqlite"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # GNU compiler collection
@@ -77,12 +80,18 @@ brew "hub"
 brew "icu4c"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# CLI wrapper for basic network utilities on macOS - ip command
+brew "iproute2mac"
 # Kubernetes command-line interface
 brew "kubernetes-cli", link: false
 # The Kubernetes package manager
 brew "kubernetes-helm"
+# Next-gen compiler infrastructure
+brew "llvm"
 # Java-based project management
 brew "maven"
+# Scalable distributed version control system
+brew "mercurial"
 # Cross platform, open source .NET development framework
 brew "mono"
 # Open source relational database management system
