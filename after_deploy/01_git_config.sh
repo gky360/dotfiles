@@ -36,9 +36,9 @@ if command_exists git ; then
   git config --global alias.br branch
   git config --global alias.co checkout
   git config --global alias.ci commit
-  git config --global alias.ca commit --amend
-  git config --global alias.cm commit -m
-  git config --global alias.cam commit --amend -m
+  git config --global alias.cia 'commit --amend'
+  git config --global alias.cim 'commit -m'
+  git config --global alias.ciam 'commit --amend -m'
   git config --global alias.mab 'merge --abort'
   git config --global alias.gr 'log --graph --oneline --decorate -10'
   git config --global alias.gn 'grep -n'
