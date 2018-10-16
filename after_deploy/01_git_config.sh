@@ -32,6 +32,9 @@ if command_exists git ; then
   git config --global color.status auto
   git config --global color.branch auto
 
+  # unset alias
+  git config --global --remove-section alias || :
+
   git config --global alias.st status
   git config --global alias.br branch
   git config --global alias.co checkout
