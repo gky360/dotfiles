@@ -7,10 +7,6 @@ export PATH
 # dotfiles
 export DOTPATH="$HOME/dotfiles"
 
-# local bin
-export PATH=$HOME/.local/bin:$PATH
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
-
 # brew
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:$PATH
 
@@ -78,3 +74,7 @@ fi
 if command_exists 'rustc'; then
   export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 fi
+
+# local bin
+export PATH=$HOME/.local/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
