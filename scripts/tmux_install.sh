@@ -30,3 +30,6 @@ cd tmux-${tmux_version}
 ./configure --prefix=$target_dir CFLAGS="-I${target_dir}/include" LDFLAGS="-L${target_dir}/lib"
 make
 make install
+
+# tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
