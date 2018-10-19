@@ -32,4 +32,5 @@ make
 make install
 
 # tpm
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+cd $DOTPATH
+./scripts/tpm_install.sh
