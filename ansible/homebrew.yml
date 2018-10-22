@@ -11,38 +11,36 @@
 
     - name: Install fundamental brew packages first
       homebrew:
-        name: "{{ item }}"
+        name:
+          - tmux
+          - vim
+          - zsh
         state: present
-      with_items:
-        - tmux
-        - vim
-        - zsh
 
     - name: Install fundamental brew cask packages first
       homebrew_cask:
-        name: "{{ item }}"
+        name:
+          - alfred
+          - atom
+          - clipy
+          - google-backup-and-sync
+          - google-chrome
+          - google-japanese-ime
+          - istat-menus
+          - iterm2
         state: present
-      with_items:
-        - alfred
-        - atom
-        - clipy
-        - google-backup-and-sync
-        - google-chrome
-        - google-japanese-ime
-        - istat-menus
-        - iterm2
 
     - name: Install homebrew packages using homebrew-bundle
       shell: brew bundle 2>&1 | tee logs/brew_bundle.log
 
-    - name: Link gcc@7
+    - name: Link gcc
       file: src={{ item.src }} dest={{ item.dest }} state=link
       with_items:
-        - src: /usr/local/bin/gcc-7
+        - src: /usr/local/bin/gcc-8
           dest: /usr/local/bin/gcc
-        - src: /usr/local/bin/g++-7
+        - src: /usr/local/bin/g++-8
           dest: /usr/local/bin/g++
-        - src: /usr/local/bin/c++-7
+        - src: /usr/local/bin/c++-8
           dest: /usr/local/bin/c++
 
     - name: Link iTerm2 config file

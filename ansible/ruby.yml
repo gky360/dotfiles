@@ -13,6 +13,9 @@
           - version: 2.5.1
             env:
               RUBY_CONFIGURE_OPTS: "--with-readline-dir=/usr/local/opt/readline/ --with-openssl-dir=/usr/local/opt/openssl/"
+          - version: 2.3.1
+            env:
+              RUBY_CONFIGURE_OPTS: "--with-readline-dir=/usr/local/opt/readline/ --with-openssl-dir=/usr/local/opt/openssl/"
       rbenv_users:
         - "{{ ansible_user | default(lookup('env', 'USER')) }}"
       default_gems_file: "{{ lookup('env', 'DOTPATH') }}/ansible/default-gems"

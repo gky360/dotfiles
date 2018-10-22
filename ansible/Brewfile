@@ -32,8 +32,6 @@ brew "boost"
 brew "bzip2"
 # CloudFlare's PKI toolkit
 brew "cfssl"
-# Tool for automated testing of webapps across many browsers
-brew "chromedriver"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
 # Cross-platform make
@@ -49,7 +47,7 @@ brew "ghostscript", link: false
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # GNU compiler collection
-brew "gcc@7"
+brew "gcc"
 # WebDriver <-> Marionette proxy
 brew "geckodriver"
 # C++ geography library
@@ -164,6 +162,7 @@ cask "adobe-acrobat-reader"
 cask "alfred"
 cask "angry-ip-scanner"
 cask "atom"
+cask "chromedriver"
 cask "chromium"
 cask "clipy"
 cask "cyberduck"

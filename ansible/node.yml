@@ -18,7 +18,10 @@
       shell: bash -l -c ". ~/.bashrc && nvm use {{ node_version }} && nvm alias default {{ node_version }}"
 
     - name: Install global packages
-      npm: name={{ item }} global=yes executable=~/.nvm/versions/node/{{ node_version }}/bin/npm
+      npm:
+        name: "{{ item }}"
+        global: yes
+        executable: /Users/{{ ansible_user }}/.nvm/versions/node/{{ node_version }}/bin/npm
       with_items:
         - gtop
         - npm
