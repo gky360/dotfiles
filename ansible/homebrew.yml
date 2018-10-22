@@ -6,7 +6,31 @@
   tasks:
 
     - name: Update homebrew itself first
-      homebrew: update_homebrew=yes
+      homebrew:
+        update_homebrew: yes
+
+    - name: Install fundamental brew packages first
+      homebrew:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - tmux
+        - vim
+        - zsh
+
+    - name: Install fundamental brew cask packages first
+      homebrew_cask:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - alfred
+        - atom
+        - clipy
+        - google-backup-and-sync
+        - google-chrome
+        - google-japanese-ime
+        - istat-menus
+        - iterm2
 
     - name: Install homebrew packages using homebrew-bundle
       shell: brew bundle 2>&1 | tee logs/brew_bundle.log
