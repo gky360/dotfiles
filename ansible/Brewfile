@@ -10,12 +10,8 @@ tap "homebrew/core"
 tap "homebrew/services"
 cask "java"
 cask "xquartz"
-# SSL/TLS cryptography library
-brew "openssl"
-# Library for command-line editing
-brew "readline", link: true
-# Command-line interface for SQLite
-brew "sqlite"
+# Interpreted, interactive, object-oriented programming language
+brew "python"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # GNU compiler collection
@@ -46,8 +42,6 @@ brew "emacs", link: false
 brew "ghostscript", link: false
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
-# GNU compiler collection
-brew "gcc"
 # WebDriver <-> Marionette proxy
 brew "geckodriver"
 # C++ geography library
@@ -62,6 +56,8 @@ brew "gibo"
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c"
 # Powerful, lightweight programming language
 brew "lua"
 # Open source programming language to build simple/reliable/efficient software
@@ -74,8 +70,6 @@ brew "groovysdk"
 brew "htop"
 # Add GitHub support to git on the command-line
 brew "hub"
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # CLI wrapper for basic network utilities on macOS - ip command
@@ -100,7 +94,7 @@ brew "nkf"
 brew "open-mpi"
 # High-level interpreted language for numerical computing
 brew "octave"
-# Package manager for OCaml
+# The OCaml package manager
 brew "opam"
 # Optimized BLAS library
 brew "openblas"
@@ -122,8 +116,6 @@ brew "postgresql"
 brew "protobuf"
 # Show ps output as a tree
 brew "pstree"
-# Interpreted, interactive, object-oriented programming language
-brew "python"
 # Software environment for statistical computing
 brew "r", args: ["with-openblas"]
 # Persistent key-value database, with built-in net interface
@@ -167,6 +159,7 @@ cask "chromium"
 cask "clipy"
 cask "cyberduck"
 cask "docker"
+cask "dropbox"
 cask "duet"
 cask "emacs"
 cask "firefox"
