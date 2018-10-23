@@ -9,14 +9,14 @@ git-time-machine@2.1.0
 hex-view@0.2.1
 hydrogen@2.6.0
 intentions@1.1.5
-kite@0.108.0
+kite@0.112.0
 language-latex@1.2.0
 latex@0.50.0
 linter-flake8@2.3.0
 linter-ui-default@1.7.1
 linter@2.2.0
-markdown-preview-plus@3.6.3
+markdown-preview-plus@3.7.0
 mathjax-wrapper@0.1.0
 minimap@4.29.9
 pdf-view@0.71.0
-vim-mode-plus@1.34.0
+vim-mode-plus@1.35.0
