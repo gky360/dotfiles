@@ -52,6 +52,7 @@
         - jupyter
         - kaggle-cli
         - matplotlib
+        - neovim
         - opencv-python
         - pandas
         - pep8
