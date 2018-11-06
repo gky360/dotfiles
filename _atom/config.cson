@@ -43,6 +43,7 @@
     showWelcomeNotificationOnStartup: false
   latex:
     buildOnSave: true
+    engine: "platex"
   "linter-ui-default":
     statusBarRepresents: "Current File"
   "markdown-preview-plus":
