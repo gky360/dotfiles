@@ -1,4 +1,5 @@
 atom-beautify@0.33.4
+atomic-management@0.3.1
 autocomplete-paths@2.12.2
 autocomplete-python@1.11.0
 busy-signal@1.4.3
@@ -19,5 +20,4 @@ markdown-preview-plus@3.7.1
 mathjax-wrapper@0.1.0
 minimap@4.29.9
 pdf-view@0.71.0
-project-manager@3.3.6
 vim-mode-plus@1.35.0
