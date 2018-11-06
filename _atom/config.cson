@@ -30,6 +30,7 @@
       "*.ttt"
     ]
     telemetryConsent: "no"
+    useTreeSitterParsers: false
   editor:
     fontFamily: "Myrica M"
     scrollPastEnd: true
