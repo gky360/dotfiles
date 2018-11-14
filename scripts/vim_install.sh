@@ -66,10 +66,13 @@ build_dependencies() {
 install_dependencies_with_sudo() {
   if [ -f /etc/lsb-release ]; then
     # Debian/Ubuntu
-    sudo apt-get install -y git build-essential ncurses-dev lua5.3 lua5.3-dev python-dev python3-dev python3-pip
+    sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+      libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+      xz-utils tk-dev libffi-dev liblzma-dev
   elif [ -f /etc/redhat-release ]; then
     # CentOS
-    sudo yum install -y git make automake gcc gcc-c++ kernel-devel ncurses ncurses-devel lua lua-devel python36 python36-devel
+    sudo yum install zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel \
+      openssl-devel xz xz-devel libffi-devel
     sudo ln -sf $(which python3.6) /usr/bin/python3
     curl https://bootstrap.pypa.io/get-pip.py | sudo python3.6
   else
