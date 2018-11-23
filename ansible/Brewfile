@@ -140,6 +140,8 @@ brew "tmux"
 brew "tree"
 # Vi 'workalike' with many additional features
 brew "vim", args: ["with-lua", "with-python3"]
+# Executes a program periodically, showing output fullscreen
+brew "watch"
 # Internet file retriever
 brew "wget"
 # View colored diff with side by side and auto pager support
