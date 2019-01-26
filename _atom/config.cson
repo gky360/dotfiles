@@ -47,6 +47,7 @@
     buildOnSave: true
     engine: "platex"
   "linter-ui-default":
+    panelHeight: 300
     statusBarRepresents: "Current File"
   "markdown-preview-plus":
     mathConfig:
