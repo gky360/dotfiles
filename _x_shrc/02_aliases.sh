@@ -41,6 +41,7 @@ alias gbrcl="git branch --merged | grep -v '*' | xargs git branch -d"
 alias gprst="git diff --numstat | awk '{if ((\$1 == \"0\" && \$2 == \"0\") || (\$1 == \"-\" && \$2 == \"-\")) print \$3}' | xargs git checkout HEAD"
 ## word-by-word diff
 alias gdfw="git dfw"
+alias gdfwca="git dfwca"
 alias gshw="git shw"
 ## ghq list
 alias gl='cd $(ghq root)/$(ghq list | peco)'
