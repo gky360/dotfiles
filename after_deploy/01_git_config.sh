@@ -54,6 +54,7 @@ if command_exists git ; then
   git config --global alias.dfch 'diff --check'
   # show diff per words
   git config --global alias.dfw 'diff --word-diff'
+  git config --global alias.dfwca 'diff --word-diff --cached'
   git config --global alias.shw 'show --word-diff'
   # edit commit's timestamp
   git config --global alias.cmad '!git commit --amend --date'
