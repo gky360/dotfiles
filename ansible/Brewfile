@@ -9,7 +9,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 cask "java"
-cask "xquartz"
+cask "java8"
 # Interpreted, interactive, object-oriented programming language
 brew "python"
 # Automate deployment, configuration, and upgrading
@@ -38,6 +38,10 @@ brew "composer"
 brew "elasticsearch"
 # GNU Emacs text editor
 brew "emacs", link: false
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c"
+# LLVM bytecode to JavaScript compiler
+brew "emscripten"
 # Interpreter for PostScript and PDF
 brew "ghostscript", link: false
 # Play, record, convert, and stream audio and video
@@ -56,8 +60,6 @@ brew "gibo"
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c"
 # Powerful, lightweight programming language
 brew "lua"
 # Open source programming language to build simple/reliable/efficient software
@@ -87,7 +89,7 @@ brew "mercurial"
 # Cross platform, open source .NET development framework
 brew "mono"
 # Open source relational database management system
-brew "mysql"
+brew "mysql", restart_service: true
 # Network Kanji code conversion Filter (NKF)
 brew "nkf"
 # High performance message passing library
@@ -122,6 +124,8 @@ brew "r", args: ["with-openblas"]
 brew "redis"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
+# The Rust toolchain installer
+brew "rustup-init"
 # Build tool for Scala projects
 brew "sbt"
 # JVM-based programming language
@@ -132,6 +136,8 @@ brew "screenfetch"
 brew "selenium-server-standalone"
 # HTTP regression testing and benchmarking utility
 brew "siege"
+# Generate clients, server stubs, and docs from an OpenAPI spec
+brew "swagger-codegen"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
@@ -172,10 +178,10 @@ cask "google-backup-and-sync"
 cask "google-chrome"
 cask "google-cloud-sdk"
 cask "google-japanese-ime"
+cask "inkscape"
 cask "intellij-idea-ce"
 cask "istat-menus"
 cask "iterm2"
-cask "java8"
 cask "kite"
 cask "mactex"
 cask "maczip4win"
@@ -195,3 +201,4 @@ cask "vagrant"
 cask "virtualbox"
 cask "vnc-viewer"
 cask "wireshark"
+cask "xquartz"
