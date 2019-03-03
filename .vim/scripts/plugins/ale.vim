@@ -1,3 +1,7 @@
+let g:ale_linters = {
+      \ 'javascript': ['eslint', 'flow', 'flow-language-server', 'jscs', 'jshint', 'standard', 'xo'],
+      \}
+
 let g:ale_fixers = {
       \  'c': ['clang-format'],
       \  'cpp': ['clang-format'],
