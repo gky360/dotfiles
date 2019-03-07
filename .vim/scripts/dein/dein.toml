@@ -11,6 +11,9 @@ repo = 'dracula/vim'
 repo = 'itchyny/lightline.vim'
 
 [[plugins]]
+repo = 'itchyny/vim-gitbranch'
+
+[[plugins]]
 repo = 'tpope/vim-surround'
 
 [[plugins]]

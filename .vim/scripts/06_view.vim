@@ -106,12 +106,13 @@ let g:lightline = {
       \  'active': {
       \    'left': [
       \      ['mode', 'paste'],
-      \      ['readonly', 'filename', 'modified'],
+      \      ['gitbranch', 'readonly', 'filename', 'modified'],
       \      ['ale'],
       \    ]
       \  },
       \  'component_function': {
-      \    'ale': 'ALEStatus'
+      \    'ale': 'ALEStatus',
+      \    'gitbranch': 'gitbranch#name',
       \  }
       \}
 
