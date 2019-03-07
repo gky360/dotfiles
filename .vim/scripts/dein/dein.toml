@@ -5,7 +5,7 @@ repo = 'Shougo/dein.vim'
 repo = 'editorconfig/editorconfig-vim'
 
 [[plugins]]
-repo = 'tomasr/molokai'
+repo = 'dracula/vim'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
