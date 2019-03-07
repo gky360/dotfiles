@@ -18,6 +18,9 @@ repo ='junegunn/vim-easy-align'
 hook_add = 'source ~/.vim/scripts/plugins/vim-easy-align.vim'
 
 [[plugins]]
+repo = 'easymotion/vim-easymotion'
+
+[[plugins]]
 repo = 'cohama/lexima.vim'
 
 [[plugins]]
