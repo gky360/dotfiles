@@ -13,12 +13,12 @@ hook_source = 'source ~/.vim/scripts/plugins/neosnippet.vim'
 
 [[plugins]]
 repo = 'roxma/nvim-yarp'
-if = "has('python3')"
+if = "!has('nvim')"
 on_event = 'InsertEnter'
 
 [[plugins]]
 repo = 'roxma/vim-hug-neovim-rpc'
-if = "has('python3')"
+if = "!has('nvim')"
 on_event = 'InsertEnter'
 
 
