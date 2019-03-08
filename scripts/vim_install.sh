@@ -8,7 +8,7 @@ lua_version=5.3.5
 vim_version=8.1
 working_dir=$HOME/tmp
 target_dir=$HOME/.local
-PY3_VERSION=3.6.5
+PY3_VERSION=3.7.2
 
 
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:-}:${target_dir}/lib
