@@ -152,6 +152,8 @@ brew "vim", args: ["with-lua", "with-python3"]
 brew "watch"
 # Internet file retriever
 brew "wget"
+# Graphical network analyzer and capture tool
+brew "wireshark", link: false
 # View colored diff with side by side and auto pager support
 brew "ydiff"
 # UNIX shell (command interpreter)
