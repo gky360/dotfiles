@@ -6,6 +6,11 @@ repo = 'editorconfig/editorconfig-vim'
 
 [[plugins]]
 repo = 'dracula/vim'
+if = "has('nvim')"
+
+[[plugins]]
+repo = 'tomasr/molokai'
+if = "!has('nvim')"
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'

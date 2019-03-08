@@ -13,7 +13,11 @@ else
 endif
 
 set t_Co=256
-colorscheme dracula
+if !has('nvim')
+  colorscheme molokai
+else
+  colorscheme dracula
+endif
 syntax on
 
 " StatusLine {{{1
