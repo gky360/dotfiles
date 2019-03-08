@@ -26,6 +26,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PATH:$PYENV_ROOT/bin"
 if command_exists 'pyenv' ; then
   eval "$(pyenv init - --no-rehash)"
+  eval "$(pyenv virtualenv-init - --no-rehash)"
 fi
 
 # postgreSQL
