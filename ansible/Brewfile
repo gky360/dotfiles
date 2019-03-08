@@ -22,6 +22,8 @@ brew "arping"
 brew "bat"
 # Searches a binary image for embedded files and executable code
 brew "binwalk"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c"
 # Collection of portable C++ source libraries
 brew "boost"
 # Freely available high-quality data compressor
@@ -34,12 +36,12 @@ brew "clang-format"
 brew "cmake"
 # Dependency Manager for PHP
 brew "composer"
+# Reimplementation of ctags(1)
+brew "ctags"
 # Distributed search & analytics engine
 brew "elasticsearch"
 # GNU Emacs text editor
 brew "emacs", link: false
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c"
 # LLVM bytecode to JavaScript compiler
 brew "emscripten"
 # Interpreter for PostScript and PDF
@@ -92,6 +94,8 @@ brew "mercurial"
 brew "mono"
 # Open source relational database management system
 brew "mysql", restart_service: true
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Network Kanji code conversion Filter (NKF)
 brew "nkf"
 # High performance message passing library
