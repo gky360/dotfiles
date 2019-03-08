@@ -51,11 +51,12 @@
         - jedi
         - jupyter
         - kaggle-cli
+        - Keras
         - matplotlib
-        - neovim
         - opencv-python
         - pandas
         - pep8
+        - pynvim
         - pytest
         - scapy
         - scikit-image
@@ -63,4 +64,5 @@
         - scipy
         - setuptools
         - statsmodels
+        - tensorflow
         - tqdm
