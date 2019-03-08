@@ -72,6 +72,8 @@ brew "groovysdk"
 brew "htop"
 # Add GitHub support to git on the command-line
 brew "hub"
+# Display an interface's bandwidth usage
+brew "iftop"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # CLI wrapper for basic network utilities on macOS - ip command
