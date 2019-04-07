@@ -4,7 +4,7 @@
   become: no
 
   vars:
-    node_version: v8.11.1
+    node_version: v10.15.3
 
   tasks:
 
@@ -26,5 +26,4 @@
         - gtop
         - npm
         - typescript
-        - webpack
         - yarn
