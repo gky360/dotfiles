@@ -58,6 +58,7 @@ alias vast='vagrant status'
 
 # docker
 alias dcm='docker-compose'
+alias dcmr='docker-compose run --rm'
 
 # dstat
 alias dstata='dstat -tlcmgdr --socket --tcp -n'
