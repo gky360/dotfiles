@@ -14,6 +14,5 @@ curl https://glide.sh/get | sh
 
 ghq get peco/peco
 cd $(ghq root)/$(ghq list --exact peco/peco)
-glide install
-go build cmd/peco/peco.go
-cp peco $(ghq root)/../bin
+make build
+cp releases/$(ls releases)/peco $(ghq root)/../bin
