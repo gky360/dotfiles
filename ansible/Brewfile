@@ -16,12 +16,18 @@ brew "python"
 brew "ansible"
 # GNU compiler collection
 brew "gcc"
+# High performance message passing library
+brew "open-mpi"
+# Routines to solve large scale eigenvalue problems
+brew "arpack"
 # Utility to check whether MAC addresses are already taken on a LAN
 brew "arping"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Searches a binary image for embedded files and executable code
 brew "binwalk"
+# Interface bandwidth monitor
+brew "bmon"
 # C/C++ and Java libraries for Unicode and globalization
 brew "icu4c"
 # Collection of portable C++ source libraries
@@ -42,8 +48,6 @@ brew "ctags"
 brew "elasticsearch"
 # GNU Emacs text editor
 brew "emacs", link: false
-# LLVM bytecode to JavaScript compiler
-brew "emscripten"
 # Interpreter for PostScript and PDF
 brew "ghostscript", link: false
 # Play, record, convert, and stream audio and video
@@ -70,6 +74,8 @@ brew "go"
 brew "gradle"
 # SDK for Groovy: a Java-based scripting language
 brew "groovysdk"
+# File format designed to store large amounts of data
+brew "hdf5"
 # Improved top (interactive process viewer)
 brew "htop"
 # Add GitHub support to git on the command-line
@@ -98,8 +104,6 @@ brew "mysql", restart_service: true
 brew "neovim"
 # Network Kanji code conversion Filter (NKF)
 brew "nkf"
-# High performance message passing library
-brew "open-mpi"
 # High-level interpreted language for numerical computing
 brew "octave"
 # The OCaml package manager
@@ -124,6 +128,8 @@ brew "postgresql"
 brew "protobuf"
 # Show ps output as a tree
 brew "pstree"
+# x86 and PowerPC Emulator
+brew "qemu"
 # Software environment for statistical computing
 brew "r", args: ["with-openblas"]
 # Persistent key-value database, with built-in net interface
@@ -156,8 +162,6 @@ brew "vim", args: ["with-lua", "with-python3"]
 brew "watch"
 # Internet file retriever
 brew "wget"
-# Graphical network analyzer and capture tool
-brew "wireshark", link: false
 # View colored diff with side by side and auto pager support
 brew "ydiff"
 # UNIX shell (command interpreter)
