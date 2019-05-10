@@ -16,8 +16,12 @@ choco upgrade \
   slack \
   sourcetree \
   vagrant \
+  vcredist2017 \
   vim \
   virtualbox \
+  visualstudio2017buildtools \
+  visualstudio2017community \
+  visualstudio2017-workload-vctools \
   vscode \
   wget \
   -y
