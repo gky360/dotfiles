@@ -7,9 +7,11 @@ choco upgrade \
   cmake \
   cmder \
   docker-toolbox \
+  firefox \
   git \
   golang \
   googlechrome \
+  google-backup-and-sync \
   make \
   myrica \
   nvm \
