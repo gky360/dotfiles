@@ -72,8 +72,8 @@ if [ -s $HOME/.opam ]; then
 fi
 
 # rust
-if [ -e ~/.cargo/env ]; then
-  source ~/.cargo/env
+if [ -e ~/.cargo ]; then
+  export PATH="$HOME/.cargo/bin:$PATH"
   export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 fi
 
