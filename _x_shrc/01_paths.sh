@@ -74,7 +74,9 @@ fi
 # rust
 if [ -e ~/.cargo ]; then
   export PATH="$HOME/.cargo/bin:$PATH"
-  export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+  if command_exists 'rustc' ; then
+    export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+  fi
 fi
 
 # local bin
