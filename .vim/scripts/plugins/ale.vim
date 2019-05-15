@@ -1,5 +1,6 @@
 let g:ale_linters = {
-      \ 'javascript': ['eslint', 'flow', 'flow-language-server', 'jscs', 'jshint', 'standard', 'xo'],
+      \  'go': ['golangci-lint'],
+      \  'javascript': ['eslint', 'flow', 'flow-language-server', 'jscs', 'jshint', 'standard', 'xo'],
       \}
 
 let g:ale_fixers = {
