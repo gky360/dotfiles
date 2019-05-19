@@ -28,6 +28,9 @@ if command_exists 'pyenv' ; then
   eval "$(pyenv init - --no-rehash)"
   eval "$(pyenv virtualenv-init - --no-rehash)"
 fi
+if [ -e /c/tools/Anaconda3 ]; then
+  export PATH=/c/tools/Anaconda3:$PATH
+fi
 
 # postgreSQL
 if command_exists 'postgres' ; then

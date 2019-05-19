@@ -15,6 +15,7 @@ choco upgrade \
   make \
   myrica \
   nvm \
+  openssl.light \
   slack \
   sourcetree \
   vagrant \
