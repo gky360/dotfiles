@@ -6,6 +6,7 @@ choco upgrade \
   anaconda3 \
   cmake \
   cmder \
+  dropbox \
   docker-toolbox \
   firefox \
   git \
