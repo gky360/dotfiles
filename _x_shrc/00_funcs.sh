@@ -46,7 +46,7 @@ function gsh() {
 ## tmux attach
 function txa() {
   session_name=${1:-${${PWD##*/}%.*}}
-  tmux new-session -A -s $session_name
+  tmux -u new-session -A -s $session_name
 }
 
 ## hash base64 encode
