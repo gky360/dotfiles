@@ -5,7 +5,7 @@
 
   vars:
     pyenv_root: "{{ '~/.pyenv' | expanduser }}"
-    python_version: anaconda3-5.3.1
+    python_version: anaconda3-2019.03
 
   pre_tasks:
 
