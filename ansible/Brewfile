@@ -112,6 +112,8 @@ brew "mysql", restart_service: true
 brew "neovim"
 # Network Kanji code conversion Filter (NKF)
 brew "nkf"
+# Fast updates of QR and Cholesky decompositions
+brew "qrupdate"
 # High-level interpreted language for numerical computing
 brew "octave"
 # The OCaml package manager
@@ -137,7 +139,7 @@ brew "pstree"
 # x86 and PowerPC Emulator
 brew "qemu"
 # Software environment for statistical computing
-brew "r", args: ["with-openblas"]
+brew "r"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Perl-powered file rename script with many helpful built-ins
@@ -165,7 +167,7 @@ brew "travis"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Vi 'workalike' with many additional features
-brew "vim", args: ["with-lua", "with-python3"]
+brew "vim"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Internet file retriever
@@ -175,7 +177,7 @@ brew "wine"
 # View colored diff with side by side and auto pager support
 brew "ydiff"
 # UNIX shell (command interpreter)
-brew "zsh", args: ["without-etcdir"]
+brew "zsh"
 # Additional completion definitions for zsh
 brew "zsh-completions"
 # Everything you need to get started with Heroku
