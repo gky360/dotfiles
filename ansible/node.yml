@@ -4,7 +4,7 @@
   become: no
 
   vars:
-    node_version: v10.15.3
+    node_version: v12.9.1
 
   tasks:
 
