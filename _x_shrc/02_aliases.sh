@@ -78,7 +78,7 @@ alias rds='redis-server'
 alias rdc='redis-cli'
 
 # npm
-alias nrbw='npm run build:watch'
+alias nrbw='npm run build:watch --fix'
 alias wpbw='$(npm bin)/webpack --progress --colors --watch'
 
 # tail
