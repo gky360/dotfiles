@@ -34,6 +34,8 @@ alias Prsb='bundle exec rails s -b 0.0.0.0 -e production'
 # git
 ## status
 alias gst="git status"
+## log
+alias gl="git log"
 ## log graph
 alias ggr="git gr"
 ## status and log graph
@@ -47,7 +49,7 @@ alias gdfw="git dfw"
 alias gdfwca="git dfwca"
 alias gshw="git shw"
 ## ghq list
-alias gl='cd $(ghq root)/$(ghq list | peco)'
+alias glp='cd $(ghq root)/$(ghq list | peco)'
 ## hub browse
 alias gb='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 
