@@ -22,8 +22,6 @@ if command_exists git ; then
 
   # ghq config
   git config --global ghq.root ~/dev/src
-  # set vim as commit message editor
-  git config --global core.editor 'vim -c "set fenc=utf-8"'
   # enable gitignore_global
   git config --global core.excludesfile ~/.gitignore_global
   # colorful
