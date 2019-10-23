@@ -67,10 +67,6 @@ echo
 echo "loading .zshrc ..."
 ./_zshrc/deploy.sh
 
-echo
-echo "loading .atom ..."
-./_atom/deploy.sh
-
 
 echo
 for after_deploy_sh in $DOTPATH/after_deploy/*.sh; do

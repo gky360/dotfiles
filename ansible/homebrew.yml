@@ -21,13 +21,13 @@
       homebrew_cask:
         name:
           - alfred
-          - atom
           - clipy
           - google-backup-and-sync
           - google-chrome
           - google-japanese-ime
           - istat-menus
           - iterm2
+          - visual-studio-code
         state: present
 
     - name: Install homebrew packages using homebrew-bundle
