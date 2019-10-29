@@ -12,6 +12,8 @@ tap "homebrew/services"
 brew "python"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
+# ARP scanning and fingerprinting tool
+brew "arp-scan"
 # GNU compiler collection
 brew "gcc"
 # High performance message passing library
@@ -104,6 +106,8 @@ brew "llvm"
 brew "maven"
 # Scalable distributed version control system
 brew "mercurial"
+# Run a Kubernetes cluster locally
+brew "minikube"
 # Cross platform, open source .NET development framework
 brew "mono"
 # Open source relational database management system
