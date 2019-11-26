@@ -53,7 +53,7 @@ brew "elasticsearch"
 # GNU Emacs text editor
 brew "emacs", link: false
 # Interpreter for PostScript and PDF
-brew "ghostscript", link: false
+brew "ghostscript"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # C routines to compute the Discrete Fourier Transform
@@ -82,8 +82,14 @@ brew "go"
 brew "gradle"
 # SDK for Groovy: a Java-based scripting language
 brew "groovysdk"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
+# Next generation open source RPC library and framework
+brew "grpc"
 # File format designed to store large amounts of data
 brew "hdf5"
+# The Kubernetes package manager
+brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
 # Add GitHub support to git on the command-line
@@ -98,8 +104,6 @@ brew "iproute2mac"
 brew "jq"
 # Kubernetes command-line interface
 brew "kubernetes-cli", link: false
-# The Kubernetes package manager
-brew "kubernetes-helm"
 # Next-gen compiler infrastructure
 brew "llvm"
 # Java-based project management
@@ -136,8 +140,6 @@ brew "php-cs-fixer"
 brew "php@7.1"
 # Object-relational database system
 brew "postgresql"
-# Protocol buffers (Google's data interchange format)
-brew "protobuf"
 # Show ps output as a tree
 brew "pstree"
 # x86 and PowerPC Emulator
@@ -212,7 +214,6 @@ cask "java"
 cask "java8"
 cask "kite"
 cask "mactex-no-gui"
-cask "maczip4win"
 cask "mendeley"
 cask "minikube"
 cask "nteract"
@@ -230,5 +231,6 @@ cask "vagrant"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vnc-viewer"
+cask "winzip"
 cask "wireshark"
 cask "xquartz"
