@@ -13,9 +13,7 @@ else
 endif
 
 set t_Co=256
-if !has('nvim')
-  colorscheme molokai
-else
+if has('nvim')
   colorscheme dracula
 endif
 syntax on
