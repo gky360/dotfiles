@@ -21,7 +21,7 @@ SAVEHIST=1000000
 # 1行表示
 # PROMPT="%~ %# "
 # 2行表示
-PROMPT="%{${fg[$zshrc_prompt_color]}%}[%n@%m]%{${reset_color}%} %~
+PROMPT="%{${fg[$zshrc_prompt_color]}%}%n@%M:%{${reset_color}%}%~
 %{%(?.$fg[white].$fg[red])%}%#%{$reset_color%} "
 
 
