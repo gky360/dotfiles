@@ -17,8 +17,6 @@ alias srcrc="if [ -e ~/.${SHELL##*/}rc ]; then . ~/.${SHELL##*/}rc; fi"
 # emacs
 alias emacs='emacs -nw'
 
-# vscode insiders
-alias cdin='code-insiders'
 
 # gcc
 alias g++14='g++ -std=c++14 -Wall'
