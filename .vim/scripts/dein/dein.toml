@@ -35,9 +35,6 @@ repo = 'justinmk/vim-sneak'
 repo = 'cohama/lexima.vim'
 
 [[plugins]]
-repo = 'honza/vim-snippets'
-
-[[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
 
 [[plugins]]
