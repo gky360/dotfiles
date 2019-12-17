@@ -51,6 +51,9 @@ alias glp='cd $(ghq root)/$(ghq list | peco)'
 ## hub browse
 alias gb='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 
+# grep
+export GREP_OPTIONS='--color=auto'
+
 # vagrant
 alias vain='vagrant up && vagrant ssh'
 alias vash='vagrant ssh'
