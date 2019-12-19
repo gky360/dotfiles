@@ -13,6 +13,7 @@ choco upgrade \
   golang \
   googlechrome \
   google-backup-and-sync \
+  line \
   make \
   myrica \
   nvm \
