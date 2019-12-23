@@ -27,6 +27,7 @@ choco upgrade \
   visualstudio2017buildtools \
   visualstudio2017community \
   visualstudio2017-workload-vctools \
+  vlc \
   vscode \
   wget \
   -y
