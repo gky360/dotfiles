@@ -67,7 +67,7 @@ function md2pdf() {
   fi
   basename=${1//.md}
   pandoc -f markdown_github ${basename}.md -o ${basename}.pdf\
-    --from markdown --template eisvogel --listings --latex-engine=xelatex\
+    --from markdown --template eisvogel --listings --pdf-engine=xelatex\
     -V CJKmainfont=Hiragino\ Kaku\ Gothic\ Pro -V lang=en-US\
     --metadata date="`date +%Y-%m-%d`"
 }
