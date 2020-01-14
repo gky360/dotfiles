@@ -81,6 +81,7 @@ if [ -e ~/.cargo ]; then
     export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
   fi
 fi
+export RUST_BACKTRACE=1
 
 # local bin
 export PATH=$HOME/.local/bin:$PATH
