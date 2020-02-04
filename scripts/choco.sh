@@ -15,6 +15,7 @@ choco upgrade \
   google-backup-and-sync \
   line \
   make \
+  mingw \
   myrica \
   nvm \
   openssl.light \
