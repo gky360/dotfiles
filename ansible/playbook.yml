@@ -1,8 +1,8 @@
 ---
-- import_playbook: homebrew.yml
-- import_playbook: zsh.yml
-- import_playbook: python.yml
-- import_playbook: ruby.yml
-- import_playbook: node.yml
-- import_playbook: tex.yml
-- import_playbook: misc.yaml
+- import_playbook: 01_homebrew.yml
+- import_playbook: 02_zsh.yml
+- import_playbook: 03_python.yml
+- import_playbook: 04_ruby.yml
+- import_playbook: 05_node.yml
+- import_playbook: 06_tex.yml
+- import_playbook: 09_misc.yaml

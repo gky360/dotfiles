@@ -42,7 +42,6 @@
         name:
           - autopep8
           - chainer
-          - dvc
           - flake8
           - flake8-docstrings
           - hacking

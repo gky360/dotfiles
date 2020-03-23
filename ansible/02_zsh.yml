@@ -14,7 +14,7 @@
     - name: Add zsh to etc/shells
       shell: echo '/usr/local/bin/zsh' >> /etc/shells
       become: yes
-      when: result|failed
+      when: result is failed
 
     - debug: var=ansible_user_id
 
