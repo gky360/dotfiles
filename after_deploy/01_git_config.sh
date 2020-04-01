@@ -17,8 +17,8 @@ if command_exists git ; then
   fi
 
   # user and email
-  git config --global user.name gky360
-  git config --global user.email gky360@gmail.com
+  git config --global user.name ${GIT_GLOBAL_USER_NAME:-gky360}
+  git config --global user.email ${GIT_GLOBAL_USER_EMAIL:-gky360}
 
   # ghq config
   git config --global ghq.root ~/dev/src
