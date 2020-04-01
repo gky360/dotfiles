@@ -1,6 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+tap "c-bata/kube-prompt"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -8,6 +9,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "weaveworks/tap"
 cask "adoptopenjdk8"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
@@ -45,6 +47,8 @@ brew "cmake"
 brew "composer"
 # Reimplementation of ctags(1)
 brew "ctags"
+# Tool for exploring each layer in a docker image
+brew "dive"
 # GNU Emacs text editor
 brew "emacs", link: false
 # Interpreter for PostScript and PDF
@@ -86,7 +90,7 @@ brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Kubernetes command-line interface
-brew "kubernetes-cli", link: false
+brew "kubernetes-cli"
 # Next-gen compiler infrastructure
 brew "llvm"
 # Run a Kubernetes cluster locally
@@ -139,8 +143,12 @@ brew "screenfetch"
 brew "selenium-server-standalone"
 # HTTP regression testing and benchmarking utility
 brew "siege"
+# Tail multiple Kubernetes pods & their containers
+brew "stern"
 # Generate clients, server stubs, and docs from an OpenAPI spec
 brew "swagger-codegen"
+# Tool to build, change, and version infrastructure
+brew "terraform"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
@@ -161,8 +169,12 @@ brew "ydiff"
 brew "zsh"
 # Additional completion definitions for zsh
 brew "zsh-completions"
+# An interactive kubernetes client featuring auto-complete using go-prompt.
+brew "c-bata/kube-prompt/kube-prompt"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
+# The official CLI for Amazon EKS
+brew "weaveworks/tap/eksctl"
 cask "adobe-acrobat-reader"
 cask "alfred"
 cask "angry-ip-scanner"
