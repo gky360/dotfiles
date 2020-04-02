@@ -49,6 +49,8 @@ brew "composer"
 brew "ctags"
 # Tool for exploring each layer in a docker image
 brew "dive"
+# Isolated development environments using Docker
+brew "docker-compose"
 # GNU Emacs text editor
 brew "emacs", link: false
 # Interpreter for PostScript and PDF
@@ -91,6 +93,8 @@ brew "imagemagick"
 brew "jq"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# Template-free customization of Kubernetes YAML manifests
+brew "kustomize"
 # Next-gen compiler infrastructure
 brew "llvm"
 # Run a Kubernetes cluster locally
