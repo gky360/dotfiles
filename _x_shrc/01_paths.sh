@@ -31,6 +31,7 @@ fi
 if [ -e /c/tools/Anaconda3 ]; then
   export PATH=/c/tools/Anaconda3:$PATH
 fi
+. $HOME/.poetry/env
 
 # postgreSQL
 if command_exists 'postgres' ; then
