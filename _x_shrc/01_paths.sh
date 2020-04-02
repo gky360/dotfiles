@@ -45,8 +45,11 @@ if [ -e $TEXLIVE_BIN ]; then
 fi
 
 # go
-export GOPATH="$HOME/dev"
-export PATH=$PATH:$HOME/.local/go/bin:/usr/local/go/bin:$GOPATH/bin
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
 
 # atcli
 export ATCLI_ROOT=${GOPATH}/src/github.com/gky360/contests/atcoder
