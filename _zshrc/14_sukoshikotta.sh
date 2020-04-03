@@ -57,8 +57,8 @@ zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 autoload -Uz vcs_info
 autoload -Uz add-zsh-hook
 
-zstyle ':vcs_info:*' formats "%F{$zshrc_prompt_color}(%s)-[%b]%f"
-zstyle ':vcs_info:*' actionformats '%F{red}(%s)-[%b|%a]%f'
+zstyle ':vcs_info:git:*' formats "%F{$zshrc_prompt_color}[%b]%f"
+zstyle ':vcs_info:git:*' actionformats '%F{red}[%b|%a]%f'
 
 # kube-ps1
 if [ -e /usr/local/opt/kube-ps1/share/kube-ps1.sh ]; then
