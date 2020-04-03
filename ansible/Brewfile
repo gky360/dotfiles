@@ -93,6 +93,8 @@ brew "imagemagick"
 brew "jq"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# Kubernetes prompt info for bash and zsh
+brew "kube-ps1"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
 # Next-gen compiler infrastructure

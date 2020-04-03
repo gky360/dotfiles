@@ -60,9 +60,15 @@ autoload -Uz add-zsh-hook
 zstyle ':vcs_info:*' formats "%F{$zshrc_prompt_color}(%s)-[%b]%f"
 zstyle ':vcs_info:*' actionformats '%F{red}(%s)-[%b|%a]%f'
 
+# kube-ps1
+if [ -e /usr/local/opt/kube-ps1/share/kube-ps1.sh ]; then
+  . /usr/local/opt/kube-ps1/share/kube-ps1.sh
+fi
+
 function _update_vcs_info_msg() {
     LANG=en_US.UTF-8 vcs_info
-    RPROMPT="${vcs_info_msg_0_} %*"
+    # kubectl context and vcs info
+    RPROMPT="$(kube_ps1 2>/dev/null) ${vcs_info_msg_0_} %*"
 }
 add-zsh-hook precmd _update_vcs_info_msg
 
