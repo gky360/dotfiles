@@ -31,7 +31,11 @@ fi
 if [ -e /c/tools/Anaconda3 ]; then
   export PATH=/c/tools/Anaconda3:$PATH
 fi
-. $HOME/.poetry/env
+
+# poetry
+if [ -e $HOME/.poetry/env ]; then
+  . $HOME/.poetry/env
+fi
 
 # postgreSQL
 if command_exists 'postgres' ; then
@@ -45,11 +49,13 @@ if [ -e $TEXLIVE_BIN ]; then
 fi
 
 # go
-export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-eval "$(goenv init -)"
-export PATH="$GOROOT/bin:$PATH"
-export PATH="$PATH:$GOPATH/bin"
+if [ -e $HOME/.goenv ]; then
+  export GOENV_ROOT="$HOME/.goenv"
+  export PATH="$GOENV_ROOT/bin:$PATH"
+  eval "$(goenv init -)"
+  export PATH="$GOROOT/bin:$PATH"
+  export PATH="$PATH:$GOPATH/bin"
+fi
 
 # atcli
 export ATCLI_ROOT=${GOPATH}/src/github.com/gky360/contests/atcoder
