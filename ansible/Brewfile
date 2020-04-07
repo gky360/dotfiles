@@ -9,6 +9,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "versent/taps"
 tap "weaveworks/tap"
 cask "adoptopenjdk8"
 # Automate deployment, configuration, and upgrading
@@ -25,6 +26,8 @@ brew "openblas"
 brew "arpack"
 # Utility to check whether MAC addresses are already taken on a LAN
 brew "arping"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Interpreted, interactive, object-oriented programming language
@@ -37,6 +40,8 @@ brew "bmon"
 brew "icu4c"
 # Collection of portable C++ source libraries
 brew "boost"
+# Increase version numbers with SemVer terms
+brew "bumpversion"
 # Freely available high-quality data compressor
 brew "bzip2"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
@@ -179,6 +184,7 @@ brew "zsh-completions"
 brew "c-bata/kube-prompt/kube-prompt"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
+brew "versent/taps/saml2aws"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
 cask "adobe-acrobat-reader"
@@ -208,6 +214,7 @@ cask "nteract"
 cask "postman"
 cask "rstudio"
 cask "sequel-pro"
+cask "session-manager-plugin"
 cask "skim"
 cask "skype"
 cask "slack"
