@@ -2,7 +2,7 @@
 
 set -e
 
-GO_VERSION=1.12
+GO_VERSION=1.14.2
 
 working_dir=$HOME
 target_dir=$HOME/.local
