@@ -28,6 +28,8 @@ brew "arpack"
 brew "arping"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Programmable completion for Bash 4.1+
+brew "bash-completion@2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Interpreted, interactive, object-oriented programming language
@@ -100,6 +102,8 @@ brew "jq"
 brew "kubernetes-cli"
 # Kubernetes prompt info for bash and zsh
 brew "kube-ps1"
+# Tool that can switch between kubectl contexts easily and create aliases
+brew "kubectx"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
 # Next-gen compiler infrastructure
@@ -120,6 +124,8 @@ brew "qrupdate"
 brew "octave"
 # The OCaml package manager
 brew "opam"
+# Generate clients, server & docs from an OpenAPI spec (v2, v3)
+brew "openapi-generator"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Simplistic interactive filtering tool
@@ -134,7 +140,7 @@ brew "php-cs-fixer"
 brew "postgresql"
 # Show ps output as a tree
 brew "pstree"
-# x86 and PowerPC Emulator
+# Emulator for x86 and PowerPC
 brew "qemu"
 # Software environment for statistical computing
 brew "r"
@@ -190,6 +196,7 @@ brew "weaveworks/tap/eksctl"
 cask "adobe-acrobat-reader"
 cask "alfred"
 cask "angry-ip-scanner"
+cask "bloomrpc"
 cask "chromedriver"
 cask "chromium"
 cask "clipy"
