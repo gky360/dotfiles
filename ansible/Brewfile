@@ -11,6 +11,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "versent/taps"
 tap "weaveworks/tap"
+tap "yoheimuta/protolint"
 cask "adoptopenjdk8"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
@@ -193,6 +194,8 @@ brew "heroku/brew/heroku"
 brew "versent/taps/saml2aws"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
+# Pluggable tool to enforce Protocol Buffer style and conventions
+brew "yoheimuta/protolint/protolint"
 cask "adobe-acrobat-reader"
 cask "alfred"
 cask "angry-ip-scanner"
