@@ -15,5 +15,5 @@ trim_trailing_whitespace = false
 [Makefile]
 indent_style = tab
 
-[*.{html,css,scss,coffee,js,jsx,ts,tsx,json,rb,erb,yaml,yml,sh}]
+[*.{html,css,scss,coffee,js,jsx,ts,tsx,json,rb,erb,yaml,yml,sh,proto}]
 indent_size = 2
