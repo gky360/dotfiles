@@ -13,6 +13,8 @@ tap "versent/taps"
 tap "weaveworks/tap"
 tap "yoheimuta/protolint"
 cask "adoptopenjdk8"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # ARP scanning and fingerprinting tool
@@ -27,14 +29,14 @@ brew "openblas"
 brew "arpack"
 # Utility to check whether MAC addresses are already taken on a LAN
 brew "arping"
+# Use AWS IAM credentials to authenticate to Kubernetes
+brew "aws-iam-authenticator"
 # Official Amazon AWS command-line interface
 brew "awscli"
-# Programmable completion for Bash 4.1+
+# Programmable completion for Bash 4.2+
 brew "bash-completion@2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Interpreted, interactive, object-oriented programming language
-brew "python"
 # Searches a binary image for embedded files and executable code
 brew "binwalk"
 # Interface bandwidth monitor
@@ -47,6 +49,10 @@ brew "boost"
 brew "bumpversion"
 # Freely available high-quality data compressor
 brew "bzip2"
+# Vector graphics library with cross-device output support
+brew "cairo"
+# CloudFlare's PKI toolkit
+brew "cfssl"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
 # Cross-platform make
@@ -58,7 +64,7 @@ brew "ctags"
 # Tool for exploring each layer in a docker image
 brew "dive"
 # Isolated development environments using Docker
-brew "docker-compose"
+brew "docker-compose", link: false
 # GNU Emacs text editor
 brew "emacs", link: false
 # Interpreter for PostScript and PDF
@@ -77,8 +83,12 @@ brew "gibo"
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
+# OpenType text shaping engine
+brew "harfbuzz"
 # Powerful, lightweight programming language
 brew "lua"
+# Command-driven, interactive function plotting
+brew "gnuplot"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Protocol buffers (Google's data interchange format)
@@ -179,6 +189,8 @@ brew "tree"
 brew "vim"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
+# Watch files and take action when they change
+brew "watchman"
 # Internet file retriever
 brew "wget"
 # View colored diff with side by side and auto pager support
@@ -239,3 +251,4 @@ cask "vnc-viewer"
 cask "winzip"
 cask "wireshark"
 cask "xquartz"
+cask "zoomus"
