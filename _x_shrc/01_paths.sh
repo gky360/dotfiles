@@ -93,6 +93,10 @@ if [ -e ~/.cargo ]; then
 fi
 export RUST_BACKTRACE=1
 
+# docker
+export DOCKER_BUILDKIT=1
+export COMPOSE_DOCKER_CLI_BUILD=1
+
 # local bin
 export PATH=$HOME/.local/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
