@@ -49,6 +49,8 @@ brew "boost"
 brew "bumpversion"
 # Freely available high-quality data compressor
 brew "bzip2"
+# Core application library for C
+brew "glib"
 # Vector graphics library with cross-device output support
 brew "cairo"
 # CloudFlare's PKI toolkit
@@ -107,6 +109,8 @@ brew "hub"
 brew "iftop"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# CLI wrapper for basic network utilities on macOS - ip command
+brew "iproute2mac"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Kubernetes command-line interface
