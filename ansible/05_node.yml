@@ -4,7 +4,7 @@
   become: no
 
   vars:
-    node_version: v12.9.1
+    node_version: v12.18.3
 
   tasks:
 
@@ -23,6 +23,7 @@
         global: yes
         executable: /Users/{{ ansible_user }}/.nvm/versions/node/{{ node_version }}/bin/npm
       with_items:
+        - aws-cdk
         - gtop
         - npm
         - typescript
