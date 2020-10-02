@@ -9,12 +9,12 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "jakehilborn/jakehilborn"
+tap "nektos/tap"
 tap "versent/taps"
 tap "weaveworks/tap"
 tap "yoheimuta/protolint"
 cask "adoptopenjdk8"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # ARP scanning and fingerprinting tool
@@ -29,6 +29,8 @@ brew "openblas"
 brew "arpack"
 # Utility to check whether MAC addresses are already taken on a LAN
 brew "arping"
+# Record and share terminal sessions
+brew "asciinema"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
 # Official Amazon AWS command-line interface
@@ -49,16 +51,18 @@ brew "boost"
 brew "bumpversion"
 # Freely available high-quality data compressor
 brew "bzip2"
-# Core application library for C
-brew "glib"
-# Vector graphics library with cross-device output support
-brew "cairo"
+# Cross-platform make
+brew "cmake"
+# Application-level logging library
+brew "glog"
+# Rich and complete approach to parallelism in C++
+brew "tbb"
+# Suite of Sparse Matrix Software
+brew "suite-sparse"
 # CloudFlare's PKI toolkit
 brew "cfssl"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
-# Cross-platform make
-brew "cmake"
 # Dependency Manager for PHP
 brew "composer"
 # Reimplementation of ctags(1)
@@ -67,39 +71,51 @@ brew "ctags"
 brew "dive"
 # Isolated development environments using Docker
 brew "docker-compose", link: false
+# Generate documentation for several programming languages
+brew "doxygen"
+# Distributed search & analytics engine
+brew "elasticsearch"
 # GNU Emacs text editor
 brew "emacs", link: false
 # Interpreter for PostScript and PDF
 brew "ghostscript"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # C routines to compute the Discrete Fourier Transform
 brew "fftw"
 # WebDriver <-> Marionette proxy
 brew "geckodriver"
 # C++ geography library
 brew "geographiclib"
+# Geometry Engine
+brew "geos"
 # Remote repository management made easy
 brew "ghq"
 # Access GitHub's .gitignore boilerplates
 brew "gibo"
+# GIF image/animation creator/editor
+brew "gifsicle"
 # Distributed revision control system
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
-# OpenType text shaping engine
-brew "harfbuzz"
 # Powerful, lightweight programming language
 brew "lua"
 # Command-driven, interactive function plotting
 brew "gnuplot"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Open-source build automation tool based on the Groovy and Kotlin DSL
+brew "gradle"
+# SDK for Groovy: a Java-based scripting language
+brew "groovysdk"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Next generation open source RPC library and framework
 brew "grpc"
 # File format designed to store large amounts of data
 brew "hdf5"
-# The Kubernetes package manager
+# Kubernetes package manager
 brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
@@ -121,10 +137,18 @@ brew "kube-ps1"
 brew "kubectx"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
+# Library for USB device access
+brew "libusb"
 # Next-gen compiler infrastructure
 brew "llvm"
+# Java-based project management
+brew "maven"
+# Scalable distributed version control system
+brew "mercurial"
 # Run a Kubernetes cluster locally
 brew "minikube"
+# Cross platform, open source .NET development framework
+brew "mono"
 # Open source relational database management system
 brew "mysql", restart_service: true
 # Fast, highly customisable system info script
@@ -133,14 +157,22 @@ brew "neofetch"
 brew "neovim"
 # Network Kanji code conversion Filter (NKF)
 brew "nkf"
+# Port scanning utility for large networks
+brew "nmap"
+# Package for scientific computing with Python
+brew "numpy"
 # Fast updates of QR and Cholesky decompositions
 brew "qrupdate"
 # High-level interpreted language for numerical computing
 brew "octave"
-# The OCaml package manager
+# OCaml package manager
 brew "opam"
+# Development kit for the Java programming language
+brew "openjdk"
 # Generate clients, server & docs from an OpenAPI spec (v2, v3)
 brew "openapi-generator"
+# Open source computer vision library
+brew "opencv"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Simplistic interactive filtering tool
@@ -151,6 +183,8 @@ brew "php"
 brew "php-code-sniffer"
 # Tool to automatically fix PHP coding standards issues
 brew "php-cs-fixer"
+# General-purpose scripting language
+brew "php@7.1"
 # Object-relational database system
 brew "postgresql"
 # Show ps output as a tree
@@ -163,7 +197,7 @@ brew "r"
 brew "redis"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
-# The Rust toolchain installer
+# Rust toolchain installer
 brew "rustup-init"
 # Build tool for Scala projects
 brew "sbt"
@@ -179,6 +213,8 @@ brew "siege"
 brew "stern"
 # Generate clients, server stubs, and docs from an OpenAPI spec
 brew "swagger-codegen"
+# User interface to the TELNET protocol
+brew "telnet"
 # Tool to build, change, and version infrastructure
 brew "terraform"
 # Simplified and community-driven man pages
@@ -197,6 +233,8 @@ brew "watch"
 brew "watchman"
 # Internet file retriever
 brew "wget"
+# Run Windows applications without a copy of Microsoft Windows
+brew "wine"
 # View colored diff with side by side and auto pager support
 brew "ydiff"
 # UNIX shell (command interpreter)
@@ -207,6 +245,10 @@ brew "zsh-completions"
 brew "c-bata/kube-prompt/kube-prompt"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
+# macOS command line utility to configure multi-display resolutions and arrangements. Essentially XRandR for macOS.
+brew "jakehilborn/jakehilborn/displayplacer"
+# Run GitHub Actions locally
+brew "nektos/tap/act"
 brew "versent/taps/saml2aws"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
@@ -215,6 +257,8 @@ brew "yoheimuta/protolint/protolint"
 cask "adobe-acrobat-reader"
 cask "alfred"
 cask "angry-ip-scanner"
+cask "atom"
+cask "bettertouchtool"
 cask "bloomrpc"
 cask "chromedriver"
 cask "chromium"
@@ -222,20 +266,26 @@ cask "clipy"
 cask "cyberduck"
 cask "docker"
 cask "dropbox"
+cask "duet"
 cask "emacs"
 cask "firefox"
 cask "font-myrica"
+cask "gimp"
 cask "github"
 cask "google-backup-and-sync"
 cask "google-chrome"
 cask "google-cloud-sdk"
 cask "google-japanese-ime"
+cask "inkscape"
 cask "intellij-idea-ce"
 cask "istat-menus"
 cask "iterm2"
 cask "java"
+cask "java8"
+cask "kite"
 cask "mactex-no-gui"
-cask "mendeley-desktop"
+cask "mendeley"
+cask "minikube"
 cask "nteract"
 cask "postman"
 cask "rstudio"
