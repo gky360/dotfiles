@@ -33,16 +33,6 @@
     - name: Install homebrew packages using homebrew-bundle
       shell: brew bundle 2>&1 | tee logs/brew_bundle.log
 
-    - name: Link gcc
-      file: src={{ item.src }} dest={{ item.dest }} state=link
-      with_items:
-        - src: /usr/local/bin/gcc-9
-          dest: /usr/local/bin/gcc
-        - src: /usr/local/bin/g++-9
-          dest: /usr/local/bin/g++
-        - src: /usr/local/bin/c++-9
-          dest: /usr/local/bin/c++
-
   handlers:
     - name: Run fc-cache
       shell: fc-cache -vf
