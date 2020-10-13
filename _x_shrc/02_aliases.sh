@@ -99,6 +99,7 @@ alias nuo='nkf -Luw --overwrite'
 # python
 alias jnb='jupyter notebook'
 alias pyex='PYTHONPATH=. python'
+alias pri='poetry run invoke'
 
 # kubernetes
 alias kgponame="kgpo -o go-template --template '{{(index .items 0).metadata.name}}'"
