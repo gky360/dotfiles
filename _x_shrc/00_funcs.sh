@@ -58,6 +58,11 @@ function sha256base64() {
   echo -n $1 | openssl dgst -sha256 -binary | openssl enc -base64
 }
 
+## random string
+function gen_random() {
+  openssl rand -base64 24 | tr -d '\n'
+}
+
 ## convert md to pdf using pandoc
 function md2pdf() {
   if ! [ -e ~/.pandoc/templates/eisvogel.latex ]; then
