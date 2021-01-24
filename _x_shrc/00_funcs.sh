@@ -78,7 +78,9 @@ function md2pdf() {
 }
 
 # kubectl completion<
-autoload -U +X bashcompinit && bashcompinit
-autoload -U +X compinit && compinit
+if command_exists 'autoload' ; then
+  autoload -U +X bashcompinit && bashcompinit
+  autoload -U +X compinit && compinit
+fi
 if [ $commands[kubectl] ]; then source <(kubectl completion zsh 2>/dev/null); fi
 complete -F __start_kubectl k
