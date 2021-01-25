@@ -12,7 +12,8 @@ $basic = (
 )
 
 $development = (
-    "SlackTechnologies.Slack"
+    "SlackTechnologies.Slack",
+    "CPUID.HWMonitor"
 )
 
 
