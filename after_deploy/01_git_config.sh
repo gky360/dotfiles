@@ -59,6 +59,6 @@ if command_exists git ; then
   # edit commit's timestamp
   git config --global alias.cmad '!git commit --amend --date'
   # set upstream
-  git config --global alias.pushu 'push -u'
+  git config --global alias.pu 'push -u'
 fi
 
