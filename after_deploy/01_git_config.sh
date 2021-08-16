@@ -20,6 +20,8 @@ if command_exists git ; then
   git config --global user.name ${GIT_GLOBAL_USER_NAME:-gky360}
   git config --global user.email ${GIT_GLOBAL_USER_EMAIL:-gky360@gmail.com}
 
+  # editor
+  git config --global core.editor vim
   # ghq config
   git config --global ghq.root ~/dev/src
   # enable gitignore_global
