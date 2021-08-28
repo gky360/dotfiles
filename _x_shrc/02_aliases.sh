@@ -46,6 +46,8 @@ alias gprst="git diff --numstat | awk '{if ((\$1 == \"0\" && \$2 == \"0\") || (\
 alias gdfw="git dfw"
 alias gdfwca="git dfwca"
 alias gshw="git shw"
+## push
+alias gpo="git push origin"
 ## ghq list
 alias glp='cd $(ghq root)/$(ghq list | peco)'
 ## hub browse
