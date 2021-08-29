@@ -14,7 +14,6 @@ tap "nektos/tap"
 tap "versent/taps"
 tap "weaveworks/tap"
 tap "yoheimuta/protolint"
-cask "adoptopenjdk8"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # ARP scanning and fingerprinting tool
@@ -23,8 +22,6 @@ brew "arp-scan"
 brew "gcc"
 # High performance message passing library
 brew "open-mpi"
-# Optimized BLAS library
-brew "openblas"
 # Routines to solve large scale eigenvalue problems
 brew "arpack"
 # Utility to check whether MAC addresses are already taken on a LAN
@@ -39,30 +36,36 @@ brew "awscli"
 brew "bash-completion@2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Package for scientific computing with Python
+brew "numpy"
 # Searches a binary image for embedded files and executable code
 brew "binwalk"
 # Interface bandwidth monitor
 brew "bmon"
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c"
 # Collection of portable C++ source libraries
 brew "boost"
 # Increase version numbers with SemVer terms
 brew "bumpversion"
 # Freely available high-quality data compressor
 brew "bzip2"
-# Cross-platform make
-brew "cmake"
+# Core application library for C
+brew "glib"
+# Vector graphics library with cross-device output support
+brew "cairo"
 # Application-level logging library
 brew "glog"
 # Rich and complete approach to parallelism in C++
 brew "tbb"
 # Suite of Sparse Matrix Software
 brew "suite-sparse"
+# C++ library for large-scale optimization
+brew "ceres-solver"
 # CloudFlare's PKI toolkit
 brew "cfssl"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
+# Cross-platform make
+brew "cmake"
 # Dependency Manager for PHP
 brew "composer"
 # Reimplementation of ctags(1)
@@ -75,6 +78,8 @@ brew "docker-compose", link: false
 brew "doxygen"
 # Distributed search & analytics engine
 brew "elasticsearch"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # GNU Emacs text editor
 brew "emacs", link: false
 # Interpreter for PostScript and PDF
@@ -89,6 +94,8 @@ brew "geckodriver"
 brew "geographiclib"
 # Geometry Engine
 brew "geos"
+# GitHub command-line tool
+brew "gh"
 # Remote repository management made easy
 brew "ghq"
 # Access GitHub's .gitignore boilerplates
@@ -123,6 +130,8 @@ brew "htop"
 brew "hub"
 # Display an interface's bandwidth usage
 brew "iftop"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # CLI wrapper for basic network utilities on macOS - ip command
@@ -150,7 +159,7 @@ brew "minikube"
 # Cross platform, open source .NET development framework
 brew "mono"
 # Open source relational database management system
-brew "mysql", restart_service: true
+brew "mysql"
 # Fast, highly customisable system info script
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -159,10 +168,12 @@ brew "neovim"
 brew "nkf"
 # Port scanning utility for large networks
 brew "nmap"
-# Package for scientific computing with Python
-brew "numpy"
 # Fast updates of QR and Cholesky decompositions
 brew "qrupdate"
+# Port to Qt of the Scintilla editing component
+brew "qscintilla2"
+# Nonlinear and differential/algebraic equations solver
+brew "sundials"
 # High-level interpreted language for numerical computing
 brew "octave"
 # OCaml package manager
@@ -185,10 +196,14 @@ brew "php-code-sniffer"
 brew "php-cs-fixer"
 # General-purpose scripting language
 brew "php@7.1"
+# Python package management tool
+brew "poetry"
 # Object-relational database system
 brew "postgresql"
 # Show ps output as a tree
 brew "pstree"
+# Python bindings for v6 of Qt
+brew "pyqt"
 # Emulator for x86 and PowerPC
 brew "qemu"
 # Software environment for statistical computing
@@ -197,8 +212,12 @@ brew "r"
 brew "redis"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
 # Rust toolchain installer
 brew "rustup-init"
+# Login and retrieve AWS temporary credentials using a SAML IDP
+brew "saml2aws"
 # Build tool for Scala projects
 brew "sbt"
 # JVM-based programming language
@@ -209,6 +228,8 @@ brew "screenfetch"
 brew "selenium-server-standalone"
 # HTTP regression testing and benchmarking utility
 brew "siege"
+# Tool to create Python bindings for C and C++ libraries
+brew "sip"
 # Tail multiple Kubernetes pods & their containers
 brew "stern"
 # Generate clients, server stubs, and docs from an OpenAPI spec
@@ -249,60 +270,107 @@ brew "heroku/brew/heroku"
 brew "jakehilborn/jakehilborn/displayplacer"
 # Run GitHub Actions locally
 brew "nektos/tap/act"
-brew "versent/taps/saml2aws"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
 # Pluggable tool to enforce Protocol Buffer style and conventions
 brew "yoheimuta/protolint/protolint"
+# View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
+# Prebuilt OpenJDK binaries
+cask "adoptopenjdk8"
+# Application launcher and productivity software
 cask "alfred"
+# Network scanner
 cask "angry-ip-scanner"
+# Text editor
 cask "atom"
+# Tool to customize input devices and automate computer systems
 cask "bettertouchtool"
+# GUI Client for GRPC Services
 cask "bloomrpc"
+# Automated testing of webapps for Google Chrome
 cask "chromedriver"
+# Free and open-source web browser
 cask "chromium"
+# Clipboard extension app
 cask "clipy"
+# Server and cloud storage browser
 cask "cyberduck"
+# App to build and share containerized applications and microservices
 cask "docker"
+# Client for the Dropbox cloud storage service
 cask "dropbox"
+# Tool for using an iPad as a second display
 cask "duet"
+# Text editor
 cask "emacs"
+# Web browser
 cask "firefox"
 cask "font-myrica"
+# Free and open-source image editor
 cask "gimp"
+# Desktop client for GitHub repositories
 cask "github"
+# Back up and sync files with Google Drive
 cask "google-backup-and-sync"
+# Web browser
 cask "google-chrome"
+# Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
 cask "google-japanese-ime"
+# Vector graphics editor
 cask "inkscape"
+# IDE for Java development - community edition
 cask "intellij-idea-ce"
+# System monitoring app
 cask "istat-menus"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 cask "java"
 cask "java8"
+# Add code completions to all your code editors
 cask "kite"
+# Full TeX Live distribution without GUI applications
 cask "mactex-no-gui"
+# Research management tool
 cask "mendeley"
 cask "minikube"
+# Interactive computing suite
 cask "nteract"
+# Collaboration platform for API development
 cask "postman"
+# Data science software focusing on R and Python
 cask "rstudio"
+# MySQL/MariaDB database management platform
 cask "sequel-pro"
+# Plugin for AWS CLI to start and end sessions that connect to managed instances
 cask "session-manager-plugin"
+# PDF reader and note-taking application
 cask "skim"
+# Video chat, voice call and instant messaging application
 cask "skype"
+# Team communication and collaboration software
 cask "slack"
+# Graphical client for Git version control
 cask "sourcetree"
+# Unpacks archive files
 cask "the-unarchiver"
+# Customizable email client
 cask "thunderbird"
+# Configurable document editor that supports Markdown
 cask "typora"
+# Development environment
 cask "vagrant"
+# Free and open-source hosted hypervisor for x86 virtualization
 cask "virtualbox"
+# Open-source code editor
 cask "visual-studio-code"
+# Remote desktop application focusing on security
 cask "vnc-viewer"
 cask "winzip"
+# Network protocol analyzer
 cask "wireshark"
+# Open-source version of the X.Org X Window System
 cask "xquartz"
+# Temporary makeshift alias for the video communication tool Zoom
 cask "zoomus"
