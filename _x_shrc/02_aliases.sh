@@ -103,6 +103,12 @@ alias jnb='jupyter notebook'
 alias pyex='PYTHONPATH=. python'
 alias pri='poetry run invoke'
 
+# terraform
+alias tf="terraform"
+alias tfp="terraform plan"
+alias tfv="terraform validate"
+alias tff="terraform fmt -recursive"
+
 # kubernetes
 alias kgponame="kgpo -o go-template --template '{{(index .items 0).metadata.name}}'"
 alias kgponamel="kgpo -o go-template --template '{{(index .items 0).metadata.name}}' -l"
