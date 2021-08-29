@@ -2,6 +2,7 @@
 # vi: set ft=ruby :
 
 tap "c-bata/kube-prompt"
+tap "hashicorp/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -236,8 +237,6 @@ brew "stern"
 brew "swagger-codegen"
 # User interface to the TELNET protocol
 brew "telnet"
-# Tool to build, change, and version infrastructure
-brew "terraform"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
@@ -264,6 +263,8 @@ brew "zsh"
 brew "zsh-completions"
 # An interactive kubernetes client featuring auto-complete using go-prompt.
 brew "c-bata/kube-prompt/kube-prompt"
+# Terraform
+brew "hashicorp/tap/terraform"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # macOS command line utility to configure multi-display resolutions and arrangements. Essentially XRandR for macOS.
