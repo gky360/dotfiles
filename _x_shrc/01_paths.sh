@@ -35,6 +35,7 @@ fi
 # poetry
 if [ -e $HOME/.poetry/env ]; then
   . $HOME/.poetry/env
+  export PATH="$HOME/.poetry/bin:$PATH"
 fi
 
 # postgreSQL
