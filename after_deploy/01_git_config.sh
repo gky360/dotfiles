@@ -60,5 +60,10 @@ if command_exists git ; then
   git config --global alias.cmad '!git commit --amend --date'
   # set upstream
   git config --global alias.pu 'push -u'
-fi
 
+  if command_exists 'git-secrets' ; then
+    git secrets --register-aws --global
+    git secrets --install ~/.git-templates/git-secrets
+    git config --global init.templatedir '~/.git-templates/git-secrets'
+  fi
+fi
