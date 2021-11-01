@@ -47,7 +47,7 @@ alias gdfw="git dfw"
 alias gdfwca="git dfwca"
 alias gshw="git shw"
 ## push
-alias gpo="git push origin"
+alias gpo="git push -u origin"
 ## ghq list
 alias glp='cd $(ghq root)/$(ghq list | peco)'
 ## hub browse
