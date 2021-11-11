@@ -71,6 +71,10 @@ brew "cmake"
 brew "composer"
 # Reimplementation of ctags(1)
 brew "ctags"
+# Open source suite of directory software
+brew "openldap"
+# Run a command as a UNIX daemon
+brew "daemonize"
 # Tool for exploring each layer in a docker image
 brew "dive"
 # Isolated development environments using Docker
@@ -89,6 +93,10 @@ brew "ghostscript"
 brew "ffmpeg"
 # C routines to compute the Discrete Fourier Transform
 brew "fftw"
+# Collection of reusable C++ library artifacts developed at Facebook
+brew "folly"
+# Libraries to talk to Microsoft SQL Server and Sybase databases
+brew "freetds"
 # WebDriver <-> Marionette proxy
 brew "geckodriver"
 # C++ geography library
@@ -117,6 +125,10 @@ brew "gnuplot"
 brew "go"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
+# GNU grep, egrep and fgrep
+brew "grep"
 # SDK for Groovy: a Java-based scripting language
 brew "groovysdk"
 # Protocol buffers (Google's data interchange format)
@@ -149,6 +161,8 @@ brew "kube-ps1"
 brew "kubectx"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
+# C library SSHv1/SSHv2 client and server protocols
+brew "libssh"
 # Library for USB device access
 brew "libusb"
 # Next-gen compiler infrastructure
@@ -171,6 +185,8 @@ brew "neovim"
 brew "nkf"
 # Port scanning utility for large networks
 brew "nmap"
+# Convert PostScript and PDF files to editable vector graphics
+brew "pstoedit"
 # Fast updates of QR and Cholesky decompositions
 brew "qrupdate"
 # Port to Qt of the Scintilla editing component
@@ -228,7 +244,7 @@ brew "scala"
 # Generate ASCII art with terminal, shell, and OS info
 brew "screenfetch"
 # Browser automation for testing purposes
-brew "selenium-server-standalone"
+brew "selenium-server"
 # HTTP regression testing and benchmarking utility
 brew "siege"
 # Tool to create Python bindings for C and C++ libraries
@@ -314,7 +330,6 @@ cask "font-myrica"
 cask "gimp"
 # Desktop client for GitHub repositories
 cask "github"
-# Back up and sync files with Google Drive
 cask "google-backup-and-sync"
 # Web browser
 cask "google-chrome"
