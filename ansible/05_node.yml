@@ -21,7 +21,7 @@
       npm:
         name: "{{ item }}"
         global: yes
-        executable: /Users/{{ ansible_user }}/.nvm/versions/node/{{ node_version }}/bin/npm
+        executable: /Users/{{ ansible_user_id }}/.nvm/versions/node/{{ node_version }}/bin/npm
       with_items:
         - aws-cdk
         - gtop

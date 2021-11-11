@@ -14,5 +14,5 @@
             env:
               RUBY_CONFIGURE_OPTS: "--with-readline-dir=/usr/local/opt/readline/ --with-openssl-dir=/usr/local/opt/openssl/"
       rbenv_users:
-        - "{{ ansible_user | default(lookup('env', 'USER')) }}"
+        - "{{ ansible_user_id | default(lookup('env', 'USER')) }}"
       default_gems_file: "{{ lookup('env', 'DOTPATH') }}/ansible/default-gems"

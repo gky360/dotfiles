@@ -8,7 +8,6 @@
     texmf_local_dir: /usr/local/texlive/texmf-local/tex/latex/local
 
   tasks:
-
     - name: Clear log file
       file:
         state: absent
@@ -20,7 +19,7 @@
 
     - name: Download jlistings
       shell: |
-        WORKING_DIR=/Users/{{ ansible_user }}/tmp
+        WORKING_DIR=/Users/{{ ansible_user_id }}/tmp
         TARGET_DIR={{ texmf_local_dir }}
 
         mkdir -p $WORKING_DIR
