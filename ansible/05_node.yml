@@ -4,24 +4,21 @@
   become: no
 
   vars:
-    node_version: v12.18.3
+    node_version: 16.13.0
 
   tasks:
 
-    - name: Install nvm
-      git: repo=https://github.com/creationix/nvm.git dest=~/.nvm version=HEAD
-
     - name: Install node
-      shell: bash -l -c ". ~/.bashrc && nvm install {{ node_version }}"
+      shell: bash -l -c ". ~/.bashrc && nodenv install {{ node_version }}"
 
     - name: Set default node version
-      shell: bash -l -c ". ~/.bashrc && nvm use {{ node_version }} && nvm alias default {{ node_version }}"
+      shell: bash -l -c ". ~/.bashrc && nodenv global {{ node_version }}"
 
     - name: Install global packages
       npm:
         name: "{{ item }}"
         global: yes
-        executable: /Users/{{ ansible_user_id }}/.nvm/versions/node/{{ node_version }}/bin/npm
+        executable: /Users/{{ ansible_user_id }}/.nodenv/versions/{{ node_version }}/bin/npm
       with_items:
         - aws-cdk
         - gtop

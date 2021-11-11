@@ -185,6 +185,8 @@ brew "neovim"
 brew "nkf"
 # Port scanning utility for large networks
 brew "nmap"
+# Manage multiple NodeJS versions
+brew "nodenv"
 # Convert PostScript and PDF files to editable vector graphics
 brew "pstoedit"
 # Fast updates of QR and Cholesky decompositions

@@ -61,22 +61,9 @@ fi
 export ATCLI_ROOT=${GOPATH}/src/github.com/gky360/contests/atcoder
 export ATCLI_CPP_TEMPLATE_PATH=$ATCLI_ROOT/../templates/Main.cpp.tmpl
 
-# nvm
-# 参考: [NVM の nvm.sh を遅延ロードしてシェルの起動を高速化する - Qiita](http://qiita.com/uasi/items/80865646607b966aedc8)
-if [ -s $HOME/.nvm ]; then
-  export NVM_DIR="$HOME/.nvm"
-  NVM_DEFAULT_VERSION=`cat $NVM_DIR/alias/default`
-  NVM_DEFAULT_DIR=$NVM_DIR/versions/node/$NVM_DEFAULT_VERSION
-  PATH=$NVM_DEFAULT_DIR/bin:$PATH
-  MANPATH=$NVM_DEFAULT_DIR/share/man:$MANPATH
-  export NODE_PATH=$NVM_DEFAULT_DIR/lib/node_modules
-  NODE_PATH=${NODE_PATH:A}
-  nvm() {
-    unset -f nvm
-    . "$NVM_DIR/nvm.sh"
-    . "$NVM_DIR/bash_completion"
-    nvm "$@"
-  }
+# nodenv
+if [ -s $HOME/.nodenv ]; then
+  eval "$(nodenv init -)"
 fi
 
 # OPAM configuration

@@ -17,7 +17,6 @@ choco upgrade \
   make \
   mingw \
   myrica \
-  nvm \
   openssl.light \
   slack \
   sourcetree \
