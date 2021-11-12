@@ -26,6 +26,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if command_exists 'pyenv' ; then
   eval "$(pyenv init --path)"
+  if [ -e $(pyenv root)/plugins/pyenv-virtualenv ]; then
+    eval "$(pyenv virtualenv-init -)"
+  fi
 fi
 if [ -e /c/tools/Anaconda3 ]; then
   export PATH=/c/tools/Anaconda3:$PATH
