@@ -8,25 +8,25 @@
         "revision": "5d521fc67513cd756621fde879d0a907a66b974c"
       },
       "homebrew/bundle": {
-        "revision": "40a0ca35d884eae0ab220cf60e951acdaea303ac"
+        "revision": "e11704f58688da7e9d0192d08ff2b31c252a2f6b"
       },
       "homebrew/cask": {
-        "revision": "97b5f3f717281c4b1c21369b9c19d64de060e3d4"
+        "revision": "26c88603af3ecf442bff7de89eb468e3045b7220"
       },
       "homebrew/cask-fonts": {
-        "revision": "3e94c38f5bbb302eef37e06ff3d9bd2206f65488"
+        "revision": "52d053f1ae28179eebc2b2d050087e1f750c0309"
       },
       "homebrew/cask-versions": {
         "revision": "ce65abc11bb0abdfb425a39fe381d88796735a94"
       },
       "homebrew/core": {
-        "revision": "1bf2df33cd91e380f8f9e3318c0452f3f0fba25c"
+        "revision": "cdb7b8a636b28674eed3fb58ceacd6237cf7f020"
       },
       "homebrew/services": {
         "revision": "b082342c220c490933caccbeab68504eeb7d7fa1"
       },
       "versent/taps": {
-        "revision": "2a29a7c4d685e55d2667c140e97d1b335aa1ee54"
+        "revision": "f3a4c99105e3ad517e9eef966b6b41321157bcaa"
       },
       "weaveworks/tap": {
         "revision": "5f7d49af8dc309d420ecda2f94ceada2c2d8bd19"
