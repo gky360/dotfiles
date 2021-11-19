@@ -2,7 +2,7 @@
 
 set -e
 
-xcode-select --install
+xcode-select --install || true
 
 if [[ $(uname -p) == 'arm' ]]; then
   # has M1 chip
