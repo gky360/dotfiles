@@ -14,21 +14,6 @@ alias sudo='sudo '
 alias dotfiles="cd $DOTPATH"
 alias srcrc="if [ -e ~/.${SHELL##*/}rc ]; then . ~/.${SHELL##*/}rc; fi"
 
-# emacs
-alias emacs='emacs -nw'
-
-
-# gcc
-alias g++14='g++ -std=c++14 -Wall'
-
-# ruby, rails
-alias be='bundle exec'
-alias rsb='bundle exec rails s -b 0.0.0.0'
-alias rtcc='bundle exec rake tmp:cache:clear'
-alias Prc='bundle exec rails c -e production'
-alias Prap='RAILS_ENV=production bundle exec rake assets:precompile assets:clean'
-alias Prsb='bundle exec rails s -b 0.0.0.0 -e production'
-
 # git
 ## status
 alias gst="git status"
@@ -50,19 +35,9 @@ alias gshw="git shw"
 alias gpo="git push -u origin"
 ## ghq list
 alias glp='cd $(ghq root)/$(ghq list | peco)'
-## hub browse
-alias gb='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 
 # grep
 alias grep='grep --color=auto'
-
-# vagrant
-alias vain='vagrant up && vagrant ssh'
-alias vash='vagrant ssh'
-alias vahl='vagrant halt'
-alias vasus='vagrant suspend'
-alias varein='vagrant reload && vagrant ssh'
-alias vast='vagrant status'
 
 # docker
 alias dcm='docker-compose'
@@ -78,22 +53,8 @@ alias osstats='cat /etc/redhat-release /proc/version /proc/cpuinfo /proc/meminfo
 alias localips="ip addr | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*'"
 alias globalip="curl inet-ip.info"
 
-# redis
-alias rds='redis-server'
-alias rdc='redis-cli'
-
-# npm
-alias nrbw='npm run build:watch --fix'
-alias wpbw='$(npm bin)/webpack --progress --colors --watch'
-
 # tail
 alias tlf='tail -F'
-
-# ssh
-alias scpf='scp -F ~/.ssh/config'
-
-# heroku
-alias hlt='heroku logs -t'
 
 # python
 alias jnb='jupyter notebook'

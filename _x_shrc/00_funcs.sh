@@ -5,15 +5,6 @@ function command_exists () {
 }
 
 
-# c++
-
-## g++ -Wall -std=c++!4 -o
-function gpwo() {
-  set -x
-  g++ -Wall -std=c++14 -o ${1%.cpp}.out ${@:2} ${1%.cpp}.cpp
-}
-
-
 # git
 
 ## side-by-side diff
@@ -61,20 +52,6 @@ function sha256base64() {
 ## random string
 function gen_random() {
   openssl rand -base64 24 | tr -d '\n'
-}
-
-## convert md to pdf using pandoc
-function md2pdf() {
-  if ! [ -e ~/.pandoc/templates/eisvogel.latex ]; then
-    mkdir -p ~/.pandoc/templates/
-    curl -o ~/.pandoc/templates/eisvogel.latex\
-      https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/master/eisvogel.tex
-  fi
-  basename=${1//.md}
-  pandoc -f markdown_github ${basename}.md -o ${basename}.pdf\
-    --from markdown --template eisvogel --listings --pdf-engine=xelatex\
-    -V CJKmainfont=Hiragino\ Kaku\ Gothic\ Pro -V lang=en-US\
-    --metadata date="`date +%Y-%m-%d`"
 }
 
 # kubectl completion<
