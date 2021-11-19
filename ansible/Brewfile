@@ -73,7 +73,7 @@ brew "ydiff"
 brew "zsh"
 # Additional completion definitions for zsh
 brew "zsh-completions"
-brew "versent/taps/saml2aws"
+brew "saml2aws"
 # Application launcher and productivity software
 cask "alfred"
 # Clipboard extension app
@@ -91,7 +91,7 @@ cask "google-japanese-ime"
 cask "istat-menus"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-cask "mendeley-desktop"
+cask "mendeley"
 # Collaboration platform for API development
 cask "postman"
 # Plugin for AWS CLI to start and end sessions that connect to managed instances
@@ -103,4 +103,4 @@ cask "the-unarchiver"
 # Open-source code editor
 cask "visual-studio-code"
 # Temporary makeshift alias for the video communication tool Zoom
-cask "zoomus"
+cask "zoom"
