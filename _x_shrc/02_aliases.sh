@@ -95,9 +95,6 @@ alias scpf='scp -F ~/.ssh/config'
 # heroku
 alias hlt='heroku logs -t'
 
-# nkf
-alias nuo='nkf -Luw --overwrite'
-
 # python
 alias jnb='jupyter notebook'
 alias pyex='PYTHONPATH=. python'
