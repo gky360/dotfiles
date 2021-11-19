@@ -12,8 +12,8 @@
     - name: Install fundamental brew packages first
       homebrew:
         name:
+          - nvim
           - tmux
-          - vim
           - zsh
         state: present
 
@@ -22,8 +22,8 @@
         name:
           - alfred
           - clipy
-          - google-backup-and-sync
           - google-chrome
+          - google-drive
           - google-japanese-ime
           - istat-menus
           - iterm2

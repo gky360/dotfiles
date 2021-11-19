@@ -5,7 +5,7 @@
 
   vars:
     pyenv_root: "{{ '~/.pyenv' | expanduser }}"
-    python_version: anaconda3-2019.03
+    python_version: 3.9.8
 
   pre_tasks:
 
@@ -22,7 +22,7 @@
 
   tasks:
 
-    - name: pyenv install anaconda
+    - name: pyenv install global version
       pyenv:
         subcommand: install
         version: "{{ python_version }}"
@@ -41,25 +41,10 @@
         executable: "{{ pyenv_root }}/shims/pip"
         name:
           - autopep8
-          - chainer
+          - black
           - flake8
-          - flake8-docstrings
-          - hacking
           - ipykernel
-          - jedi
-          - jupyter
-          - Keras
-          - matplotlib
-          - opencv-python
-          - pandas
-          - pep8
-          - pynvim
+          - isort
+          - mypy
           - pytest
-          - scapy
-          - scikit-image
-          - scikit-learn
-          - scipy
           - setuptools
-          - statsmodels
-          - tensorflow
-          - tqdm
