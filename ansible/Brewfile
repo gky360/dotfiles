@@ -1,6 +1,11 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "versent/taps"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Official Amazon AWS command-line interface
@@ -27,8 +32,6 @@ brew "gibo"
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
-# Powerful, lightweight programming language
-brew "lua"
 # Improved top (interactive process viewer)
 brew "htop"
 # Lightweight and flexible command-line JSON processor
@@ -41,6 +44,8 @@ brew "kube-ps1"
 brew "kubectx"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
+# Powerful, lightweight programming language
+brew "lua"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Manage multiple NodeJS versions
@@ -53,6 +58,8 @@ brew "poetry"
 brew "pstree"
 # Cross-platform application and UI framework
 brew "qt"
+# Login and retrieve AWS temporary credentials using a SAML IDP
+brew "saml2aws"
 # User interface to the TELNET protocol
 brew "telnet"
 # Tool to build, change, and version infrastructure
@@ -73,7 +80,6 @@ brew "ydiff"
 brew "zsh"
 # Additional completion definitions for zsh
 brew "zsh-completions"
-brew "saml2aws"
 # Application launcher and productivity software
 cask "alfred"
 # Clipboard extension app
@@ -85,12 +91,14 @@ cask "firefox"
 cask "font-myrica"
 # Web browser
 cask "google-chrome"
+# Client for the Google Drive storage service
 cask "google-drive"
 cask "google-japanese-ime"
 # System monitoring app
 cask "istat-menus"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Research management tool
 cask "mendeley"
 # Collaboration platform for API development
 cask "postman"
@@ -102,5 +110,5 @@ cask "slack"
 cask "the-unarchiver"
 # Open-source code editor
 cask "visual-studio-code"
-# Temporary makeshift alias for the video communication tool Zoom
+# Video communication and virtual meeting platform
 cask "zoom"
