@@ -57,7 +57,7 @@ function gen_random() {
 # kubectl completion<
 if command_exists 'autoload' ; then
   autoload -U +X bashcompinit && bashcompinit
-  autoload -U +X compinit && compinit
+  autoload -U +X compinit && compinit -u
 fi
 if [ $commands[kubectl] ]; then source <(kubectl completion zsh 2>/dev/null); fi
 complete -F __start_kubectl k

@@ -6,7 +6,7 @@ export PATH=$PATH:/sbin:$HOME/bin
 export DOTPATH="$HOME/dotfiles"
 
 # brew
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:$PATH
+export PATH="/opt/homebrew/bin:$PATH"
 if [ -e /opt/homebrew ]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
