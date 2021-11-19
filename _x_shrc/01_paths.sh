@@ -7,6 +7,9 @@ export DOTPATH="$HOME/dotfiles"
 
 # brew
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:$PATH
+if [ -e /opt/homebrew ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
 # zsh-completions
 if [ -e /usr/local/share/zsh-completions ]; then

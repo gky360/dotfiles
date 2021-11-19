@@ -5,11 +5,19 @@
 
   vars:
     node_version: 16.13.0
+    nodenv_root: /Users/{{ ansible_user_id }}/.nodenv
 
   tasks:
 
-    - name: Install node
+    - name: Check for {{ node_version }}
+      stat:
+        path: "{{ nodenv_root }}/versions/{{ node_version }}"
+      register: node
+      ignore_errors: yes
+
+    - name: Install node {{ node_version }}
       shell: bash -l -c ". ~/.bashrc && nodenv install {{ node_version }}"
+      when: node.stat.exists == false
 
     - name: Set default node version
       shell: bash -l -c ". ~/.bashrc && nodenv global {{ node_version }}"
@@ -18,9 +26,8 @@
       npm:
         name: "{{ item }}"
         global: yes
-        executable: /Users/{{ ansible_user_id }}/.nodenv/versions/{{ node_version }}/bin/npm
+        executable: "{{ nodenv_root }}/versions/{{ node_version }}/bin/npm"
       with_items:
-        - aws-cdk
         - gtop
         - npm
         - typescript
