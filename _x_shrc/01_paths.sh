@@ -28,6 +28,8 @@ fi
 if [ -e /c/tools/Anaconda3 ]; then
   export PATH=/c/tools/Anaconda3:$PATH
 fi
+## for numpy build
+export OPENBLAS="$(brew --prefix openblas)"
 
 # poetry
 if [ -e $HOME/.poetry/env ]; then

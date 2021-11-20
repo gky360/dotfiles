@@ -50,6 +50,8 @@ brew "lua"
 brew "neovim"
 # Manage multiple NodeJS versions
 brew "nodenv"
+# Optimized BLAS library
+brew "openblas"
 # Simplistic interactive filtering tool
 brew "peco"
 # Python package management tool
