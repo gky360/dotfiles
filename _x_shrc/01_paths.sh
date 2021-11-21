@@ -9,6 +9,11 @@ export DOTPATH="$HOME/dotfiles"
 export PATH="/opt/homebrew/bin:$PATH"
 if [ -e /opt/homebrew ]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
+
+  ## for numpy build
+  export OPENBLAS="$(brew --prefix openblas)"
+  ## for cryptography
+  export LDFLAGS="-L$(brew --prefix openssl@1.1)/lib" CFLAGS="-I$(brew --prefix openssl@1.1)/include"
 fi
 
 # zsh-completions
@@ -28,8 +33,6 @@ fi
 if [ -e /c/tools/Anaconda3 ]; then
   export PATH=/c/tools/Anaconda3:$PATH
 fi
-## for numpy build
-export OPENBLAS="$(brew --prefix openblas)"
 
 # poetry
 if [ -e $HOME/.poetry/env ]; then
