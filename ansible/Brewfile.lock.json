@@ -425,22 +425,35 @@
         }
       },
       "gcc": {
-        "version": "9.3.0_1",
+        "version": "11.2.0_2",
         "bottle": {
-          "cellar": "/usr/local/Cellar",
-          "prefix": "/usr/local",
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
+            "arm64_big_sur": {
+              "cellar": "/opt/homebrew/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/gcc/blobs/sha256:eb3835c0e59c656d3a9eb06cd8eeaa5012900a685a6acc00a117df53eef1a706",
+              "sha256": "eb3835c0e59c656d3a9eb06cd8eeaa5012900a685a6acc00a117df53eef1a706"
+            },
+            "monterey": {
+              "cellar": "/usr/local/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/gcc/blobs/sha256:3dabf9fa3b2bcbfde46223ae4f439d4ecf78dd2c1cf18d2dc83da47aa9e24308",
+              "sha256": "3dabf9fa3b2bcbfde46223ae4f439d4ecf78dd2c1cf18d2dc83da47aa9e24308"
+            },
+            "big_sur": {
+              "cellar": "/usr/local/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/gcc/blobs/sha256:fbafac97c1a9d1e48b4f15aa9410eb9db11d1f2889c62989bb51275848682686",
+              "sha256": "fbafac97c1a9d1e48b4f15aa9410eb9db11d1f2889c62989bb51275848682686"
+            },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/gcc-10.2.0.catalina.bottle.tar.gz",
-              "sha256": "8dbccea194c20b1037b7e8180986e98a8ee3e37eaac12c7d223c89be3deaac6a"
+              "cellar": "/usr/local/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/gcc/blobs/sha256:f13c1f501612180a12f801dbbde83705c29b5c8c07fd78b1707afbd4713487e9",
+              "sha256": "f13c1f501612180a12f801dbbde83705c29b5c8c07fd78b1707afbd4713487e9"
             },
-            "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/gcc-10.2.0.mojave.bottle.tar.gz",
-              "sha256": "79d2293ce912dc46af961f30927b31eb06844292927be497015496f79ac41557"
-            },
-            "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/gcc-10.2.0.high_sierra.bottle.tar.gz",
-              "sha256": "5ed870a39571614dc5d83be26d73a4164911f4356b80d9345258a4c1dc3f1b70"
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/gcc/blobs/sha256:beca6d1eddfdfa2d8b7b1eab50f473e838644d7997d915c6a7958db268759ec7",
+              "sha256": "beca6d1eddfdfa2d8b7b1eab50f473e838644d7997d915c6a7958db268759ec7"
             }
           }
         }
@@ -3148,7 +3161,7 @@
         "macOS": "10.15.7"
       },
       "monterey": {
-        "HOMEBREW_VERSION": "3.3.4",
+        "HOMEBREW_VERSION": "3.3.5",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "9f8a86782f878794db0d8476c74f9de45f00aec5",
         "CLT": "13.1.0.0.1.1633545042",

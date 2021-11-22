@@ -24,6 +24,8 @@ brew "clang-format"
 brew "cmake"
 # Isolated development environments using Docker
 brew "docker-compose"
+# GNU compiler collection
+brew "gcc"
 # GitHub command-line tool
 brew "gh"
 # Remote repository management made easy
