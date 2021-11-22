@@ -22,6 +22,8 @@ brew "bumpversion"
 brew "clang-format"
 # Cross-platform make
 brew "cmake"
+# Run a command as a UNIX daemon
+brew "daemonize"
 # Isolated development environments using Docker
 brew "docker-compose"
 # GNU compiler collection
