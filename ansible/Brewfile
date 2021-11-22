@@ -68,6 +68,8 @@ brew "pstree"
 brew "qt"
 # Login and retrieve AWS temporary credentials using a SAML IDP
 brew "saml2aws"
+# Software for mathematics, science, and engineering
+brew "scipy"
 # User interface to the TELNET protocol
 brew "telnet"
 # Tool to build, change, and version infrastructure
