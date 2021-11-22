@@ -63,7 +63,7 @@ if command_exists git ; then
 
   if command_exists 'git-secrets' ; then
     git secrets --register-aws --global
-    git secrets --install ~/.git-templates/git-secrets
+    git secrets --install -f ~/.git-templates/git-secrets
     git config --global init.templatedir '~/.git-templates/git-secrets'
   fi
 fi
