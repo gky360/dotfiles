@@ -68,6 +68,8 @@ brew "poetry"
 brew "pstree"
 # Cross-platform application and UI framework
 brew "qt"
+# Rust toolchain installer
+brew "rustup-init"
 # Login and retrieve AWS temporary credentials using a SAML IDP
 brew "saml2aws"
 # Software for mathematics, science, and engineering
