@@ -11,9 +11,9 @@ if [ -e /opt/homebrew ]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 
   ## for numpy build
-  export OPENBLAS="$(brew --prefix openblas)"
+  # export OPENBLAS="$(brew --prefix openblas)"
   ## for cryptography
-  export LDFLAGS="-L$(brew --prefix openssl@1.1)/lib" CFLAGS="-I$(brew --prefix openssl@1.1)/include"
+  # export LDFLAGS="-L$(brew --prefix openssl@1.1)/lib" CFLAGS="-I$(brew --prefix openssl@1.1)/include"
 fi
 
 # zsh-completions
