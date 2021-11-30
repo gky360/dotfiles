@@ -1,6 +1,7 @@
 let g:ale_linters = {
       \  'go': ['golangci-lint'],
       \  'javascript': ['eslint', 'flow', 'flow-language-server', 'jscs', 'jshint', 'standard', 'xo'],
+      \  'json': [],
       \}
 
 let g:ale_fixers = {
@@ -8,7 +9,8 @@ let g:ale_fixers = {
       \  'cpp': ['clang-format'],
       \  'css': ['stylelint'],
       \  'go': ['gofmt', 'goimports'],
-      \  'javascript': ['eslint'],
+      \  'javascript': ['prettier'],
+      \  'json': ['prettier'],
       \  'scss': ['stylelint'],
       \  'typescript': ['eslint'],
       \  'php': ['phpcbf'],
