@@ -1,4 +1,5 @@
 let g:ale_linters = {
+      \  'cpp': ['cppcheck'],
       \  'go': ['golangci-lint'],
       \  'javascript': ['eslint', 'flow', 'flow-language-server', 'jscs', 'jshint', 'standard', 'xo'],
       \  'json': [],

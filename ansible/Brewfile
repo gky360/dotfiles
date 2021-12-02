@@ -22,6 +22,8 @@ brew "bumpversion"
 brew "clang-format"
 # Cross-platform make
 brew "cmake"
+# Static analysis of C and C++ code
+brew "cppcheck"
 # Run a command as a UNIX daemon
 brew "daemonize"
 # Isolated development environments using Docker
