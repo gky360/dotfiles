@@ -33,6 +33,24 @@
     - name: Install homebrew packages using homebrew-bundle
       shell: brew bundle 2>&1 | tee logs/brew_bundle.log
 
+    - name: Create local bin dir
+      file:
+        path: /Users/{{ ansible_user_id }}/.local/bin
+        state: directory
+
+    - name: Link gcc
+      file:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+        state: link
+      with_items:
+        - src: /opt/homebrew/bin/gcc-11
+          dest: /Users/{{ ansible_user_id }}/.local/bin/gcc
+        - src: /opt/homebrew/bin/g++-11
+          dest: /Users/{{ ansible_user_id }}/.local/bin/g++
+        - src: /opt/homebrew/bin/c++-11
+          dest: /Users/{{ ansible_user_id }}/.local/bin/c++
+
   handlers:
     - name: Run fc-cache
       shell: fc-cache -vf
