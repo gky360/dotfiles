@@ -1,0 +1,70 @@
+---
+# acick config file
+#
+# For details, see
+# https://docs.rs/acick/0.0.8/acick/config/index.html
+
+# Version of acick that generated this config file.
+version: 0.2.0
+# Shell used to compile the source code or to run the binary. [c]
+shell: [/bin/bash, "-eu", "-c", "{{ command }}"]
+# Path at which the problems fetched from service are saved. [t, s]
+problem_path: "~/dev/src/github.com/gky360/contests/{{ service }}/{{ contest }}/{{ problem | lower }}/problem.yaml"
+# Directory in which the testcase files downloaded from AtCoder are saved. [t, s]
+testcases_dir: "~/dev/src/github.com/gky360/contests/{{ service }}/{{ contest }}/{{ problem | lower }}/testcases"
+
+# Session that communicates with service.
+session:
+  timeout: 30s
+  retry_limit: 4
+  retry_interval: 2s
+
+# Configs for each service
+services:
+  # Config for AtCoder (https://atcoder.jp)
+  atcoder:
+    # Name of language as which your source code is submitted to the service.
+    # See https://atcoder.jp/contests/practice/rules for full list of available language names.
+    lang_names:
+      - C++ (GCC 9.2.1)
+      - C++14 (GCC 5.4.1)
+    # Directory where compile and run commands are executed. [t, s]
+    working_dir: "~/dev/src/github.com/gky360/contests/{{ service }}/{{ contest }}/{{ problem | lower }}"
+    # Path of your source code. [t, s]
+    source_path: "~/dev/src/github.com/gky360/contests/{{ service }}/{{ contest }}/{{ problem | lower }}/Main.cpp"
+    # Shell script to compile your source code. [t]
+    compile: set -x && g++-11 -std=gnu++17 -Wall -Wextra -O2 -o ./a.out ./Main.cpp
+    # Shell script to run the binary built with the compile script. [t]
+    run: ./a.out
+    # Template for source code. [p]
+    template: |
+      /*
+      [{{ contest.id }}] {{ problem.id }} - {{ problem.name }}
+      */
+
+      #include <bits/stdc++.h>
+      using namespace std;
+      typedef long long int ll;
+      typedef long double DD;
+      typedef pair<int, int> pii;
+      typedef pair<ll, int> pli;
+      typedef pair<ll, ll> pll;
+      #define REP(i, n) for (int i = 0; i < (int)(n); i++)
+      #define ALL(c) (c).begin(), (c).end()
+
+
+      ll solve() {
+
+
+          ll ans = 0;
+          return ans;
+      }
+
+      int main() {
+
+
+          cout << solve() << endl;
+
+          return 0;
+
+      }
