@@ -64,6 +64,8 @@ brew "neovim"
 brew "nodenv"
 # Optimized BLAS library
 brew "openblas"
+# Development kit for the Java programming language
+brew "openjdk"
 # Simplistic interactive filtering tool
 brew "peco"
 # Python package management tool
