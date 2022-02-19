@@ -28,6 +28,7 @@
         global: yes
         executable: "{{ nodenv_root }}/versions/{{ node_version }}/bin/npm"
       with_items:
+        - aws-cdk
         - gtop
         - npm
         - typescript
