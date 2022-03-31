@@ -1,6 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+tap "aws/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -9,14 +10,20 @@ tap "homebrew/services"
 tap "versent/taps"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Programmable completion for Bash 4.2+
 brew "bash-completion@2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Collection of portable C++ source libraries
+brew "boost"
 # Increase version numbers with SemVer terms
 brew "bumpversion"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
@@ -43,6 +50,10 @@ brew "git"
 brew "git-lfs"
 # Prevents you from committing sensitive information to a git repo
 brew "git-secrets"
+# Core application library for C
+brew "glib"
+# GNU grep, egrep and fgrep
+brew "grep"
 # Improved top (interactive process viewer)
 brew "htop"
 # CLI wrapper for basic network utilities on macOS - ip command
@@ -63,10 +74,12 @@ brew "libomp"
 brew "lua"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Install NodeJS versions
+brew "node-build"
 # Manage multiple NodeJS versions
 brew "nodenv"
-# Optimized BLAS library
-brew "openblas"
+# Package for scientific computing with Python
+brew "numpy"
 # Development kit for the Java programming language
 brew "openjdk"
 # Simplistic interactive filtering tool
@@ -105,6 +118,8 @@ brew "ydiff"
 brew "zsh"
 # Additional completion definitions for zsh
 brew "zsh-completions"
+# AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
+brew "aws/tap/aws-sam-cli"
 # Application launcher and productivity software
 cask "alfred"
 # Clipboard extension app
