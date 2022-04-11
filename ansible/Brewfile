@@ -86,8 +86,6 @@ brew "openjdk"
 brew "peco"
 # PNG image optimizing utility
 brew "pngquant"
-# Python package management tool
-brew "poetry"
 # Show ps output as a tree
 brew "pstree"
 # Cross-platform application and UI framework
