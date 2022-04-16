@@ -60,6 +60,7 @@ alias tlf='tail -F'
 alias jnb='jupyter notebook'
 alias pyex='PYTHONPATH=. python'
 alias pri='poetry run invoke'
+alias prp='poetry run poe'
 
 # terraform
 alias tf="terraform"
