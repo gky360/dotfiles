@@ -128,6 +128,8 @@ cask "alfred"
 cask "clipy"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Draw.io is free online diagram software
+cask "drawio"
 # Web browser
 cask "firefox"
 cask "font-myrica"
