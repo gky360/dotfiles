@@ -102,8 +102,10 @@ brew "saml2aws"
 brew "scipy"
 # User interface to the TELNET protocol
 brew "telnet"
+# Thin wrapper for Terraform e.g. for locking state
+brew "terragrunt"
 # Terraform version manager inspired by rbenv
-brew "tfenv"
+brew "tfenv", link: false
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
