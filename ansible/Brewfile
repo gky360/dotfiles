@@ -100,6 +100,8 @@ brew "rustup-init"
 brew "saml2aws"
 # Software for mathematics, science, and engineering
 brew "scipy"
+# Editor of encrypted files
+brew "sops"
 # User interface to the TELNET protocol
 brew "telnet"
 # Thin wrapper for Terraform e.g. for locking state
