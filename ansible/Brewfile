@@ -113,7 +113,7 @@ brew "telnet"
 # Thin wrapper for Terraform e.g. for locking state
 brew "terragrunt"
 # Terraform version manager inspired by rbenv
-brew "tfenv", link: false
+brew "tfenv"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
