@@ -59,6 +59,15 @@ if [ -e ~/.cargo ]; then
 fi
 export RUST_BACKTRACE=1
 
+# golang
+if command_exists 'goenv' ; then
+  export GOENV_ROOT="$HOME/.goenv"
+  export PATH="$GOENV_ROOT/bin:$PATH"
+  eval "$(goenv init -)"
+  export PATH="$GOROOT/bin:$PATH"
+  export PATH="$PATH:$GOPATH/bin"
+fi
+
 # local bin
 export PATH=$HOME/.local/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
