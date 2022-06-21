@@ -52,6 +52,8 @@ brew "git"
 brew "git-lfs"
 # Prevents you from committing sensitive information to a git repo
 brew "git-secrets"
+# Go version management
+brew "goenv"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Library to render SVG files using Cairo
