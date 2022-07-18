@@ -5,6 +5,9 @@ export PATH=$PATH:/sbin:$HOME/bin
 # dotfiles
 export DOTPATH="$HOME/dotfiles"
 
+# docker
+export DOCKER_BUILDKIT=1
+
 # brew
 export PATH="/opt/homebrew/bin:$PATH"
 if [ -e /opt/homebrew ]; then
