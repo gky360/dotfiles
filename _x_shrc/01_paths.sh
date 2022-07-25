@@ -52,6 +52,10 @@ if [ -s $HOME/.nodenv ]; then
   eval "$(nodenv init -)"
 fi
 
+if command_exists 'rbenv'; then
+  eval "$(rbenv init - zsh)"
+fi
+
 # rust
 if [ -e ~/.cargo ]; then
   export PATH="$HOME/.cargo/bin:$PATH"
