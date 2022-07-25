@@ -14,20 +14,22 @@ brew "act"
 brew "python@3.10"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Programmable completion for Bash 4.2+
 brew "bash-completion@2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Friendly powerful distributed version control system
+brew "bazaar"
 # Collection of portable C++ source libraries
 brew "boost"
 # Increase version numbers with SemVer terms
 brew "bumpversion"
 # Core application library for C
 brew "glib"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
 # Cross-platform make
@@ -56,6 +58,8 @@ brew "git-secrets"
 brew "goenv"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
@@ -80,6 +84,8 @@ brew "kustomize"
 brew "libomp"
 # Powerful, lightweight programming language
 brew "lua"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
 # Open source relational database management system
 brew "mysql"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -88,6 +94,8 @@ brew "neovim"
 brew "node-build"
 # Manage multiple NodeJS versions
 brew "nodenv"
+# Libraries for security-enabled client and server applications
+brew "nss"
 # Package for scientific computing with Python
 brew "numpy"
 # Development kit for the Java programming language
@@ -96,12 +104,16 @@ brew "openjdk"
 brew "peco"
 # PNG image optimizing utility
 brew "pngquant"
+# Object-relational database system
+brew "postgresql"
 # Show ps output as a tree
 brew "pstree"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
 # Cross-platform application and UI framework
 brew "qt"
+# Ruby version manager
+brew "rbenv"
 # Rust toolchain installer
 brew "rustup-init"
 # Login and retrieve AWS temporary credentials using a SAML IDP
@@ -142,6 +154,8 @@ cask "clipy"
 cask "docker"
 # Draw.io is free online diagram software
 cask "drawio"
+# Collaborative team software
+cask "figma"
 # Web browser
 cask "firefox"
 cask "font-myrica"
