@@ -69,7 +69,7 @@ alias tfp="terraform plan"
 alias tfv="terraform validate"
 alias tff="terraform fmt -recursive"
 alias tg="terragrunt"
-alias tfi="terraform init"
+alias tgi="terragrunt init"
 alias tgp="terragrunt plan"
 
 # kubernetes
