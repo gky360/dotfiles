@@ -14,6 +14,9 @@ alias sudo='sudo '
 alias dotfiles="cd $DOTPATH"
 alias srcrc="if [ -e ~/.${SHELL##*/}rc ]; then . ~/.${SHELL##*/}rc; fi"
 
+# ruby, rails
+alias be='bundle exec'
+
 # git
 ## status
 alias gst="git status"
