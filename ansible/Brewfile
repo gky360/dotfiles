@@ -107,7 +107,7 @@ brew "peco"
 # PNG image optimizing utility
 brew "pngquant"
 # Object-relational database system
-brew "postgresql"
+brew "postgresql@14"
 # Show ps output as a tree
 brew "pstree"
 # Interpreted, interactive, object-oriented programming language
@@ -168,6 +168,8 @@ cask "google-cloud-sdk"
 # Client for the Google Drive storage service
 cask "google-drive"
 cask "google-japanese-ime"
+# IDE for Java development - community edition
+cask "intellij-idea-ce"
 # System monitoring app
 cask "istat-menus"
 # Terminal emulator as alternative to Apple's Terminal app
