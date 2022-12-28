@@ -38,8 +38,6 @@ brew "cmake"
 brew "cppcheck"
 # Run a command as a UNIX daemon
 brew "daemonize"
-# Isolated development environments using Docker
-brew "docker-compose"
 # GNU compiler collection
 brew "gcc"
 # GitHub command-line tool
@@ -72,6 +70,8 @@ brew "htop"
 brew "iproute2mac"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Domain specific configuration language for defining JSON data
+brew "jsonnet"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Kubernetes prompt info for bash and zsh
@@ -81,7 +81,7 @@ brew "kubectx"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
 # LLVM's OpenMP runtime library
-brew "libomp"
+brew "libomp", link: true
 # Powerful, lightweight programming language
 brew "lua"
 # Simple tool to make locally trusted development certificates
@@ -124,6 +124,8 @@ brew "saml2aws"
 brew "scipy"
 # Editor of encrypted files
 brew "sops"
+# Soak up standard input and write to a file
+brew "sponge"
 # User interface to the TELNET protocol
 brew "telnet"
 # Thin wrapper for Terraform e.g. for locking state
