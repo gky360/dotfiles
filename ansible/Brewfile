@@ -164,6 +164,8 @@ brew "zsh-completions"
 brew "aws/tap/aws-sam-cli"
 # Application launcher and productivity software
 cask "alfred"
+# Transfer files from and to an Android smartphone
+cask "android-file-transfer"
 # Clipboard extension app
 cask "clipy"
 # App to build and share containerized applications and microservices
