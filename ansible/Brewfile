@@ -10,8 +10,6 @@ tap "homebrew/services"
 tap "versent/taps"
 # Run your GitHub Actions locally 🚀
 brew "act"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Official Amazon AWS command-line interface
@@ -24,6 +22,8 @@ brew "bat"
 brew "bazaar"
 # Collection of portable C++ source libraries
 brew "boost"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Increase version numbers with SemVer terms
 brew "bumpversion"
 # Core application library for C
@@ -52,6 +52,8 @@ brew "git"
 brew "git-lfs"
 # Prevents you from committing sensitive information to a git repo
 brew "git-secrets"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # Go version management
 brew "goenv"
 # OpenType text shaping engine
@@ -66,12 +68,16 @@ brew "graphviz"
 brew "grep"
 # Improved top (interactive process viewer)
 brew "htop"
+# Spell checker and morphological analyzer
+brew "hunspell"
 # CLI wrapper for basic network utilities on macOS - ip command
 brew "iproute2mac"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Domain specific configuration language for defining JSON data
 brew "jsonnet"
+# Network authentication protocol
+brew "krb5"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Kubernetes prompt info for bash and zsh
@@ -80,6 +86,8 @@ brew "kube-ps1"
 brew "kubectx"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
+# Provides library functionality for FIDO U2F & FIDO 2.0, including USB
+brew "libfido2"
 # LLVM's OpenMP runtime library
 brew "libomp", link: true
 # Powerful, lightweight programming language
@@ -110,10 +118,14 @@ brew "pngquant"
 brew "postgresql@14"
 # Show ps output as a tree
 brew "pstree"
+# Tool Command Language
+brew "tcl-tk"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
 # Cross-platform application and UI framework
 brew "qt"
+# Install various Ruby versions and implementations
+brew "ruby-build"
 # Ruby version manager
 brew "rbenv"
 # Rust toolchain installer
@@ -162,6 +174,7 @@ cask "drawio"
 cask "figma"
 # Web browser
 cask "firefox"
+# Programming font
 cask "font-myrica"
 # Web browser
 cask "google-chrome"
