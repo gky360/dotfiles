@@ -2,6 +2,7 @@
 # vi: set ft=ruby :
 
 tap "aws/tap"
+tap "codecrafters-io/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -162,10 +163,14 @@ brew "zsh"
 brew "zsh-completions"
 # AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
 brew "aws/tap/aws-sam-cli"
+# CodeCrafters CLI
+brew "codecrafters-io/tap/codecrafters"
 # Application launcher and productivity software
 cask "alfred"
 # Transfer files from and to an Android smartphone
 cask "android-file-transfer"
+# Free and open-source web browser
+cask "chromium"
 # Clipboard extension app
 cask "clipy"
 # App to build and share containerized applications and microservices
