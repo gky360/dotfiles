@@ -5,4 +5,7 @@ set clipboard=unnamed
 map <C-c> <Esc>
 
 # https://github.com/JetBrains/ideavim/wiki/IdeaVim-Plugins
+set sneak
 Plug 'tpope/vim-surround'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-commentary'
