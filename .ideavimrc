@@ -1,3 +1,8 @@
 source ~/.vimrc
+
 set clipboard=unnamed
+
 map <C-c> <Esc>
+
+# https://github.com/JetBrains/ideavim/wiki/IdeaVim-Plugins
+Plug 'tpope/vim-surround'
