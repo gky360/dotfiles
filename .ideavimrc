@@ -1,2 +1,3 @@
 source ~/.vimrc
 set clipboard=unnamed
+map <C-c> <Esc>
