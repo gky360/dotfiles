@@ -29,33 +29,29 @@ for before_deploy_sh in $DOTPATH/before_deploy/*.sh; do
   . $before_deploy_sh
 done
 
-
-echo
-for dotfile in .??*; do
-  [ "$dotfile" = ".git" ] && continue
-  [ "$dotfile" = ".gitignore" ] && continue
-  [ "$dotfile" = ".gitattributes" ] && continue
-  [ "$dotfile" = ".DS_Store" ] && continue
-  [ ${dotfile##*.} = "swp" ] && continue
-
+read -p "overwrite dotfiles in Home dir? (Yn) > " is_overwrite
+if [[ $is_overwrite = [Nn] ]]; then
+  echo "skipping ..."
+else
   echo
-  if [ -e "$HOME"/"$dotfile" ]; then
-    read -p "overwrite ~/$dotfile ? (Yn) > " yn
-    case $yn in
-      [Nn]* )
-        echo "skipping ..."
-        continue
-        ;;
-    esac
-    if [ -d "$DOTPATH"/"$dotfile" ]; then
-      rm -rf "$HOME"/"$dotfile"
+  for dotfile in .??*; do
+    [ "$dotfile" = ".git" ] && continue
+    [ "$dotfile" = ".gitignore" ] && continue
+    [ "$dotfile" = ".gitattributes" ] && continue
+    [ "$dotfile" = ".DS_Store" ] && continue
+    [ ${dotfile##*.} = "swp" ] && continue
+
+    if [ -e "$HOME"/"$dotfile" ]; then
+      if [ -d "$DOTPATH"/"$dotfile" ]; then
+        rm -rf "$HOME"/"$dotfile"
+      fi
     fi
-  fi
 
-  echo "loading $dotfile ..."
-  ln -snfv "$DOTPATH"/"$dotfile" "$HOME"
+    echo "loading $dotfile ..."
+    ln -snfv "$DOTPATH"/"$dotfile" "$HOME"
 
-done
+  done
+fi
 
 select_theme_color
 
