@@ -167,8 +167,6 @@ brew "tree"
 brew "watch"
 # Internet file retriever
 brew "wget"
-# View colored diff with side by side and auto pager support
-brew "ydiff"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Additional completion definitions for zsh
