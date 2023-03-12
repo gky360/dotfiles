@@ -81,7 +81,9 @@ if command_exists git ; then
     git config --global delta.side-by-side true
     git config --global delta.line-numbers true
     git config --global delta.syntax-theme 'Dracula'
-    git config --global delta.plus-style 'syntax "#003800"'
-    git config --global delta.minus-style 'syntax "#3f0001"'
+    git config --global delta.minus-emph-style 'syntax bold "#b80000"'
+    git config --global delta.minus-style 'syntax "#5d001e"'
+    git config --global delta.plus-emph-style 'syntax bold "#007800"'
+    git config --global delta.plus-style 'syntax "#004433"'
   fi
 fi
