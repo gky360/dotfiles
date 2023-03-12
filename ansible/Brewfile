@@ -11,8 +11,18 @@ tap "homebrew/services"
 tap "versent/taps"
 # Run your GitHub Actions locally 🚀
 brew "act"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
+# Text processing system for reStructuredText
+brew "docutils"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Programmable completion for Bash 4.2+
@@ -120,7 +130,7 @@ brew "postgresql@14"
 # Show ps output as a tree
 brew "pstree"
 # Tool Command Language
-brew "tcl-tk"
+brew "tcl-tk", link: false
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
 # Cross-platform application and UI framework
