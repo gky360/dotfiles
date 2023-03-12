@@ -69,4 +69,19 @@ if command_exists git ; then
   #   bash -c 'alias say="echo" && git secrets --install -f ~/.git-templates/git-secrets'
   #   git config --global init.templatedir '~/.git-templates/git-secrets'
   # fi
+
+  # git-delta
+  if command_exists delta ; then
+    git config --global core.pager delta
+    git config --global interactive.diffFilter 'delta --color-only'
+    git config --global merge.conflictstyle diff3
+    git config --global diff.colorMoved default
+    git config --global delta.navigate true
+    git config --global delta.dark true
+    git config --global delta.side-by-side true
+    git config --global delta.line-numbers true
+    git config --global delta.syntax-theme 'Dracula'
+    git config --global delta.plus-style 'syntax "#003800"'
+    git config --global delta.minus-style 'syntax "#3f0001"'
+  fi
 fi

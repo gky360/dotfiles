@@ -4,36 +4,6 @@ function command_exists () {
   command -v "$1" >/dev/null 2>&1 ;
 }
 
-
-# git
-
-## side-by-side diff
-function gdf() {
-  if [[ -x `which ydiff 2>/dev/null` ]]; then
-    git diff $@ | ydiff -s -w 0
-  else
-    git diff $@
-  fi
-}
-
-## side-by-side diff --cached
-function gdfca() {
-  if [[ -x `which ydiff 2>/dev/null` ]]; then
-    git diff --cached $@ | ydiff -s -w 0
-  else
-    git diff --cached $@
-  fi
-}
-
-## side-by-side show
-function gsh() {
-  if [[ -x `which ydiff 2>/dev/null` ]]; then
-    git show $@ | ydiff -s
-  else
-    git show $@
-  fi
-}
-
 ## tmux attach
 function txa() {
   session_name=${1:-${${PWD##*/}%.*}}

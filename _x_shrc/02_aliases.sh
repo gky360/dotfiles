@@ -31,8 +31,11 @@ alias gbrcl="git branch --merged | grep -v '*' | xargs git branch -d"
 ## reset modes of the files
 alias gprst="git diff --numstat | awk '{if ((\$1 == \"0\" && \$2 == \"0\") || (\$1 == \"-\" && \$2 == \"-\")) print \$3}' | xargs git checkout HEAD"
 ## word-by-word diff
+alias gdf="git diff"
+alias gdfca="git dfca"
 alias gdfw="git dfw"
 alias gdfwca="git dfwca"
+alias gsh="git show"
 alias gshw="git shw"
 ## push
 alias gpo="git push -u origin"
