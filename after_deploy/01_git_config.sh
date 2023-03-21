@@ -44,7 +44,7 @@ if command_exists git ; then
   git config --global alias.ciam 'commit --amend -m'
   git config --global alias.mab 'merge --abort'
   git config --global alias.gr 'log --graph --oneline --decorate -10'
-  git config --global alias.gn 'grep -n'
+  git config --global alias.gn 'grep -A 1 -B 1 -n'
 
   # make sure the current branch has no conflict
   git config --global alias.mts 'merge --no-commit --no-ff'
