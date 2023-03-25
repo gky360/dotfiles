@@ -111,6 +111,8 @@ brew "mkcert"
 brew "mysql"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Install NodeJS versions
 brew "node-build"
 # Manage multiple NodeJS versions
@@ -121,8 +123,6 @@ brew "nss"
 brew "numpy"
 # Development kit for the Java programming language
 brew "openjdk"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # Simplistic interactive filtering tool
 brew "peco"
 # PNG image optimizing utility
@@ -132,7 +132,7 @@ brew "postgresql@14"
 # Show ps output as a tree
 brew "pstree"
 # Tool Command Language
-brew "tcl-tk", link: false
+brew "tcl-tk"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
 # Cross-platform application and UI framework
