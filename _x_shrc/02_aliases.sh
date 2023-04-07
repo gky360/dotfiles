@@ -46,8 +46,8 @@ alias glp='cd $(ghq root)/$(ghq list | peco)'
 alias grep='grep --color=auto'
 
 # docker
-alias dcm='docker-compose'
-alias dcmr='docker-compose run --rm'
+alias dcm='docker compose'
+alias dcmr='docker compose run --rm'
 
 # dstat
 alias dstata='dstat -tlcmgdr --socket --tcp -n'
