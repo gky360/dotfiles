@@ -6,7 +6,7 @@ function command_exists () {
 
 ## tmux attach
 function txa() {
-  session_name=${1:-${${PWD##*/}%.*}}
+  session_name=${1:-$(basename "$PWD" | cut -d. -f1)}
   tmux -u new-session -A -s $session_name
 }
 
