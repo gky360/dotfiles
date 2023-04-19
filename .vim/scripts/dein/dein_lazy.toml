@@ -17,12 +17,6 @@ if = "!has('nvim')"
 on_event = 'InsertEnter'
 
 [[plugins]]
-repo = 'roxma/vim-hug-neovim-rpc'
-if = "!has('nvim')"
-on_event = 'InsertEnter'
-
-
-[[plugins]]
 repo = 'Shougo/deoplete.nvim'
 if = "has('python3')"
 on_event = 'InsertEnter'
