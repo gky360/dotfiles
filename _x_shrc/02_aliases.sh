@@ -84,3 +84,6 @@ alias kgponamel="kgpo -o go-template --template '{{(index .items 0).metadata.nam
 
 # completion
 alias watch='watch '
+
+# aws
+alias awsme='aws sts get-caller-identity'
