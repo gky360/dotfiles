@@ -215,6 +215,8 @@ cask "iterm2"
 cask "keka"
 # Research management tool
 cask "mendeley"
+# Replacement for Docker Desktop
+cask "orbstack"
 # Collaboration platform for API development
 cask "postman"
 # Plugin for AWS CLI to start and end sessions that connect to managed instances
