@@ -4,9 +4,7 @@
 tap "aws/tap"
 tap "codecrafters-io/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "versent/taps"
 # Run your GitHub Actions locally
@@ -75,6 +73,8 @@ brew "git-secrets"
 brew "gobject-introspection"
 # Go version management
 brew "goenv"
+# GNU triangulated surface library
+brew "gts"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Framework for layout and rendering of i18n text
@@ -95,8 +95,6 @@ brew "iproute2mac"
 brew "jq"
 # Domain specific configuration language for defining JSON data
 brew "jsonnet"
-# Network authentication protocol
-brew "krb5"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Kubernetes prompt info for bash and zsh
@@ -145,6 +143,8 @@ brew "qt"
 brew "ruby-build"
 # Ruby version manager
 brew "rbenv"
+# Persistent key-value database, with built-in net interface
+brew "redis"
 # Rust toolchain installer
 brew "rustup-init"
 # Login and retrieve AWS temporary credentials using a SAML IDP
@@ -185,6 +185,8 @@ cask "alfred"
 cask "android-file-transfer"
 # Android SDK component
 cask "android-platform-tools"
+# Tools for the Android SDK
+cask "android-sdk"
 # Free and open-source web browser
 cask "chromium"
 # Clipboard extension app
