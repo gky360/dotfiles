@@ -219,6 +219,8 @@ cask "iterm2"
 cask "keka"
 # Research management tool
 cask "mendeley"
+# Orchestrates virtual Ubuntu instances
+cask "multipass"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Collaboration platform for API development
