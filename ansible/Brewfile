@@ -9,6 +9,8 @@ tap "homebrew/services"
 tap "versent/taps"
 # Run your GitHub Actions locally
 brew "act"
+# CLI for Amazon ECS to manage clusters and tasks for development
+brew "amazon-ecs-cli"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Interpreted, interactive, object-oriented programming language
@@ -21,6 +23,12 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
+# Tool Command Language
+brew "tcl-tk"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
+# CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
+brew "aws-sam-cli"
 # Text processing system for reStructuredText
 brew "docutils"
 # Official Amazon AWS command-line interface
@@ -133,10 +141,6 @@ brew "pngquant"
 brew "postgresql@14"
 # Show ps output as a tree
 brew "pstree"
-# Tool Command Language
-brew "tcl-tk"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.8"
 # Cross-platform application and UI framework
 brew "qt"
 # Install various Ruby versions and implementations
@@ -175,8 +179,6 @@ brew "wget"
 brew "zsh"
 # Additional completion definitions for zsh
 brew "zsh-completions"
-# AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
-brew "aws/tap/aws-sam-cli"
 # CodeCrafters CLI
 brew "codecrafters-io/tap/codecrafters"
 # Application launcher and productivity software
