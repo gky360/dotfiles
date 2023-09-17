@@ -4,7 +4,7 @@ set -eux
 
 WORKING_DIR=$HOME/tmp
 TARGET_DIR=$HOME/.local
-PYTHON_VERSION=3.7.2
+PYTHON_VERSION=3.11.3
 
 
 # Support Python3 provider
