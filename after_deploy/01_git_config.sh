@@ -20,6 +20,9 @@ if command_exists git ; then
   git config --global user.name ${GIT_GLOBAL_USER_NAME:-gky360}
   git config --global user.email ${GIT_GLOBAL_USER_EMAIL:-gky360@gmail.com}
 
+  # init
+  git config --global init.defaultBranch main
+
   # editor
   git config --global core.editor vim
   # ghq config
