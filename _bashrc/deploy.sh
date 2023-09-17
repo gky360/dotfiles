@@ -22,6 +22,7 @@ sedi "/##### begin dotfiles #####/,/##### end dotfiles #####/c\\" "$HOME"/.bashr
 echo "##### begin dotfiles #####" >> "$HOME"/.bashrc
 
 echo "export theme_color=$theme_color" >> "$HOME"/.bashrc
+echo "export prompt_color=$theme_color" >> "$HOME"/.bashrc
 
 _x_sh_shs=`ls $DOTPATH/_x_shrc/[0-9][0-9]_*.sh`
 bash_shs=`ls $DOTPATH/_bashrc/[0-9][0-9]_*.sh`

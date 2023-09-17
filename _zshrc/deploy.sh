@@ -22,7 +22,7 @@ sedi "/##### begin dotfiles #####/,/##### end dotfiles #####/c\\" "$HOME"/.zshrc
 echo "##### begin dotfiles #####" >> "$HOME"/.zshrc
 
 echo "export theme_color=$theme_color" >> "$HOME"/.zshrc
-echo "export zshrc_prompt_color=$theme_color" >> "$HOME"/.zshrc
+echo "export prompt_color=$theme_color" >> "$HOME"/.zshrc
 
 _x_sh_shs=`ls $DOTPATH/_x_shrc/[0-9][0-9]_*.sh`
 zsh_shs=`ls $DOTPATH/_zshrc/[0-9][0-9]_*.sh`

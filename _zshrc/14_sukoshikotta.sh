@@ -21,7 +21,7 @@ SAVEHIST=1000000
 # 1行表示
 # PROMPT="%~ %# "
 # 2行表示
-PROMPT="%{${fg[$zshrc_prompt_color]}%}%n@%M:%{${reset_color}%}%~
+PROMPT="%{${fg[$prompt_color]}%}%n@%M:%{${reset_color}%}%~
 %{%(?.$fg[white].$fg[red])%}%#%{$reset_color%} "
 
 
@@ -77,7 +77,7 @@ bindkey -M menuselect '^r' history-incremental-search-forward # 補完候補内�
 autoload -Uz vcs_info
 autoload -Uz add-zsh-hook
 
-zstyle ':vcs_info:git:*' formats "%F{$zshrc_prompt_color}[%b]%f"
+zstyle ':vcs_info:git:*' formats "%F{$prompt_color}[%b]%f"
 zstyle ':vcs_info:git:*' actionformats '%F{red}[%b|%a]%f'
 
 # kube-ps1
