@@ -10,10 +10,6 @@ alias mv='mv -i'
 # sudo の後のコマンドでエイリアスを有効にする
 alias sudo='sudo '
 
-# グローバルエイリアス
-alias -g L='| less'
-alias -g G='| grep'
-
 
 # dotfiles
 alias dotfiles="cd $DOTPATH"

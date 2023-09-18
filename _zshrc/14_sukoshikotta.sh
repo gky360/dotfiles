@@ -139,6 +139,10 @@ setopt extended_glob
 bindkey '^R' history-incremental-pattern-search-backward
 
 ########################################
+# グローバルエイリアス
+alias -g L='| less'
+alias -g G='| grep'
+
 # C で標準出力をクリップボードにコピーする
 # mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
 # if which pbcopy >/dev/null 2>&1 ; then
