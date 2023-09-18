@@ -1,14 +1,27 @@
 #!/bin/sh
 
-declare -A prompt_colors=(
-  ["black"]="30"
-  ["red"]="31"
-  ["green"]="32"
-  ["yellow"]="33"
-  ["blue"]="34"
-  ["magenta"]="35"
-  ["cyan"]="36"
-  ["white"]="37"
-)
+PROMPT_COMMAND=__prompt_command
 
-PS1="\[\033[01;${prompt_colors[$prompt_color]}m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
+__prompt_command() {
+  local EXIT="$?"
+
+  declare -A colors=(
+    ["black"]="\[\e[01;30m\]"
+    ["red"]="\[\e[01;31m\]"
+    ["green"]="\[\e[01;32m\]"
+    ["yellow"]="\[\e[01;33m\]"
+    ["blue"]="\[\e[01;34m\]"
+    ["magenta"]="\[\e[01;35m\]"
+    ["cyan"]="\[\e[01;36m\]"
+    ["white"]="\[\e[01;37m\]"
+  )
+  reset_color="\[\e[m\]"
+
+  PS1="${colors[$prompt_color]}\u@\h${reset_color}:${colors['blue']}\w${reset_color}\n"
+
+  if [ $EXIT != 0 ]; then
+    PS1+="${colors['red']}\$${reset_color} "
+  else
+    PS1+="\$ "
+  fi
+}
