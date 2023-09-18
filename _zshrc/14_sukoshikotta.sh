@@ -139,24 +139,6 @@ setopt extended_glob
 bindkey '^R' history-incremental-pattern-search-backward
 
 ########################################
-# エイリアス
-
-alias la='ls -la'
-alias ll='ls -l'
-
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-
-alias mkdir='mkdir -p'
-
-# sudo の後のコマンドでエイリアスを有効にする
-alias sudo='sudo '
-
-# グローバルエイリアス
-alias -g L='| less'
-alias -g G='| grep'
-
 # C で標準出力をクリップボードにコピーする
 # mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
 # if which pbcopy >/dev/null 2>&1 ; then
