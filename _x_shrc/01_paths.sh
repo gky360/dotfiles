@@ -80,3 +80,6 @@ fi
 # local bin
 export PATH=$HOME/.local/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
+
+# For git diff
+export LESSCHARSET=utf-8
