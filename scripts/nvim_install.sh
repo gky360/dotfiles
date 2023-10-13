@@ -4,23 +4,23 @@ set -eux
 
 WORKING_DIR=$HOME/tmp
 TARGET_DIR=$HOME/.local
-PYTHON_VERSION=3.11.3
+# PYTHON_VERSION=3.11.3
 
 
 # Support Python3 provider
 
-$DOTPATH/scripts/pyenv_install.sh
-
-pyenv install $PYTHON_VERSION || true
-if ! [ -e $(pyenv root)/versions/$PYTHON_VERSION/envs/nvim3 ]; then
-  pyenv virtualenv $PYTHON_VERSION nvim3
-fi
-set +u
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-pyenv activate nvim3
-pyenv which python
-pip install pynvim
+# $DOTPATH/scripts/pyenv_install.sh
+#
+# pyenv install $PYTHON_VERSION || true
+# if ! [ -e $(pyenv root)/versions/$PYTHON_VERSION/envs/nvim3 ]; then
+#   pyenv virtualenv $PYTHON_VERSION nvim3
+# fi
+# set +u
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+# pyenv activate nvim3
+# pyenv which python
+# pip install pynvim
 
 # Install dependencies
 if [ -f /etc/lsb-release ]; then
