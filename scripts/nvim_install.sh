@@ -36,7 +36,7 @@ if ! [ -x "$(command -v nvim)" ]; then
   mkdir -p $WORKING_DIR
   cd $WORKING_DIR
   if ! [ -e neovim ]; then
-    git clone https://github.com/neovim/neovim
+    git clone --depth 1 https://github.com/neovim/neovim
   fi
   cd neovim
   git pull
