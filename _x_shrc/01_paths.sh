@@ -17,6 +17,8 @@ if [ -e /opt/homebrew ]; then
   # export OPENBLAS="$(brew --prefix openblas)"
   ## for cryptography
   # export LDFLAGS="-L$(brew --prefix openssl@1.1)/lib" CFLAGS="-I$(brew --prefix openssl@1.1)/include"
+  ## for pygraphviz
+  # export LDFLAGS="-L$(brew --prefix graphviz)/lib" CFLAGS="-I$(brew --prefix graphviz)/include"
 fi
 
 # zsh-completions
