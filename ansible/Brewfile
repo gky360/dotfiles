@@ -11,10 +11,14 @@ tap "versent/taps"
 brew "act"
 # CLI for Amazon ECS to manage clusters and tasks for development
 brew "amazon-ecs-cli"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
+# Cryptographic recipes and primitives for Python
+brew "python-cryptography"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Image format providing lossless and lossy compression for web images
@@ -23,14 +27,12 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# Tool Command Language
-brew "tcl-tk"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.8"
 # CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
 brew "aws-sam-cli"
 # Text processing system for reStructuredText
 brew "docutils"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Programmable completion for Bash 4.2+
@@ -47,8 +49,6 @@ brew "python@3.10"
 brew "bumpversion"
 # Core application library for C
 brew "glib"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
 # Cross-platform make
@@ -81,6 +81,8 @@ brew "git-secrets"
 brew "gobject-introspection"
 # Go version management
 brew "goenv"
+# Image manipulation
+brew "netpbm"
 # GNU triangulated surface library
 brew "gts"
 # OpenType text shaping engine
@@ -129,6 +131,8 @@ brew "node-build"
 brew "nodenv"
 # Libraries for security-enabled client and server applications
 brew "nss"
+# Optimized BLAS library
+brew "openblas"
 # Package for scientific computing with Python
 brew "numpy"
 # Development kit for the Java programming language
@@ -141,6 +145,12 @@ brew "pngquant"
 brew "postgresql@14"
 # Show ps output as a tree
 brew "pstree"
+# Tool Command Language
+brew "tcl-tk"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Cross-platform application and UI framework
 brew "qt"
 # Install various Ruby versions and implementations
@@ -164,7 +174,7 @@ brew "telnet"
 # Thin wrapper for Terraform e.g. for locking state
 brew "terragrunt"
 # Terraform version manager inspired by rbenv
-brew "tfenv", link: false
+brew "tfenv"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
@@ -193,6 +203,8 @@ cask "android-sdk"
 cask "chromium"
 # Clipboard extension app
 cask "clipy"
+# Write, edit, and chat about your code with AI
+cask "cursor"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Online diagram software
@@ -240,6 +252,7 @@ cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "zoom"
 vscode "42Crunch.vscode-openapi"
+vscode "4ops.terraform"
 vscode "BillStewart.extended-cursormove"
 vscode "bonprosoft.pysen-vscode"
 vscode "chouzz.vscode-better-align"
@@ -250,6 +263,7 @@ vscode "dsznajder.es7-react-js-snippets"
 vscode "eamodio.gitlens"
 vscode "EditorConfig.EditorConfig"
 vscode "esbenp.prettier-vscode"
+vscode "figma.figma-vscode-extension"
 vscode "GitHub.copilot"
 vscode "GitHub.copilot-chat"
 vscode "github.vscode-github-actions"
@@ -261,9 +275,13 @@ vscode "ipedrazas.kubernetes-snippets"
 vscode "James-Yu.latex-workshop"
 vscode "kaiwood.endwise"
 vscode "karunamurti.haml"
+vscode "mechatroner.rainbow-csv"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
+vscode "ms-python.black-formatter"
+vscode "ms-python.flake8"
 vscode "ms-python.isort"
+vscode "ms-python.mypy-type-checker"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-toolsai.jupyter"
@@ -282,11 +300,11 @@ vscode "ms-vscode.remote-server"
 vscode "ms-vsliveshare.vsliveshare"
 vscode "oderwat.indent-rainbow"
 vscode "philosowaffle.openapi-designer"
-vscode "rebornix.ruby"
 vscode "redhat.vscode-commons"
 vscode "redhat.vscode-yaml"
 vscode "rust-lang.rust-analyzer"
 vscode "ryanluker.vscode-coverage-gutters"
+vscode "Shopify.ruby-lsp"
 vscode "stylelint.vscode-stylelint"
 vscode "tamasfe.even-better-toml"
 vscode "ThreadHeap.serverless-ide-vscode"
@@ -296,6 +314,5 @@ vscode "VisualStudioExptTeam.intellicode-api-usage-examples"
 vscode "VisualStudioExptTeam.vscodeintellicode"
 vscode "vscode-icons-team.vscode-icons"
 vscode "vscodevim.vim"
-vscode "wingrunr21.vscode-ruby"
 vscode "yzhang.markdown-all-in-one"
 vscode "zxh404.vscode-proto3"
