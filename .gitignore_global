@@ -2,6 +2,7 @@
 .DS_Store
 .node-version
 .python-version
+.terraform-version
 .lvimrc
 .gitallowed
 
