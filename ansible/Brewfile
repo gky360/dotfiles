@@ -6,6 +6,7 @@ tap "codecrafters-io/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
+tap "kayac/tap"
 tap "versent/taps"
 # Run your GitHub Actions locally
 brew "act"
@@ -191,6 +192,8 @@ brew "zsh"
 brew "zsh-completions"
 # CodeCrafters CLI
 brew "codecrafters-io/tap/codecrafters"
+# ecspresso is a deployment tool for Amazon ECS
+brew "kayac/tap/ecspresso"
 # Application launcher and productivity software
 cask "alfred"
 # Transfer files from and to an Android smartphone
@@ -272,7 +275,6 @@ vscode "github.vscode-github-actions"
 vscode "golang.go"
 vscode "hashicorp.terraform"
 vscode "hediet.vscode-drawio"
-vscode "hex-ci.stylelint-plus"
 vscode "ipedrazas.kubernetes-snippets"
 vscode "james-yu.latex-workshop"
 vscode "kaiwood.endwise"
