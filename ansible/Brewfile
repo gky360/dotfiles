@@ -20,6 +20,10 @@ brew "cffi"
 brew "openssl@3"
 # Cryptographic recipes and primitives for Python
 brew "cryptography"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Image format providing lossless and lossy compression for web images
@@ -30,8 +34,6 @@ brew "jpeg-xl"
 brew "aom"
 # CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
 brew "aws-sam-cli"
-# Text processing system for reStructuredText
-brew "docutils"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Official Amazon AWS command-line interface
@@ -50,20 +52,28 @@ brew "python@3.10"
 brew "bumpversion"
 # Core application library for C
 brew "glib"
+# Validate CloudFormation templates against the CloudFormation spec
+brew "cfn-lint"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
 # Cross-platform make
 brew "cmake"
+# Utility that creates projects from templates
+brew "cookiecutter"
 # Static analysis of C and C++ code
 brew "cppcheck"
 # Run a command as a UNIX daemon
 brew "daemonize"
 # Docker Credential Helper for Amazon ECR
 brew "docker-credential-helper-ecr"
+# Text processing system for reStructuredText
+brew "docutils"
 # Build automation tool for the container era
 brew "earthly"
 # GNU compiler collection
 brew "gcc"
+# Library for encoding and decoding .avif files
+brew "libavif"
 # GitHub command-line tool
 brew "gh"
 # Remote repository management made easy
@@ -259,7 +269,7 @@ cask "zoom"
 vscode "42crunch.vscode-openapi"
 vscode "4ops.terraform"
 vscode "billstewart.extended-cursormove"
-vscode "bonprosoft.pysen-vscode"
+vscode "charliermarsh.ruff"
 vscode "chouzz.vscode-better-align"
 vscode "dawhite.mustache"
 vscode "dbaeumer.vscode-eslint"
@@ -284,7 +294,6 @@ vscode "ms-azuretools.vscode-docker"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-python.black-formatter"
 vscode "ms-python.debugpy"
-vscode "ms-python.flake8"
 vscode "ms-python.isort"
 vscode "ms-python.mypy-type-checker"
 vscode "ms-python.python"
@@ -310,6 +319,7 @@ vscode "redhat.vscode-yaml"
 vscode "rust-lang.rust-analyzer"
 vscode "ryanluker.vscode-coverage-gutters"
 vscode "shopify.ruby-lsp"
+vscode "streetsidesoftware.code-spell-checker"
 vscode "stylelint.vscode-stylelint"
 vscode "tamasfe.even-better-toml"
 vscode "threadheap.serverless-ide-vscode"
