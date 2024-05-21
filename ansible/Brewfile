@@ -226,6 +226,8 @@ cask "drawio"
 cask "figma"
 # Web browser
 cask "firefox"
+# Japanese programming font which is a composed of Hack and GenJyuu-Gothic
+cask "font-hackgen"
 # Programming font
 cask "font-myrica"
 # Web browser
