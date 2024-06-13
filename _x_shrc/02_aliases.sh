@@ -41,7 +41,7 @@ alias gshw="git shw"
 ## push
 alias gpo="git push -u origin"
 ## copy current branch
-alias cpgbr="git rev-parse --abbrev-ref HEAD | pbcopy"
+alias cpgbr="git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy"
 ## ghq list
 alias glp='cd $(ghq root)/$(ghq list | peco)'
 
