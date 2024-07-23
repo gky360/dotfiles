@@ -70,6 +70,12 @@ brew "docker-credential-helper-ecr"
 brew "docutils"
 # Build automation tool for the container era
 brew "earthly"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # GNU compiler collection
 brew "gcc"
 # Library for encoding and decoding .avif files
@@ -96,10 +102,6 @@ brew "goenv"
 brew "netpbm"
 # GNU triangulated surface library
 brew "gts"
-# OpenType text shaping engine
-brew "harfbuzz"
-# Framework for layout and rendering of i18n text
-brew "pango"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
@@ -152,6 +154,8 @@ brew "openjdk"
 brew "peco"
 # PNG image optimizing utility
 brew "pngquant"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Object-relational database system
 brew "postgresql@14"
 # Show ps output as a tree
@@ -171,7 +175,7 @@ brew "rbenv"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Rust toolchain installer
-brew "rustup-init"
+brew "rustup"
 # Login and retrieve AWS temporary credentials using a SAML IDP
 brew "saml2aws"
 # Software for mathematics, science, and engineering
@@ -226,9 +230,7 @@ cask "drawio"
 cask "figma"
 # Web browser
 cask "firefox"
-# Japanese programming font which is a composed of Hack and GenJyuu-Gothic
 cask "font-hackgen"
-# Programming font
 cask "font-myrica"
 # Web browser
 cask "google-chrome"
@@ -289,6 +291,7 @@ vscode "hashicorp.terraform"
 vscode "hediet.vscode-drawio"
 vscode "ipedrazas.kubernetes-snippets"
 vscode "james-yu.latex-workshop"
+vscode "jock.svg"
 vscode "kaiwood.endwise"
 vscode "karunamurti.haml"
 vscode "mechatroner.rainbow-csv"
