@@ -250,8 +250,12 @@ cask "iterm2"
 cask "keka"
 # Research management tool
 cask "mendeley"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
 # Remote desktop client
 cask "microsoft-remote-desktop"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
 # Replacement for Docker Desktop
