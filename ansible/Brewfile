@@ -22,8 +22,6 @@ brew "openssl@3"
 brew "cryptography"
 # General-purpose data compression with high compression ratio
 brew "xz"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Image format providing lossless and lossy compression for web images
@@ -35,7 +33,7 @@ brew "aom"
 # CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
 brew "aws-sam-cli"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
+brew "python@3.12"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Programmable completion for Bash 4.2+
@@ -70,10 +68,16 @@ brew "docker-credential-helper-ecr"
 brew "docutils"
 # Build automation tool for the container era
 brew "earthly"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Reliable Internet Stream Transport (RIST)
+brew "librist"
 # Framework for layout and rendering of i18n text
 brew "pango"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # GNU compiler collection
@@ -94,10 +98,14 @@ brew "git-delta"
 brew "git-lfs"
 # Prevents you from committing sensitive information to a git repo
 brew "git-secrets"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # Go version management
 brew "goenv"
+# Library access to GnuPG
+brew "gpgme"
 # Image manipulation
 brew "netpbm"
 # GNU triangulated surface library
@@ -112,6 +120,10 @@ brew "grep"
 brew "htop"
 # Spell checker and morphological analyzer
 brew "hunspell"
+# LLVM's OpenMP runtime library
+brew "libomp", link: true
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
 # CLI wrapper for basic network utilities on macOS - ip command
 brew "iproute2mac"
 # Lightweight and flexible command-line JSON processor
@@ -128,8 +140,6 @@ brew "kubectx"
 brew "kustomize"
 # Provides library functionality for FIDO U2F & FIDO 2.0, including USB
 brew "libfido2"
-# LLVM's OpenMP runtime library
-brew "libomp", link: true
 # Powerful, lightweight programming language
 brew "lua"
 # Simple tool to make locally trusted development certificates
@@ -144,8 +154,6 @@ brew "node-build"
 brew "nodenv"
 # Libraries for security-enabled client and server applications
 brew "nss"
-# Optimized BLAS library
-brew "openblas"
 # Package for scientific computing with Python
 brew "numpy"
 # Development kit for the Java programming language
@@ -160,6 +168,8 @@ brew "poppler"
 brew "postgresql@14"
 # Show ps output as a tree
 brew "pstree"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Tool Command Language
 brew "tcl-tk"
 # Interpreted, interactive, object-oriented programming language
@@ -276,6 +286,7 @@ cask "visual-studio-code"
 cask "zoom"
 vscode "42crunch.vscode-openapi"
 vscode "4ops.terraform"
+vscode "bierner.markdown-mermaid"
 vscode "billstewart.extended-cursormove"
 vscode "charliermarsh.ruff"
 vscode "chouzz.vscode-better-align"
