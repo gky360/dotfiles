@@ -2,6 +2,10 @@
 
 export PATH=$PATH:/sbin:$HOME/bin
 
+# local bin
+export PATH=$HOME/.local/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
+
 # dotfiles
 export DOTPATH="$HOME/dotfiles"
 
@@ -24,6 +28,11 @@ fi
 # zsh-completions
 if [ -e /usr/local/share/zsh-completions ]; then
   fpath=(/usr/local/share/zsh-completions $fpath)
+fi
+
+# mise
+if [ -e $HOME/.local/bin/mise ]; then
+  echo 'eval "$(~/.local/bin/mise activate zsh)"' >> ~/.zshrc
 fi
 
 # python
@@ -78,10 +87,6 @@ if command_exists 'goenv' ; then
 fi
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
-
-# local bin
-export PATH=$HOME/.local/bin:$PATH
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
 
 # For git diff
 export LESSCHARSET=utf-8
