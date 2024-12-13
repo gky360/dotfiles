@@ -142,6 +142,8 @@ brew "kustomize"
 brew "libfido2"
 # Powerful, lightweight programming language
 brew "lua"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Open source relational database management system
