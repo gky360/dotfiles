@@ -45,12 +45,6 @@ fi
 export ATCLI_ROOT=${GOPATH}/src/github.com/gky360/contests/atcoder
 export ATCLI_CPP_TEMPLATE_PATH=$ATCLI_ROOT/../templates/Main.cpp.tmpl
 
-# ruby, rails
-export PATH="$HOME/.rbenv/bin:$PATH"
-if command_exists 'rbenv'; then
-  eval "$(rbenv init - --no-rehash)"
-fi
-
 # rust
 if [ -e ~/.cargo ]; then
   export PATH="$HOME/.cargo/bin:$PATH"
