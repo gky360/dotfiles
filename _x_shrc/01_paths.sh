@@ -58,11 +58,6 @@ fi
 export ATCLI_ROOT=${GOPATH}/src/github.com/gky360/contests/atcoder
 export ATCLI_CPP_TEMPLATE_PATH=$ATCLI_ROOT/../templates/Main.cpp.tmpl
 
-# nodenv
-if [ -s $HOME/.nodenv ]; then
-  eval "$(nodenv init -)"
-fi
-
 # ruby, rails
 export PATH="$HOME/.rbenv/bin:$PATH"
 if command_exists 'rbenv'; then

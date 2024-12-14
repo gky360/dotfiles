@@ -152,8 +152,6 @@ brew "mysql"
 brew "neovim"
 # Install NodeJS versions
 brew "node-build"
-# Manage multiple NodeJS versions
-brew "nodenv"
 # Libraries for security-enabled client and server applications
 brew "nss"
 # Package for scientific computing with Python
