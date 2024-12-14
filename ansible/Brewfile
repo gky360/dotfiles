@@ -102,8 +102,6 @@ brew "git-secrets"
 brew "gnupg"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
-# Go version management
-brew "goenv"
 # Library access to GnuPG
 brew "gpgme"
 # Image manipulation

@@ -74,14 +74,5 @@ if [ -e ~/.cargo ]; then
 fi
 export RUST_BACKTRACE=1
 
-# golang
-export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-if command_exists 'goenv' ; then
-  eval "$(goenv init -)"
-fi
-export PATH="$GOROOT/bin:$PATH"
-export PATH="$PATH:$GOPATH/bin"
-
 # For git diff
 export LESSCHARSET=utf-8
