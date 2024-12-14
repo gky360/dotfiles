@@ -31,8 +31,8 @@ if [ -e /usr/local/share/zsh-completions ]; then
 fi
 
 # mise
-if [ -e $HOME/.local/bin/mise ]; then
-  echo 'eval "$(~/.local/bin/mise activate zsh)"' >> ~/.zshrc
+if command_exists 'mise'; then
+  eval "$(mise activate zsh)"
 fi
 
 # python
