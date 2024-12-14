@@ -1,4 +1,6 @@
 *
 !.gitignore
+!mise
+!mise/*
 !nvim
 !nvim/init.vim
