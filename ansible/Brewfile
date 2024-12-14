@@ -148,8 +148,6 @@ brew "mkcert"
 brew "mysql"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Install NodeJS versions
-brew "node-build"
 # Libraries for security-enabled client and server applications
 brew "nss"
 # Package for scientific computing with Python
