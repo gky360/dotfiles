@@ -3,6 +3,7 @@
 .node-version
 .python-version
 .terraform-version
+.tool-versions
 .lvimrc
 .gitallowed
 
