@@ -1,3 +1,4 @@
 [tools]
 go = "1.23"
 node = "22"
+python = "3.13"
