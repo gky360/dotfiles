@@ -238,7 +238,7 @@ cask "iterm2"
 # File archiver
 cask "keka"
 # Research management tool
-cask "mendeley"
+cask "mendeley-reference-manager"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Remote desktop client
