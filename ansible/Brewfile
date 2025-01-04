@@ -205,8 +205,6 @@ cask "alfred"
 cask "android-file-transfer"
 # Android SDK component
 cask "android-platform-tools"
-# Tools for the Android SDK
-cask "android-sdk"
 # Free and open-source web browser
 cask "chromium"
 # Clipboard extension app
