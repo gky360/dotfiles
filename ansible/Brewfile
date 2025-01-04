@@ -4,7 +4,6 @@
 tap "aws/tap"
 tap "codecrafters-io/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "kayac/tap"
 tap "versent/taps"
@@ -40,14 +39,8 @@ brew "awscli"
 brew "bash-completion@2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Friendly powerful distributed version control system
-brew "bazaar"
 # Collection of portable C++ source libraries
 brew "boost"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
-# Increase version numbers with SemVer terms
-brew "bumpversion"
 # Core application library for C
 brew "glib"
 # Validate CloudFormation templates against the CloudFormation spec
@@ -166,12 +159,6 @@ brew "postgresql@14"
 brew "pstree"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
-# Tool Command Language
-brew "tcl-tk"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.8"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # Cross-platform application and UI framework
@@ -188,6 +175,8 @@ brew "scipy"
 brew "sops"
 # Soak up standard input and write to a file
 brew "sponge"
+# Tool Command Language
+brew "tcl-tk"
 # User interface to the TELNET protocol
 brew "telnet"
 # Thin wrapper for Terraform e.g. for locking state
