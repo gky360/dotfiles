@@ -40,6 +40,9 @@ if command_exists git ; then
   # diff
   git config --global diff.indentHeuristic true
 
+  # push
+  git config --global push.autoSetupRemote true
+
   # unset alias
   git config --global --remove-section alias || :
 
