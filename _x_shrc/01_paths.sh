@@ -12,6 +12,9 @@ export DOTPATH="$HOME/dotfiles"
 # docker
 export DOCKER_BUILDKIT=1
 
+# rancher desktop
+export PATH=$PATH:$HOME/.rd/bin
+
 # brew
 export PATH="/opt/homebrew/bin:$PATH"
 if [ -e /opt/homebrew ]; then
