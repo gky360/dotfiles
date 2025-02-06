@@ -209,8 +209,6 @@ cask "android-platform-tools"
 cask "chromium"
 # Clipboard extension app
 cask "clipy"
-# App to build and share containerised applications and microservices
-cask "docker"
 # Online diagram software
 cask "drawio"
 # Collaborative team software
@@ -247,6 +245,8 @@ cask "multipass"
 cask "orbstack"
 # Collaboration platform for API development
 cask "postman"
+# Kubernetes and container management on the desktop
+cask "rancher"
 # Plugin for AWS CLI to start and end sessions that connect to managed instances
 cask "session-manager-plugin"
 # Team communication and collaboration software
