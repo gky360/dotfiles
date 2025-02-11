@@ -2,5 +2,5 @@
 go = "1.23"
 node = "22"
 poetry = "1.8"
-python = "3.13"
+python = "3.12"
 terraform = "1.10"
