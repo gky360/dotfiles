@@ -41,6 +41,8 @@ brew "bash-completion@2"
 brew "bat"
 # Collection of portable C++ source libraries
 brew "boost"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
 # Core application library for C
 brew "glib"
 # Validate CloudFormation templates against the CloudFormation spec
