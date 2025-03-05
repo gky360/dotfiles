@@ -31,3 +31,14 @@ if command_exists 'autoload' ; then
 fi
 # if [ $commands[kubectl] ]; then source <(kubectl completion zsh 2>/dev/null); fi
 # complete -F __start_kubectl k
+
+# Incremental search for git branches
+gcop() {
+  git branch -a --sort=-authordate |
+    grep -v -e '->' -e '*' |
+    perl -pe 's/^\h+//g' |
+    perl -pe 's#^remotes/origin/##' |
+    perl -nle 'print if !$c{$_}++' |
+    peco |
+    xargs git checkout
+}
