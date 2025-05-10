@@ -209,6 +209,8 @@ cask "android-file-transfer"
 cask "android-platform-tools"
 # Free and open-source web browser
 cask "chromium"
+# Anthropic's official Claude AI desktop app
+cask "claude"
 # Clipboard extension app
 cask "clipy"
 # Online diagram software
