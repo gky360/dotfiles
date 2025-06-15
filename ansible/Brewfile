@@ -245,6 +245,8 @@ cask "microsoft-auto-update"
 cask "microsoft-teams"
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
+# Replacement for Docker Desktop
+cask "orbstack"
 # Collaboration platform for API development
 cask "postman"
 # Kubernetes and container management on the desktop
