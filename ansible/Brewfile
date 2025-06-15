@@ -263,6 +263,8 @@ cask "the-unarchiver"
 cask "visual-studio-code"
 # Connect to Windows
 cask "windows-app"
+# Open-source version of the X.Org X Window System
+cask "xquartz"
 # Video communication and virtual meeting platform
 cask "zoom"
 vscode "42crunch.vscode-openapi"

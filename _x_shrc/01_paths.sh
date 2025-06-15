@@ -58,5 +58,9 @@ if [ -e ~/.cargo ]; then
 fi
 export RUST_BACKTRACE=1
 
+# X11
+export PATH=$PATH:/opt/X11/bin
+export DISPLAY=:0
+
 # For git diff
 export LESSCHARSET=utf-8
