@@ -13,4 +13,8 @@ Session.vim
 # auto-generated tag files
 tags
 
-
+# claude
+.claude/projects/
+.claude/shell-snapshots/
+.claude/statsig/
+.claude/todos/

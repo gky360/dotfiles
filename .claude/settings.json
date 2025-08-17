@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd:*)",
+      "Bash(find:*)",
+      "Bash(git add:*)",
+      "Bash(ls:*)",
+      "Bash(npm run format)",
+      "Bash(npm run lint)",
+      "Bash(pnpm run format)",
+      "Bash(pnpm run lint)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
