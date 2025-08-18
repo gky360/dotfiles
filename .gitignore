@@ -14,7 +14,5 @@ Session.vim
 tags
 
 # claude
-.claude/projects/
-.claude/shell-snapshots/
-.claude/statsig/
-.claude/todos/
+.claude/*
+!.claude/settings.json
