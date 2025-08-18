@@ -23,6 +23,7 @@
 - Use iterative approaches
 - Course-correct early and frequently
 - MUST run project-specific lint commands (if available) before completing each task
+- MUST run project-specific tests (if available) for affected functionality before completing each task
 - MUST create a git commit before completing each task
 
 ## [MUST] Context Management
