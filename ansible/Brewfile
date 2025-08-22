@@ -31,8 +31,6 @@ brew "jpeg-xl"
 brew "aom"
 # CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
 brew "aws-sam-cli"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Programmable completion for Bash 4.2+
@@ -161,6 +159,8 @@ brew "postgresql@14"
 brew "pstree"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # Cross-platform application and UI framework
