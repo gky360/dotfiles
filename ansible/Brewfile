@@ -33,6 +33,8 @@ brew "aom"
 brew "aws-sam-cli"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Curl like simplicity to access AWS resources
+brew "awscurl"
 # Programmable completion for Bash 4.2+
 brew "bash-completion@2"
 # Clone of cat(1) with syntax highlighting and Git integration
