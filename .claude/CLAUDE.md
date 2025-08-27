@@ -26,6 +26,11 @@
 - MUST run project-specific tests (if available) for affected functionality before completing each task
 - MUST create a git commit before completing each task
 
+## [MUST] Git and Version Control
+
+- MUST write commit messages in English
+- Use clear and descriptive commit messages following conventional commit format when possible
+
 ## [MUST] Context Management
 
 - Provide visual references
