@@ -4,7 +4,7 @@ node = "22"
 "npm:@anthropic-ai/claude-code" = "latest"
 "npm:pnpm" = "10"
 poetry = "2"
-python = "3.12"
+python = "3.13"
 terraform = "1.11"
 uv = "0.6"
 
