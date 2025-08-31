@@ -20,6 +20,7 @@ alias be='bundle exec'
 
 # git
 ## status
+alias gs="git status"
 alias gst="git status"
 ## log
 alias gl="git log"
@@ -38,6 +39,8 @@ alias gdfw="git dfw"
 alias gdfwca="git dfwca"
 alias gsh="git show"
 alias gshw="git shw"
+## add
+alias ga="git add"
 ## push
 alias gpo="git push -u origin"
 ## copy current branch
