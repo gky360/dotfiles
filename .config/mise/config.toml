@@ -9,4 +9,4 @@ terraform = "1.11"
 uv = "0.6"
 
 [settings]
-idiomatic_version_file_enable_tools = ["node"]
+idiomatic_version_file_enable_tools = ["node", "python"]
