@@ -2,7 +2,7 @@
 go = "1.23"
 node = "22"
 "npm:@anthropic-ai/claude-code" = "latest"
-"npm:pnpm" = "10"
+pnpm = "10"
 poetry = "2"
 python = "3.13"
 terraform = "1.11"
