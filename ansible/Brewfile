@@ -203,8 +203,6 @@ brew "zsh-completions"
 brew "codecrafters-io/tap/codecrafters"
 # ecspresso is a deployment tool for Amazon ECS
 brew "kayac/tap/ecspresso"
-# Application launcher and productivity software
-cask "alfred"
 # Transfer files from and to an Android smartphone
 cask "android-file-transfer"
 # Android SDK component
@@ -213,8 +211,6 @@ cask "android-platform-tools"
 cask "chromium"
 # Anthropic's official Claude AI desktop app
 cask "claude"
-# Clipboard extension app
-cask "clipy"
 # Online diagram software
 cask "drawio"
 # Collaborative team software
@@ -253,6 +249,8 @@ cask "orbstack"
 cask "postman"
 # Kubernetes and container management on the desktop
 cask "rancher"
+# Control your tools with a few keystrokes
+cask "raycast"
 # Plugin for AWS CLI to start and end sessions that connect to managed instances
 cask "session-manager-plugin"
 # Team communication and collaboration software
