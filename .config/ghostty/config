@@ -48,5 +48,20 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-font-family = "HackGen Regular"
 theme = "Dracula"
+font-family = "HackGen"
+font-size = 14
+
+# https://github.com/sushichan044/dotfiles/commit/e579c2145270f434acfa52d53102f501c7fc2726
+## from v1.2, ghostty refers W3C KeyboardEvent Code, so some keybinds are changed on JIS keyboard layout
+## Spec: https://www.w3.org/TR/uievents-code/
+## debug: https://keyjs.dev/
+keybind = super+shift+bracket_left=unbind
+keybind = super+shift+bracket_right=previous_tab
+keybind = super+shift+backslash=next_tab
+keybind = super+bracket_left=unbind
+keybind = super+bracket_right=goto_split:previous
+keybind = super+backslash=goto_split:next
+
+keybind = "super+shift+arrow_left=move_tab:-1"
+keybind = "super+shift+arrow_right=move_tab:1"
