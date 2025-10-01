@@ -50,7 +50,7 @@
 
 theme = "Dracula"
 font-family = "HackGen"
-font-size = 14
+font-size = 12
 
 # https://github.com/sushichan044/dotfiles/commit/e579c2145270f434acfa52d53102f501c7fc2726
 ## from v1.2, ghostty refers W3C KeyboardEvent Code, so some keybinds are changed on JIS keyboard layout
