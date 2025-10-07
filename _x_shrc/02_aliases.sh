@@ -41,6 +41,8 @@ alias gsh="git show"
 alias gshw="git shw"
 ## add
 alias ga="git add"
+## pull
+alias gp="git pull"
 ## push
 alias gpo="git push -u origin"
 ## copy current branch
