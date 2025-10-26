@@ -1,6 +1,7 @@
 [tools]
 go = "1.23"
 node = "22"
+"npm:@biomejs/biome" = "latest"
 "npm:@openai/codex" = "latest"
 pnpm = "10"
 poetry = "2"
