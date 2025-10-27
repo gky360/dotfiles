@@ -1,1 +1,1 @@
-@~/.codex/AGEMTS.md
+@~/.codex/AGENTS.md
