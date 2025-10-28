@@ -21,5 +21,6 @@
     "deny": [],
     "ask": []
   },
-  "model": "opusplan"
+  "model": "opusplan",
+  "alwaysThinkingEnabled": false
 }
