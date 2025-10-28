@@ -30,7 +30,8 @@
 
 - **MUST** write commit messages in English
 - **MUST** use clear and descriptive commit messages following conventional commit format when possible
-- **MUST** include Codex as a co-author on every git commit using `Co-authored-by: Codex <codex@openai.com>`
+- **MUST** include you as a co-author on every git commit
+    - e.g. if you are Codex, use `Co-authored-by: Codex <codex@openai.com>`
 
 ## Context Management
 

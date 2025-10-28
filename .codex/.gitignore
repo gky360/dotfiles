@@ -2,3 +2,5 @@
 !.gitignore
 !AGENTS.md
 !config.toml
+!prompts/
+!prompts/*
