@@ -8,7 +8,7 @@ pnpm = "10"
 poetry = "2"
 python = "3.13"
 terraform = "1.11"
-uv = "0.6"
+uv = "0.9"
 
 [settings]
 idiomatic_version_file_enable_tools = ["node", "python"]
