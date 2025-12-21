@@ -1,1 +1,1 @@
-@~/.codex/AGENTS.md
+Always refer to @~/.codex/AGENTS.md
