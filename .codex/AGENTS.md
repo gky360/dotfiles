@@ -1,8 +1,8 @@
-# CLAUDE.md - Claude Code Development Guidelines
+# AGENTS.md - Claude Code Development Guidelines
 
 > The terms **MUST** **SHOULD** **MAY** in this document comply with RFC 2119:
 >
-> - **GLOBAL MUST**: A higher-level concept than MUST. Takes precedence over project-specific CLAUDE.md files
+> - **GLOBAL MUST**: A higher-level concept than MUST. Takes precedence over project-specific AGENTS.md (or CLAUDE.md if you are claude code) files
 > - **MUST**: Absolute requirement. Must be followed without exception
 > - **SHOULD**: Strong recommendation. Should be followed unless there are special reasons not to
 > - **MAY**: Optional item. Adoption should be determined according to the situation
@@ -37,7 +37,7 @@
 
 - Provide visual references
 - Include relevant background information and constraints
-- **GLOBAL MUST** update and maintain CLAUDE.md files for persistent project context
+- **GLOBAL MUST** update and maintain AGENTS.md (or CLAUDE.md if you are claude code) files for persistent project context
 - Document project-specific patterns and conventions
 
 ## Problem-Solving Approach
