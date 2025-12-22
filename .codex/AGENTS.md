@@ -37,7 +37,7 @@
 
 - Provide visual references
 - Include relevant background information and constraints
-- **GLOBAL MUST** update and maintain AGENTS.md (or CLAUDE.md if you are claude code) files for persistent project context
+- **MUST** update and maintain AGENTS.md (or CLAUDE.md if you are claude code) files and other documentation to reflect new project knowledge and avoid inconsistencies if necessary
 - Document project-specific patterns and conventions
 
 ## Problem-Solving Approach
