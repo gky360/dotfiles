@@ -12,7 +12,7 @@
 - Don't hold back. Give it your all.
 - Always Think in English, but respond in Japanese.
 - For maximum efficiency, whenever you need to perform multiple independent operations, invoke all relevant tools simultaneously rather than sequentially.
-- **MUST** use subagents for complex problem verification
+- **SHOULD** use subagents for complex problem verification
 - After receiving tool results, carefully reflect on their quality and determine optimal next steps before proceeding. Use your thinking to plan and iterate based on this new information, and then take the best next action.
 
 ## Workflow Structure
@@ -22,9 +22,9 @@
 - Create detailed plans before implementation
 - Use iterative approaches
 - Course-correct early and frequently
-- **GLOBAL MUST** run project-specific format commands and lint commands (if available) before completing each task
-- **GLOBAL MUST** run project-specific tests (if available) for affected functionality before completing each task
-- **GLOBAL MUST** create a git commit before completing each task
+- **MUST** run project-specific format commands and lint commands (if available) before completing each task
+- **MUST** run project-specific tests (if available) for affected functionality before completing each task
+- **MUST** create a git commit before completing each task
 
 ## Git and Version Control
 
