@@ -12,9 +12,6 @@ export DOTPATH="$HOME/dotfiles"
 # docker
 export DOCKER_BUILDKIT=1
 
-# rancher desktop
-export PATH=$PATH:$HOME/.rd/bin
-
 # brew
 export PATH="/opt/homebrew/bin:$PATH"
 if [ -e /opt/homebrew ]; then
@@ -43,10 +40,6 @@ if [ -e $HOME/.poetry/env ]; then
   . $HOME/.poetry/env
   export PATH="$HOME/.poetry/bin:$PATH"
 fi
-
-# atcli
-export ATCLI_ROOT=${GOPATH}/src/github.com/gky360/contests/atcoder
-export ATCLI_CPP_TEMPLATE_PATH=$ATCLI_ROOT/../templates/Main.cpp.tmpl
 
 # rust
 if [ -e ~/.cargo ]; then
