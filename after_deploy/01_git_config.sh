@@ -72,15 +72,6 @@ if command_exists git ; then
   # set upstream
   git config --global alias.pu 'push -u'
 
-  # Temporary disable git-secrets until say command is removed from git-secrets.
-  # See: https://github.com/awslabs/git-secrets/pull/221
-
-  # if command_exists 'git-secrets' ; then
-  #   git secrets --register-aws --global
-  #   bash -c 'alias say="echo" && git secrets --install -f ~/.git-templates/git-secrets'
-  #   git config --global init.templatedir '~/.git-templates/git-secrets'
-  # fi
-
   # git-delta
   if command_exists delta ; then
     git config --global core.pager delta
