@@ -1,3 +1,11 @@
+Brewfile.lock.json
+
+# claude
+.claude/*
+!.claude/settings.json
+
+
+
 ### https://raw.github.com/github/gitignore/67f633a0df0feeb1ae6f9a521d43ff7070191098/Global/Vim.gitignore
 
 # swap
@@ -12,7 +20,3 @@ Session.vim
 *~
 # auto-generated tag files
 tags
-
-# claude
-.claude/*
-!.claude/settings.json
