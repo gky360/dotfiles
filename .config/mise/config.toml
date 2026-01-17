@@ -1,13 +1,12 @@
 [tools]
-go = "1.23"
+go = "1.25"
 node = "24"
 "npm:@anthropic-ai/claude-code" = "latest"
-"npm:@biomejs/biome" = "latest"
 "npm:@openai/codex" = "latest"
 pnpm = "10"
 poetry = "2"
-python = "3.13"
-terraform = "1.11"
+python = "3.14"
+terraform = "1.14"
 uv = "0.9"
 
 [settings]
