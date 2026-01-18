@@ -16,8 +16,6 @@ brew "xz"
 brew "tree"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
 # New file format for still image compression
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
@@ -36,12 +34,14 @@ brew "glib"
 brew "cmake"
 # Docker Credential Helper for Amazon ECR
 brew "docker-credential-helper-ecr"
-# Play, record, convert, and stream audio and video
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # GNU compiler collection
 brew "gcc"
 # Library for encoding and decoding .avif files
 brew "libavif"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
 # GitHub command-line tool
 brew "gh"
 # Remote repository management made easy
@@ -56,6 +56,8 @@ brew "git-delta"
 brew "git-lfs"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Image manipulation
 brew "netpbm"
 # GNU triangulated surface library
@@ -153,10 +155,12 @@ cask "google-japanese-ime"
 cask "istat-menus"
 # Research management tool
 cask "mendeley-reference-manager"
-# Provides updates to various Microsoft products
-cask "microsoft-auto-update"
-# Meet, chat, call, and collaborate in just one place
-cask "microsoft-teams"
+# Spreadsheet software
+cask "microsoft-excel"
+# Presentation software
+cask "microsoft-powerpoint"
+# Word processor
+cask "microsoft-word"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Collaboration platform for API development
@@ -165,14 +169,8 @@ cask "postman"
 cask "raycast"
 # Team communication and collaboration software
 cask "slack"
-# Command-line client for connecting to Snowflake
-cask "snowflake-snowsql"
 # Open-source code editor
 cask "visual-studio-code"
-# Connect to Windows
-cask "windows-app"
-# Video communication and virtual meeting platform
-cask "zoom"
 vscode "42crunch.vscode-openapi"
 vscode "amazonwebservices.aws-toolkit-vscode"
 vscode "anthropic.claude-code"
@@ -210,6 +208,8 @@ vscode "ms-python.vscode-python-envs"
 vscode "ms-toolsai.jupyter"
 vscode "ms-toolsai.jupyter-keymap"
 vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
