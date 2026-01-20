@@ -166,7 +166,7 @@ case ${OSTYPE} in
         alias ls='ls -G -F'
         # [zshでもgitの補完機能使えるようにする設定]
         # (http://qiita.com/ryomits/items/8abbcc683457b5e9ca34)
-        fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
+        fpath=($(/opt/homebrew/bin/brew --prefix)/share/zsh/site-functions $fpath)
         ;;
     linux*)
         #Linux用の設定
