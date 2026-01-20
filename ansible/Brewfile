@@ -136,6 +136,8 @@ brew "kayac/tap/ecspresso"
 cask "android-file-transfer"
 # Android SDK component
 cask "android-platform-tools"
+# Tools for building Android applications
+cask "android-studio"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Collaborative team software
