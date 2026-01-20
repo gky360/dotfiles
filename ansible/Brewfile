@@ -32,6 +32,8 @@ brew "btop"
 brew "glib"
 # Cross-platform make
 brew "cmake"
+# Run a command as a UNIX daemon
+brew "daemonize"
 # Docker Credential Helper for Amazon ECR
 brew "docker-credential-helper-ecr"
 # Play, record, convert, and stream select audio and video codecs
