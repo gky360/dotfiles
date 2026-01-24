@@ -9,5 +9,10 @@ python = "3.14"
 terraform = "1.14"
 uv = "0.9"
 
+[env]
+# --enable-shared for `mise install poetry`
+# --enable-optimizations --with-lto for building for maximum performance
+PYTHON_CONFIGURE_OPTS = '--enable-shared --enable-optimizations --with-lto'
+
 [settings]
 idiomatic_version_file_enable_tools = ["node", "python"]

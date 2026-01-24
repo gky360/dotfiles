@@ -1,3 +1,4 @@
+*.log
 Brewfile.lock.json
 
 # claude
