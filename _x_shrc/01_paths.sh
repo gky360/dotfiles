@@ -23,6 +23,9 @@ if [ -e /opt/homebrew ]; then
   # export LDFLAGS="-L$(brew --prefix openssl@1.1)/lib" CFLAGS="-I$(brew --prefix openssl@1.1)/include"
   ## for pygraphviz
   # export LDFLAGS="-L$(brew --prefix graphviz)/lib" CFLAGS="-I$(brew --prefix graphviz)/include"
+
+  # for installing fonts system-wide
+  export HOMEBREW_CASK_OPTS="--fontdir=/Library/Fonts"
 fi
 
 # zsh-completions
