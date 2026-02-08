@@ -140,6 +140,8 @@ cask "android-platform-tools"
 cask "android-studio"
 # Anthropic's official Claude AI desktop app
 cask "claude"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # Collaborative team software
 cask "figma"
 # Web browser

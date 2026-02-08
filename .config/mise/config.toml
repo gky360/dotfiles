@@ -1,7 +1,6 @@
 [tools]
 go = "1.25"
 node = "24"
-"npm:@anthropic-ai/claude-code" = "latest"
 "npm:@openai/codex" = "latest"
 pnpm = "10"
 "pipx:poetry" = "2"
