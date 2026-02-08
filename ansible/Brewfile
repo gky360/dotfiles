@@ -102,6 +102,8 @@ brew "neovim"
 brew "openjdk"
 # Simplistic interactive filtering tool
 brew "peco"
+# Pins GitHub Actions to full hashes and versions
+brew "pinact"
 # Object-relational database system
 brew "postgresql@14"
 # Show ps output as a tree
