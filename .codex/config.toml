@@ -5,6 +5,7 @@ network_access = true
 web_search_request = true
 
 notify = ["bash", "-lc", "afplay /System/Library/Sounds/Ping.aiff"]
+personality = "pragmatic"
 
 
 [mcp_servers.aws-knowledge]
