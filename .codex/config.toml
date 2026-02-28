@@ -7,6 +7,8 @@ web_search_request = true
 notify = ["bash", "-lc", "afplay /System/Library/Sounds/Ping.aiff"]
 personality = "pragmatic"
 
+[features]
+codex_git_commit = true
 
 [mcp_servers.aws-knowledge]
 url = "https://knowledge-mcp.global.api.aws"
