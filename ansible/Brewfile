@@ -2,6 +2,8 @@
 # vi: set ft=ruby :
 
 tap "kayac/tap"
+# Static checker for GitHub Actions workflow files
+brew "actionlint"
 # C parser in Python
 brew "pycparser"
 # C Foreign Function Interface for Python
