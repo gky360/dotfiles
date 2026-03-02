@@ -179,6 +179,8 @@ cask "postman"
 cask "raycast"
 # Team communication and collaboration software
 cask "slack"
+# Command-line client for connecting to Snowflake
+cask "snowflake-snowsql"
 # Open-source code editor
 cask "visual-studio-code"
 vscode "42crunch.vscode-openapi"
