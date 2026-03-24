@@ -181,6 +181,8 @@ cask "postman"
 cask "raycast"
 # Team communication and collaboration software
 cask "slack"
+# CLI to create, run, and deploy Slack apps
+cask "slack-cli"
 # Command-line client for connecting to Snowflake
 cask "snowflake-snowsql"
 # Open-source code editor
