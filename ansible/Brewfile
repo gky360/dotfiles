@@ -128,6 +128,8 @@ brew "tldr"
 brew "tmux"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
+# Convert HTML to PDF
+brew "weasyprint"
 # Internet file retriever
 brew "wget"
 # UNIX shell (command interpreter)
