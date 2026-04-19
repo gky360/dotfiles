@@ -1,6 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+tap "flother/taps"
 tap "kayac/tap"
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
@@ -18,8 +19,6 @@ brew "xz"
 brew "tree"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
-# New file format for still image compression
-brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
 # Official Amazon AWS command-line interface
@@ -42,6 +41,8 @@ brew "docker-credential-helper-ecr"
 brew "ffmpeg"
 # GNU compiler collection
 brew "gcc"
+# New file format for still image compression
+brew "jpeg-xl"
 # Library for encoding and decoding .avif files
 brew "libavif"
 # Image format providing lossless and lossy compression for web images
@@ -136,6 +137,8 @@ brew "wget"
 brew "zsh"
 # Additional completion definitions for zsh
 brew "zsh-completions"
+# Create a spritesheet from a set of SVG images
+brew "flother/taps/spreet"
 # ecspresso is a deployment tool for Amazon ECS
 brew "kayac/tap/ecspresso"
 # Transfer files from and to an Android smartphone
