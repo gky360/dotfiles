@@ -1,12 +1,12 @@
 [tools]
-go = "1.25"
+go = "1.26"
 node = "24"
 "npm:@openai/codex" = "latest"
-pnpm = "10"
+pnpm = "11"
 "pipx:poetry" = "2"
 python = "3.14"
 terraform = "1.14"
-uv = "0.9"
+uv = "0.11"
 
 [env]
 # --enable-shared for `mise install poetry`
