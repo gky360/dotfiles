@@ -30,6 +30,7 @@
 
 - **MUST** write commit messages in English
 - **MUST** use clear and descriptive commit messages following conventional commit format when possible
+- **SHOULD NOT** use `git -C <dir> ...` form. It bypasses permission allowlists like `Bash(git status:*)` and triggers unnecessary permission prompts.
 
 ## Context Management
 

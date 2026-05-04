@@ -3,6 +3,13 @@
     "allow": [
       "Bash(cd:*)",
       "Bash(find:*)",
+      "Bash(git blame:*)",
+      "Bash(git branch:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git ls-files:*)",
+      "Bash(git show:*)",
+      "Bash(git status:*)",
       "Bash(grep:*)",
       "Bash(ls:*)",
       "Bash(npm run check)",
@@ -21,5 +28,6 @@
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "model": "opus"
 }
