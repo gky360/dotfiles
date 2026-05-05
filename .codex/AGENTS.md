@@ -30,7 +30,8 @@
 
 - **MUST** write commit messages in English
 - **MUST** use clear and descriptive commit messages following conventional commit format when possible
-- **SHOULD NOT** use `git -C <dir> ...` form. It bypasses permission allowlists like `Bash(git status:*)` and triggers unnecessary permission prompts.
+- **SHOULD NOT** use `git -C <dir> ...` or `cd <path> && git ...` forms. Both bypass permission allowlists like `Bash(git status:*)` (the matcher does not split on `&&`).
+- **SHOULD** instead run `cd <path>` in a separate Bash call, then run git commands. The Bash tool's working directory persists across calls.
 
 ## Context Management
 

@@ -1,6 +1,7 @@
 {
   "permissions": {
     "allow": [
+      "Bash(cat:*)",
       "Bash(cd:*)",
       "Bash(find:*)",
       "Bash(git blame:*)",
@@ -25,7 +26,9 @@
       "Bash(pnpm lint)",
       "Bash(pnpm test)",
       "Bash(npx prettier:*)",
-      "Read(~/.codex/AGENTS.md)"
+      "Read(~/.claude/**)",
+      "Read(~/.codex/AGENTS.md)",
+      "Read(~/dotfiles/.claude/**)"
     ],
     "deny": [],
     "ask": []
@@ -37,7 +40,6 @@
     "context7@claude-plugins-official": true,
     "code-review@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true,
-    "github@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": true,
     "playwright@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": true,
