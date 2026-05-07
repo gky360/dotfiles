@@ -15,6 +15,7 @@ PYTHON_CONFIGURE_OPTS = '--enable-shared --enable-optimizations --with-lto'
 
 [settings]
 idiomatic_version_file_enable_tools = ["node", "python"]
+minimum_release_age = "7d"
 
 [settings.python]
 compile = false
