@@ -35,6 +35,11 @@ fi
 
 # mise
 if command_exists 'mise'; then
+  # Add shims to PATH so non-interactive shells (e.g. Claude Code Bash tool,
+  # `ssh host 'cmd'`, `zsh -c '...'`) can resolve mise-managed tools.
+  # `mise activate` only registers a precmd hook, which never fires in
+  # non-interactive shells.
+  export PATH="$HOME/.local/share/mise/shims:$PATH"
   eval "$(mise activate zsh)"
 fi
 
