@@ -172,10 +172,14 @@ cask "google-japanese-ime"
 cask "istat-menus"
 # Research management tool
 cask "mendeley-reference-manager"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
 # Spreadsheet software
 cask "microsoft-excel"
 # Presentation software
 cask "microsoft-powerpoint"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
 # Word processor
 cask "microsoft-word"
 # Replacement for Docker Desktop
@@ -186,12 +190,14 @@ cask "postman"
 cask "raycast"
 # Team communication and collaboration software
 cask "slack"
-# CLI to create, run, and deploy Slack apps
-cask "slack-cli"
 # Command-line client for connecting to Snowflake
 cask "snowflake-snowsql"
 # Open-source code editor
 cask "visual-studio-code"
+# Connect to Windows
+cask "windows-app"
+# Video communication and virtual meeting platform
+cask "zoom"
 vscode "42crunch.vscode-openapi"
 vscode "amazonwebservices.aws-toolkit-vscode"
 vscode "anthropic.claude-code"
@@ -202,7 +208,6 @@ vscode "chouzz.vscode-better-align"
 vscode "dbaeumer.vscode-eslint"
 vscode "docker.docker"
 vscode "dracula-theme.theme-dracula"
-vscode "dsznajder.es7-react-js-snippets"
 vscode "eamodio.gitlens"
 vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
@@ -219,12 +224,9 @@ vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-playwright.playwright"
-vscode "ms-python.black-formatter"
 vscode "ms-python.debugpy"
-vscode "ms-python.isort"
 vscode "ms-python.mypy-type-checker"
 vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
 vscode "ms-python.vscode-python-envs"
 vscode "ms-toolsai.jupyter"
 vscode "ms-toolsai.jupyter-keymap"
@@ -254,5 +256,3 @@ vscode "voidzero.vite-plus-extension-pack"
 vscode "vscode-icons-team.vscode-icons"
 vscode "vscodevim.vim"
 vscode "yzhang.markdown-all-in-one"
-go "cmd/go"
-go "cmd/gofmt"
