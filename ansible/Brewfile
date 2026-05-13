@@ -113,6 +113,8 @@ brew "poppler"
 brew "postgresql@14"
 # Show ps output as a tree
 brew "pstree"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Rust toolchain installer
 brew "rustup"
 # Login and retrieve AWS temporary credentials using a SAML IDP
