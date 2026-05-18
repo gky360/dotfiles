@@ -5,6 +5,7 @@
       "Bash(cd *)",
       "Bash(find *)",
       "Bash(gh issue view *)",
+      "Bash(gh pr list *)",
       "Bash(git blame *)",
       "Bash(git branch *)",
       "Bash(git check-ignore *)",
@@ -30,7 +31,9 @@
       "Bash(npx prettier *)",
       "Read(~/.claude/**)",
       "Read(~/.codex/AGENTS.md)",
-      "Read(~/dotfiles/.claude/**)"
+      "Read(~/dotfiles/.claude/**)",
+      "Skill(superpowers:systematic-debugging)",
+      "Skill(superpowers:systematic-debugging:*)"
     ],
     "deny": [],
     "ask": []
