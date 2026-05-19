@@ -6,6 +6,7 @@
 .tool-versions
 .lvimrc
 .gitallowed
+.pnpm-store/
 **/.claude/settings.local.json
 **/.vscode/settings.local.json
 mise.local.toml
