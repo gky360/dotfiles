@@ -53,6 +53,9 @@ alias glp='cd $(ghq root)/$(ghq list | peco)'
 # grep
 alias grep='grep --color=auto'
 
+# node
+alias vp='pnpm exec vp'
+
 # docker
 alias dcm='docker compose'
 alias dcmr='docker compose run --rm'
@@ -95,3 +98,4 @@ alias watch='watch '
 
 # aws
 alias awsme='aws sts get-caller-identity'
+
