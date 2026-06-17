@@ -4,6 +4,8 @@ Brewfile.lock.json
 # claude
 .claude/*
 !.claude/settings.json
+!.claude/skills/
+!.claude/skills/**
 
 
 
