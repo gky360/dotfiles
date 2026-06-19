@@ -184,6 +184,8 @@ cask "microsoft-powerpoint"
 cask "microsoft-teams"
 # Word processor
 cask "microsoft-word"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Collaboration platform for API development
