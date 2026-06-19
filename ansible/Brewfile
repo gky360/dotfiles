@@ -1,8 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-tap "flother/taps"
-tap "kayac/tap"
+tap "flother/taps", trusted: true
+tap "kayac/tap", trusted: true
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
 # C parser in Python
