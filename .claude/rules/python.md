@@ -5,7 +5,6 @@ paths:
 
 # Python
 
-- **SHOULD** prefer read-only abstract types over concrete mutable ones:
-  - `Sequence` / `Mapping` (from `collections.abc`) over `list` / `dict`
-  - `frozenset[T]` over `set[T]`
-- Concrete mutable types **MAY** still be used for internal / private state.
+- **SHOULD** favor immutability wherever practical:
+  - `Sequence` / `Mapping` (from `collections.abc`) over `list` / `dict`; `frozenset[T]` over `set[T]`
+  - `tuple` over `list`; frozen dataclasses / `NamedTuple` over mutable classes
