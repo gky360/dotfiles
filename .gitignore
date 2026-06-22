@@ -6,6 +6,8 @@ Brewfile.lock.json
 !.claude/settings.json
 !.claude/skills/
 !.claude/skills/**
+!.claude/rules/
+!.claude/rules/**
 
 
 
