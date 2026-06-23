@@ -4,10 +4,11 @@ Three complementary mechanisms keep dependencies fresh **and** resistant to
 supply-chain attacks:
 
 1. **Dependabot** — opens grouped update PRs on a schedule.
-2. **pinact** — pins GitHub Actions to commit SHAs (a tag can be re-pointed; a SHA can't).
+2. **pinact** — pins GitHub Actions to commit SHAs (a tag can be re-pointed; a SHA can't),
+   and via `min_age` refuses to pin to releases published *just now*.
 3. **New-version adoption delay** — refuse to install versions published *just now*, so a
    compromised fresh release ages out before it reaches you (pnpm `minimumReleaseAge`,
-   Dependabot `cooldown`).
+   Dependabot `cooldown`, pinact `min_age`).
 
 ## Dependabot — `.github/dependabot.yml`
 
@@ -55,19 +56,26 @@ Repeat the second block per language ecosystem (`uv` → `/py`, `terraform` → 
 etc.), adjusting `directory`. Keep `versioning-strategy: increase` for `npm` and `uv`;
 drop it for `terraform`. Drop ecosystems the repo doesn't have.
 
-## pinact — `pinact.yaml`
+## pinact — `.github/pinact.yaml`
 
 ```yaml
+# .github/pinact.yaml
 version: 3
-files:
-  - pattern: .github/workflows/*.yaml
-  - pattern: .github/workflows/*.yml
+min_age:
+  value: 7      # days — don't pin/update to releases younger than this
+  always: true  # audit min-age on every run (so the CI check enforces it too)
 ```
 
 Run `pinact run` to rewrite every `uses: owner/action@vX` into `uses: owner/action@<sha> # vX`.
-Keep the trailing `# vX.Y.Z` comment so Dependabot still reads the version. CI enforces
-this with a `pinact` job (see ci-cd.md) that fails if anything is unpinned — so a PR can't
-introduce a mutable tag.
+In v4 the trailing `# vX.Y.Z` version comment is **required** (a bare SHA errors; `pinact run`
+adds it automatically) and Dependabot reads it to propose updates. For a non-mutating check use
+`pinact run --check` (alias of `-fix=false`). CI enforces this with a `pinact` job (see
+ci-cd.md) that fails if anything is unpinned — so a PR can't introduce a mutable tag.
+
+A pinned SHA is immutable, but *when* that release was published is a separate concern: a
+freshly compromised tag could be pinned the moment it lands. `min_age` closes that gap by
+refusing releases younger than `value` days — it is the GitHub Actions counterpart of the
+new-version adoption delay below.
 
 ## New-version adoption delay (supply-chain)
 
@@ -94,6 +102,10 @@ manager:
   [tool.uv]
   exclude-newer = "1 week"
   ```
+
+- **GitHub Actions**: pinact `min_age` (see the pinact section above) refuses to pin or
+  update to releases younger than N days — the Actions-ecosystem equivalent of the delays
+  above. Keep it in sync with the 7-day `cooldown`.
 
 - **Other ecosystems**: there's no universal equivalent. For most, Dependabot `cooldown`
   plus SHA/lockfile pinning is the available defense — note the gap rather than implying

@@ -38,7 +38,7 @@ Before proposing changes, inventory the repo:
 - **Languages**: `pyproject.toml` / `package.json` / `*.tf` / `go.mod` / `Cargo.toml`.
 - **Existing quality config**: ruff/eslint/biome/prettier/tsconfig, test runner config.
 - **CI**: `.github/workflows/*.{yml,yaml}` — which jobs already exist?
-- **Dependency hygiene**: `.github/dependabot.yml`, `pinact.yaml`, pnpm `minimumReleaseAge`.
+- **Dependency hygiene**: `.github/dependabot.yml`, `.github/pinact.yaml`, pnpm `minimumReleaseAge`.
 - **Version pinning**: `mise.toml` / `.tool-versions` / `.python-version` / `.nvmrc`.
 - **Harness**: `.claude/settings.json`, `.claude/hooks/`, `CLAUDE.md` / `AGENTS.md`.
 
@@ -79,7 +79,7 @@ Audit a repo against this; every "no" is a gap to fill.
 1. Each present language has format + lint + typecheck + test, each as a single command?
 2. A `mise.toml` (or equivalent) pins every tool/runtime version used in CI?
 3. A GitHub Actions workflow runs those checks on push and PR, one job per language?
-4. The CI includes a `pinact` job, and workflow actions are pinned to commit SHAs (with `pinact.yaml`)?
+4. The CI includes a `pinact` job, and workflow actions are pinned to commit SHAs (with `.github/pinact.yaml`, including a `min_age` adoption delay)?
 5. `dependabot.yml` covers every ecosystem (github-actions monthly; npm/uv/terraform weekly), grouped, with `cooldown`?
 6. New-version adoption delay set where supported (pnpm `minimumReleaseAge`)?
 7. Harness wired — hooks ([[configuring-harness-hooks]]) and lean `CLAUDE.md`/`AGENTS.md` ([[authoring-agent-instructions]])?

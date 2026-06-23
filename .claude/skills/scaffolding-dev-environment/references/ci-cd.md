@@ -69,11 +69,14 @@ jobs:
       - uses: actions/checkout@<sha> # vX.Y.Z
       - uses: suzuki-shunsuke/pinact-action@<sha> # vX.Y.Z
         with:
-          skip_push: "true"
+          fix: "false"   # v4 check-only: fail on unpinned actions, missing version comments, or min_age violations
 ```
 
 - `<sha>` placeholders are filled by running pinact (see dependency-hygiene.md); keep the
-  `# vX.Y.Z` trailing comment so Dependabot can read the version.
+  `# vX.Y.Z` trailing comment — v4 requires it and Dependabot reads it to propose updates.
+- `fix: "false"` is v4's check-only mode: it never edits files and fails CI on any unpinned
+  action or missing version comment. `min_age` is audited in the same run because
+  `.github/pinact.yaml` sets `always: true` (alternatively pass `verify_min_age: "true"`).
 - Include only the jobs for languages the repo actually has (drop `node` from a
   Python-only repo, etc.). The `pinact` job is always present.
 - Add specialized jobs as needed — e.g. a long e2e job (Playwright) with its own
