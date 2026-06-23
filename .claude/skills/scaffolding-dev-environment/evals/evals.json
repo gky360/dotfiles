@@ -1,0 +1,56 @@
+{
+  "skill_name": "scaffolding-dev-environment",
+  "evals": [
+    {
+      "id": 0,
+      "name": "bare-python-full-setup",
+      "prompt": "この Python リポジトリの開発環境を整備してください。lint / typecheck / test、CI、依存更新まわりを一通りお願いします。",
+      "expected_output": "uv/ruff/ty/pytest を pyproject.toml に設定、mise.toml でバージョンピン、.github/workflows/check.yaml に python job + pinact job、.github/dependabot.yml(uv + github-actions, weekly friday/Asia/Tokyo, cooldown)、pinact.yaml を新規追加。既存の pyproject.toml の project メタは壊さない。",
+      "fixture": "fixtures/python-bare",
+      "assertions": [
+        "Adds ruff config to pyproject.toml with select=[\"ALL\"] and an ignore list",
+        "Configures ty and pytest",
+        "Creates .github/workflows/check.yaml with a python job running ruff format/check, ty, pytest",
+        "check.yaml includes a dedicated pinact job",
+        "Creates .github/dependabot.yml covering uv and github-actions",
+        "dependabot schedule is weekly, day friday, timezone Asia/Tokyo, with cooldown",
+        "Creates pinact.yaml",
+        "Creates mise.toml pinning at least python and uv",
+        "Existing [project] metadata is preserved (name=coolpkg, httpx dependency intact)"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "node-fill-ci-gaps-nonclobber",
+      "prompt": "この Node/TS リポジトリ、CI と依存更新の仕組みが入っていないので整備して。既存の設定は壊さないでね。",
+      "expected_output": "既存 package.json(pnpm)/tsconfig は尊重しつつ、check.yaml(node job + pinact job)、dependabot.yml(npm + github-actions, versioning-strategy: increase)、pinact.yaml、pnpm minimumReleaseAge を追加。",
+      "fixture": "fixtures/node-no-ci",
+      "assertions": [
+        "Existing package.json preserved (name=widget-cli, commander dependency intact)",
+        "Existing tsconfig.json not destroyed",
+        "Creates .github/workflows/check.yaml with a node job and a pinact job",
+        "Creates .github/dependabot.yml covering npm and github-actions",
+        "dependabot npm entry uses versioning-strategy: increase, weekly friday Asia/Tokyo, cooldown",
+        "Creates pinact.yaml",
+        "Adds pnpm minimumReleaseAge",
+        "Creates mise.toml pinning at least node and pnpm"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "wiki-like-audit-fill-harness-intact",
+      "prompt": "このリポジトリの開発環境を整備してください。",
+      "expected_output": "既存の .claude harness と markdownlint/ruff 設定を非破壊で残し、欠けている CI(python + node/markdownlint + pinact job)、dependabot.yml、pinact.yaml、mise.toml を補完する。harness の hook 詳細は configuring-harness-hooks に委譲。",
+      "fixture": "fixtures/wiki-like",
+      "assertions": [
+        "Pre-existing .claude/settings.json left unchanged",
+        "Pre-existing CLAUDE.md not bloated with re-documented harness detail",
+        "Existing ruff/ty and markdownlint config preserved",
+        "Creates check.yaml with a python job, a node/markdownlint job, and a pinact job",
+        "Creates .github/dependabot.yml covering uv, npm, and github-actions",
+        "Creates pinact.yaml",
+        "Creates mise.toml pinning python, uv, node, pnpm"
+      ]
+    }
+  ]
+}
