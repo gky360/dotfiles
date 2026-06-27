@@ -151,6 +151,8 @@ cask "android-file-transfer"
 cask "android-platform-tools"
 # Tools for building Android applications
 cask "android-studio"
+# E-books management software
+cask "calibre"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
@@ -260,3 +262,6 @@ vscode "voidzero.vite-plus-extension-pack"
 vscode "vscode-icons-team.vscode-icons"
 vscode "vscodevim.vim"
 vscode "yzhang.markdown-all-in-one"
+go "cmd/go"
+go "cmd/gofmt"
+npm "corepack"
