@@ -38,6 +38,20 @@
     "deny": [],
     "ask": []
   },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/gky360/dotfiles/.claude/hooks/allow-safe-echo.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
   "model": "opus",
   "enabledPlugins": {
     "superpowers@claude-plugins-official": true,
