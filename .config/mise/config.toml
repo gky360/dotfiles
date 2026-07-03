@@ -1,6 +1,6 @@
 [tools]
 go = "1.26"
-node = "24"
+node = "26"
 "npm:@openai/codex" = { version = "latest", minimum_release_age = "0d" }
 pnpm = "11"
 "pipx:poetry" = "2"
