@@ -151,6 +151,8 @@ cask "android-file-transfer"
 cask "android-platform-tools"
 # Tools for building Android applications
 cask "android-studio"
+# Memory training application
+cask "anki"
 # E-books management software
 cask "calibre"
 # Anthropic's official Claude AI desktop app
