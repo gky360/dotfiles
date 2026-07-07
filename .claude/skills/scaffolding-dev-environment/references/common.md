@@ -26,8 +26,8 @@ pinact    = "…"
   version (e.g. `terraform_version: "X.Y.Z"`), pin that same patch version in `mise.toml`
   so local and CI resolve to the identical build. Use a looser pin only where CI is also
   loose.
-- A language-native pin file may also exist and should agree with mise: `.python-version`
-  for Python, the `packageManager` field + `engines` in `package.json` for Node/pnpm.
+- A language-native pin file may also exist and should agree with mise: the
+  `packageManager` field + `engines` in `package.json` for Node/pnpm.
 
 ## Other languages — apply the same shape
 

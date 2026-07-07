@@ -20,7 +20,7 @@ uv run ty check           # typecheck
 uv run pytest             # test
 ```
 
-Pin `python` and `uv` versions in `mise.toml` and `.python-version` (see common.md), so
+Pin `python` and `uv` versions in `mise.toml` (see common.md), so
 CI and local use the same toolchain. Put the dev tools in a dependency group (add lower
 bounds at whatever the current versions are):
 
