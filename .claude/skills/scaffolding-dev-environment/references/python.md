@@ -56,6 +56,11 @@ ignore = [
 unfixable = [
   "ERA001", # do not delete commented code
 ]
+
+[tool.ruff.lint.flake8-tidy-imports.banned-api]
+# Deferred annotation evaluation (PEP 563) is superseded by PEP 649 (Python 3.14+)
+# and breaks runtime annotation inspection (e.g. pydantic, dataclasses introspection).
+"__future__.annotations".msg = "Do not use `from __future__ import annotations`."
 ```
 
 - `select = ["ALL"]` then a small, *justified* ignore list keeps the lint surface honest.
