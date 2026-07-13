@@ -64,7 +64,8 @@
     "claude-md-management@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true,
     "commit-commands@claude-plugins-official": true,
-    "document-skills@anthropic-agent-skills": true
+    "document-skills@anthropic-agent-skills": true,
+    "llm-wiki@llm-wiki-marketplace": true
   },
   "extraKnownMarketplaces": {
     "anthropic-agent-skills": {
@@ -72,7 +73,14 @@
         "source": "github",
         "repo": "anthropics/skills"
       }
+    },
+    "llm-wiki-marketplace": {
+      "source": {
+        "source": "directory",
+        "path": "~/dev/src/github.com/gky360/llm-wiki"
+      }
     }
   },
+  "tui": "fullscreen",
   "inputNeededNotifEnabled": true
 }
