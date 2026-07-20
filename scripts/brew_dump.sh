@@ -8,7 +8,7 @@ export DOTPATH
 cd $DOTPATH
 cd ansible
 
-brew bundle dump --describe --force --no-go --no-npm --no-uv
+brew bundle dump --force --no-go --no-npm --no-uv
 mv Brewfile Brewfile.tmp
 cat <<EOF | cat - Brewfile.tmp > Brewfile
 # -*- mode: ruby -*-
