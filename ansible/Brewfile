@@ -57,12 +57,14 @@ brew "gibo"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Quickly rewrite git repository history
+brew "git-filter-repo"
 # Git extension for versioning large files
 brew "git-lfs"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
 # Image manipulation
 brew "netpbm"
 # GNU triangulated surface library
@@ -153,8 +155,6 @@ cask "android-platform-tools"
 cask "android-studio"
 # Memory training application
 cask "anki"
-# E-books management software
-cask "calibre"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
@@ -264,6 +264,3 @@ vscode "voidzero.vite-plus-extension-pack"
 vscode "vscode-icons-team.vscode-icons"
 vscode "vscodevim.vim"
 vscode "yzhang.markdown-all-in-one"
-go "cmd/go"
-go "cmd/gofmt"
-npm "corepack"
