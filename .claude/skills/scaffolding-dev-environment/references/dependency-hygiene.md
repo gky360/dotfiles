@@ -56,6 +56,17 @@ Repeat the second block per language ecosystem (`uv` → `/py`, `terraform` → 
 etc.), adjusting `directory`. Keep `versioning-strategy: increase` for `npm` and `uv`;
 drop it for `terraform`. Drop ecosystems the repo doesn't have.
 
+Where an ecosystem's manifests are spread across several directories, swap `directory` for
+`directories` (plural, accepts globs). Terraform is the usual case — each environment and
+each module declares its own `required_providers` (see terraform.md):
+
+```yaml
+  - package-ecosystem: 'terraform'
+    directories:
+      - '/terraform/envs/*'
+      - '/terraform/modules/**'
+```
+
 ## pinact — `.github/pinact.yaml`
 
 ```yaml

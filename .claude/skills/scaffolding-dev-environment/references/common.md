@@ -18,7 +18,7 @@ python    = "…"
 uv        = "…"
 terraform = "…"
 tflint    = "…"
-tfsec     = "…"
+trivy     = "…"
 pinact    = "…"
 ```
 
