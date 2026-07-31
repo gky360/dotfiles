@@ -39,6 +39,7 @@ jobs:
       - uses: astral-sh/setup-uv@<sha> # vX.Y.Z
         with:
           version: "<uv version, matching mise>"
+          python-version: "<python version, matching mise>"
           enable-cache: true
           cache-dependency-glob: py/uv.lock
       - run: uv sync --locked
