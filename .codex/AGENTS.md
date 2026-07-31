@@ -9,6 +9,7 @@
 ## Core
 
 - Always Think in English, but respond in Japanese.
+- **SHOULD** follow YAGNI and KISS: implement only what the current task requires, in the simplest way that works. **SHOULD NOT** add speculative abstractions, options, or generality "for later"
 
 ## Workflow Structure
 
@@ -17,9 +18,8 @@
 ## Git and Version Control
 
 - **MUST** write commit messages in English
-- **MUST** use clear and descriptive commit messages following conventional commit format when possible
-- **SHOULD NOT** use `git -C <dir> ...` or `cd <path> && git ...` forms. Both bypass permission allowlists like `Bash(git status:*)` (the matcher does not split on `&&`).
-- **SHOULD** instead run `cd <path>` in a separate Bash call, then run git commands. The Bash tool's working directory persists across calls.
+- **SHOULD** use clear and descriptive commit messages following conventional commit format when possible
+- **SHOULD** run `cd <path>` in a separate Bash call before git commands (the working directory persists), instead of `git -C <dir> ...` or `cd <path> && git ...` which bypass permission allowlists like `Bash(git status:*)`
 
 ## Context Management
 
