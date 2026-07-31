@@ -33,7 +33,8 @@
       "Read(~/.codex/AGENTS.md)",
       "Read(~/dotfiles/.claude/**)",
       "Skill(superpowers:systematic-debugging)",
-      "Skill(superpowers:systematic-debugging:*)"
+      "Skill(superpowers:systematic-debugging:*)",
+      "Bash(mise ls *)"
     ],
     "deny": [],
     "ask": []
