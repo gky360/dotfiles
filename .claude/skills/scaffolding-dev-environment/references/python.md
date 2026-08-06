@@ -56,7 +56,7 @@ ignore = [
   "S101",   # Use of `assert` detected
   "T20",    # flake8-print (https://pypi.org/project/flake8-print/)
   # Require explicit type annotations on functions and methods.
-  # "ANN",    # flkae8-annotations (https://pypi.org/project/flake8-annotations/)
+  # "ANN",    # flake8-annotations (https://pypi.org/project/flake8-annotations/)
   "INP001", # File {file} is part of an implicit namespace package. Add an `__init__.py`.
 ]
 unfixable = [
