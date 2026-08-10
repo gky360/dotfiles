@@ -10,6 +10,7 @@
 
 - Always Think in English, but respond in Japanese.
 - **SHOULD** follow YAGNI and KISS: implement only what the current task requires, in the simplest way that works. **SHOULD NOT** add speculative abstractions, options, or generality "for later"
+- **MUST** invoke the `ponytail` skill before planning, writing, refactoring, or reviewing code, and follow it
 
 ## Workflow Structure
 
