@@ -36,6 +36,22 @@ terraform/
   with `~>` constraints; keep `required_version` consistent with the `terraform` pin in
   `mise.toml`. Commit `.terraform.lock.hcl` per env — modules never get `init`-ed directly,
   so they have none.
+- **`providers.tf` sets `default_labels`** (google provider; `default_tags` on aws —
+  match the provider actually used, as with the tflint plugin) so every resource carries
+  the environment and a managed-by marker without per-resource labels:
+
+  ```hcl
+  provider "google" {
+    project = local.project_id
+    region  = local.region
+
+    default_labels = {
+      environment = local.environment # e.g. "dev"
+      managed-by  = "terraform"
+    }
+  }
+  ```
+
 - A module wrapping a single resource names it `this` (`google_project.this`). Every
   `variable` and `output` carries a `description` (`<<-EOT` heredoc if multi-line).
 - `backend.tf` can't reference variables or module outputs, so the bucket name is spelled
