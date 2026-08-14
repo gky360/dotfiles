@@ -73,8 +73,14 @@ each module declares its own `required_providers` (see terraform.md):
 # .github/pinact.yaml
 version: 3
 min_age:
-  value: 7      # days — don't pin/update to releases younger than this
-  always: true  # audit min-age on every run (so the CI check enforces it too)
+  # Days. A freshly compromised release ages out before it can be pinned here.
+  value: 7
+  # Only audited when pinning or updating a ref, not on every check run. Auditing on every
+  # run has CI read commit metadata for each pinned action, and some orgs (e.g.
+  # `aquasecurity`, trivy-action) block GitHub-hosted runner IPs with an allow list, so the
+  # check job would fail on a 403 that says nothing about the pinning. `pinact run` locally
+  # and Dependabot's own cooldown still enforce the delay.
+  always: false
 ```
 
 Run `pinact run` to rewrite every `uses: owner/action@vX` into `uses: owner/action@<sha> # vX`.
