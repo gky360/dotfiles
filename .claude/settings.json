@@ -83,5 +83,6 @@
     }
   },
   "tui": "fullscreen",
-  "inputNeededNotifEnabled": true
+  "inputNeededNotifEnabled": true,
+  "effortLevel": "high"
 }

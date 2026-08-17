@@ -73,9 +73,6 @@ kind: it dresses up as efficiency and ships a confident wrong fix.
 Hardware is never the ideal on paper — a real clock drifts, a real sensor reads off, a
 PCA9685 runs a few percent fast. Leave the calibration knob, not just less code.
 
-Tests are out of scope for the ladder: follow the `superpowers:test-driven-development`
-skill and **MUST NOT** skip a test as "YAGNI".
-
 ---
 
 The shortest path to done is the right path.
