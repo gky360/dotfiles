@@ -5,8 +5,8 @@ node = "26"
 pnpm = "11"
 "pipx:poetry" = "2"
 python = "3.14"
-terraform = "1.14"
-uv = "0.11"
+terraform = "1.15"
+uv = "0.12"
 
 [env]
 # --enable-shared for `mise install poetry`
