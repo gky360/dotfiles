@@ -11,6 +11,11 @@ the values are placeholders, not versions to copy:
 
 ```toml
 # mise.toml
+[settings]
+# New-version adoption delay; same 7-day window as the other mechanisms in
+# dependency-hygiene.md. mise's own default is 24h.
+minimum_release_age = "7d"
+
 [tools]
 node      = "…"
 pnpm      = "…"
@@ -26,6 +31,11 @@ pinact    = "…"
   version (e.g. `terraform_version: "X.Y.Z"`), pin that same patch version in `mise.toml`
   so local and CI resolve to the identical build. Use a looser pin only where CI is also
   loose.
+- **`minimum_release_age` refuses releases published just now** — including an exact
+  version you pinned. If the current stable resolved at setup time is younger than 7 days,
+  pin the previous stable instead, or exempt that tool: per-tool
+  `[tools.trivy] minimum_release_age = "1d"`, or
+  `minimum_release_age_excludes = ["trivy", "npm:*"]`. See dependency-hygiene.md.
 - A language-native pin file may also exist and should agree with mise: the
   `packageManager` field + `engines` in `package.json` for Node/pnpm.
 

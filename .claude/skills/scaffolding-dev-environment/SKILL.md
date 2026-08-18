@@ -38,7 +38,7 @@ Before proposing changes, inventory the repo:
 - **Languages**: `pyproject.toml` / `package.json` / `*.tf` / `go.mod` / `Cargo.toml`.
 - **Existing quality config**: ruff/eslint/biome/prettier/tsconfig, test runner config.
 - **CI**: `.github/workflows/*.{yml,yaml}` — which jobs already exist?
-- **Dependency hygiene**: `.github/dependabot.yml`, `.github/pinact.yaml`, pnpm `minimumReleaseAge`.
+- **Dependency hygiene**: `.github/dependabot.yml`, `.github/pinact.yaml`, pnpm `minimumReleaseAge`, mise `minimum_release_age`.
 - **Version pinning**: `mise.toml` / `.tool-versions` / `.python-version` / `.nvmrc`.
 - **Harness**: `.claude/settings.json`, `.claude/hooks/`, `CLAUDE.md` / `AGENTS.md`.
 
@@ -55,7 +55,7 @@ generalized snippet to adapt. Read the relevant one before writing files:
 | **Node / TypeScript** | pnpm + tsconfig(strictest) + lint/format/typecheck/test | [references/node-ts.md](references/node-ts.md) |
 | **Terraform** | fmt -check + validate + tflint + trivy | [references/terraform.md](references/terraform.md) |
 | **CI/CD** | GitHub Actions: per-language lint+typecheck+test jobs + a `pinact` job | [references/ci-cd.md](references/ci-cd.md) |
-| **Dependency hygiene** | Dependabot, pinact, pnpm `minimumReleaseAge` / `cooldown` | [references/dependency-hygiene.md](references/dependency-hygiene.md) |
+| **Dependency hygiene** | Dependabot, pinact, pnpm `minimumReleaseAge` / mise `minimum_release_age` / `cooldown` | [references/dependency-hygiene.md](references/dependency-hygiene.md) |
 | **Version pinning & misc** | mise pinning; other-language fallback | [references/common.md](references/common.md) |
 
 For languages outside the first-class three (Go, Rust, …), apply the same *shape* —
@@ -81,6 +81,6 @@ Audit a repo against this; every "no" is a gap to fill.
 3. A GitHub Actions workflow runs those checks on push and PR, one job per language?
 4. The CI includes a `pinact` job, and workflow actions are pinned to commit SHAs (with `.github/pinact.yaml`, including a `min_age` adoption delay)?
 5. `dependabot.yml` covers every ecosystem (github-actions/npm/uv/terraform, weekly), grouped, with `cooldown`?
-6. New-version adoption delay set where supported (pnpm `minimumReleaseAge`)?
+6. New-version adoption delay set where supported (pnpm `minimumReleaseAge`, uv `exclude-newer`, mise `[settings] minimum_release_age`)?
 7. Harness wired — hooks ([[configuring-harness-hooks]]) and lean `CLAUDE.md`/`AGENTS.md` ([[authoring-agent-instructions]])?
 8. Nothing pre-existing was overwritten — only gaps were filled?

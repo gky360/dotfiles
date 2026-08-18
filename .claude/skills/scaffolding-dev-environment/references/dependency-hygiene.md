@@ -8,7 +8,7 @@ supply-chain attacks:
    and via `min_age` refuses to pin to releases published *just now*.
 3. **New-version adoption delay** — refuse to install versions published *just now*, so a
    compromised fresh release ages out before it reaches you (pnpm `minimumReleaseAge`,
-   Dependabot `cooldown`, pinact `min_age`).
+   uv `exclude-newer`, mise `minimum_release_age`, Dependabot `cooldown`, pinact `min_age`).
 
 ## Dependabot — `.github/dependabot.yml`
 
@@ -119,6 +119,11 @@ manager:
   [tool.uv]
   exclude-newer = "1 week"
   ```
+
+- **mise** (the toolchain itself): `[settings] minimum_release_age = "7d"` in `mise.toml`
+  refuses to install tool/runtime releases younger than 7 days (mise's own default is 24h).
+  Escape hatches: per-tool `[tools.<name>] minimum_release_age`, or
+  `minimum_release_age_excludes`. Config shape in common.md.
 
 - **GitHub Actions**: pinact `min_age` (see the pinact section above) refuses to pin or
   update to releases younger than N days — the Actions-ecosystem equivalent of the delays
