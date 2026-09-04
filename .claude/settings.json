@@ -82,7 +82,9 @@
       }
     }
   },
+  "effortLevel": "high",
   "tui": "fullscreen",
   "inputNeededNotifEnabled": true,
-  "effortLevel": "high"
+  "agentPushNotifEnabled": true,
+  "remoteControlAtStartup": true
 }
