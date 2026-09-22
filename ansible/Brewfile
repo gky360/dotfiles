@@ -2,6 +2,7 @@
 # vi: set ft=ruby :
 
 tap "flother/taps", trusted: true
+tap "j-quants/tap", "https://github.com/J-Quants/homebrew-tap"
 tap "kayac/tap", trusted: true
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
@@ -41,12 +42,12 @@ brew "docker-credential-helper-ecr"
 brew "ffmpeg"
 # GNU compiler collection
 brew "gcc"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
 # New file format for still image compression
 brew "jpeg-xl"
 # Library for encoding and decoding .avif files
 brew "libavif"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
 # GitHub command-line tool
 brew "gh"
 # Remote repository management made easy
@@ -63,8 +64,6 @@ brew "git-filter-repo"
 brew "git-lfs"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
 # Image manipulation
 brew "netpbm"
 # GNU triangulated surface library
@@ -133,6 +132,8 @@ brew "tesseract"
 brew "tldr"
 # Terminal multiplexer
 brew "tmux"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Convert HTML to PDF
@@ -145,8 +146,10 @@ brew "zsh"
 brew "zsh-completions"
 # Create a spritesheet from a set of SVG images
 brew "flother/taps/spreet"
+# CLI tool for querying the J-Quants API V2 (Japanese stock market data)
+brew "j-quants/tap/jquants", trusted: true
 # ecspresso is a deployment tool for Amazon ECS
-brew "kayac/tap/ecspresso"
+brew "kayac/tap/ecspresso", trusted: true
 # Transfer files from and to an Android smartphone
 cask "android-file-transfer"
 # Android SDK component
@@ -210,7 +213,6 @@ vscode "42crunch.vscode-openapi"
 vscode "amazonwebservices.aws-toolkit-vscode"
 vscode "anthropic.claude-code"
 vscode "astral-sh.ty"
-vscode "bierner.markdown-mermaid"
 vscode "charliermarsh.ruff"
 vscode "chouzz.vscode-better-align"
 vscode "dbaeumer.vscode-eslint"
