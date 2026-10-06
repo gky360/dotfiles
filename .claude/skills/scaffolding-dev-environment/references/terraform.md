@@ -262,7 +262,9 @@ jobs:
 - Dependabot raises PRs for the `terraform` ecosystem, and those *do* get an OIDC token
   (same-repo branch), so the plan itself still runs — only the comment step is skipped.
 - Terraform manifests are spread across `envs/` and `modules/`, so the Dependabot entry
-  needs `directories:` (plural, globbable) rather than a single `directory:` — see
+  needs `directories:` (plural, globbable) rather than a single `directory:`, and provider
+  majors are grouped with `group-by: dependency-name` — the env intersects every module's
+  `~>` constraint, so a per-directory major PR can never pass `terraform init`. See
   dependency-hygiene.md.
 
 ## Cloud auth — OIDC / Workload Identity Federation

@@ -62,9 +62,24 @@ each module declares its own `required_providers` (see terraform.md):
 
 ```yaml
   - package-ecosystem: 'terraform'
+    # No .tf files live directly in /terraform. Globbing is only available on
+    # `directories` (plural); the singular `directory` does not support it.
     directories:
-      - '/terraform/envs/*'
-      - '/terraform/modules/**'
+      - '/terraform/**/*'
+    # schedule / cooldown: same as the other ecosystems
+    groups:
+      minor-updates:
+        applies-to: version-updates
+        update-types: ['minor', 'patch']
+      # A provider major must move every versions.tf at once: the env intersects the
+      # module constraints, so a per-directory `~> 8.0` PR can never pass `terraform init`.
+      major-updates:
+        applies-to: version-updates
+        update-types: ['major']
+        group-by: dependency-name
+      security-minor-updates:
+        applies-to: security-updates
+        update-types: ['minor', 'patch']
 ```
 
 ## pinact — `.github/pinact.yaml`
